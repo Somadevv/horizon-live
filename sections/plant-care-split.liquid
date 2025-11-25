@@ -1,0 +1,931 @@
+{% liquid
+  assign product = closest.product
+  if request.visual_preview_mode and product == blank
+    assign product = collections.all.products.first
+  endif
+%}
+
+<div class="plant-care-split plant-care-split--{{ section.id }}"
+     style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="plant-care-split__container"
+       style="gap: {{ section.settings.container_gap }}px;">
+
+    {%- comment -%} Left Side: Plant Characteristics {%- endcomment -%}
+    <div class="plant-care-split__characteristics">
+      <h3 class="plant-care-split__heading"
+          style="font-size: {{ section.settings.heading_size }}px; font-weight: {{ section.settings.heading_weight }};">
+        {{ section.settings.characteristics_heading }}
+      </h3>
+
+      {% if product %}
+        <div class="plant-characteristics__grid">
+
+          {%- if product.metafields.custom.growability.value -%}
+            <div class="characteristic-card difficulty-{{ product.metafields.custom.growability.value[0] | downcase }}">
+              <div class="characteristic-card__inner">
+                <div class="characteristic-card__icon">
+                  {% render 'icon-difficulty' %}
+                </div>
+                <div class="characteristic-card__content">
+                  <div class="characteristic-card__title">Difficulty</div>
+                  <div class="characteristic-card__value">{{ product.metafields.custom.growability | metafield_text }}</div>
+                  <div class="characteristic-card__description">{{ section.settings.desc_difficulty | default: "Indicates how easy or challenging this plant is to grow and maintain." }}</div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if product.metafields.custom.growth_form -%}
+            <div class="characteristic-card">
+              <div class="characteristic-card__inner">
+                <div class="characteristic-card__icon">
+                  {% render 'icon-growth-form' %}
+                </div>
+                <div class="characteristic-card__content">
+                  <div class="characteristic-card__title">Growth Form</div>
+                  <div class="characteristic-card__value">
+                    {% for form in product.metafields.custom.growth_form.value %}
+                      <span>{{ form }}{% unless forloop.last %}, {% endunless %}</span>
+                    {% endfor %}
+                  </div>
+                  <div class="characteristic-card__description">{{ section.settings.desc_growth_form | default: "Describes the natural shape and growth habit of the plant." }}</div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if product.metafields.custom.growth_rate -%}
+            <div class="characteristic-card growth-{{ product.metafields.custom.growth_rate | metafield_text | downcase }}">
+              <div class="characteristic-card__inner">
+                <div class="characteristic-card__icon">
+                  {% render 'icon-growth-rate' %}
+                </div>
+                <div class="characteristic-card__content">
+                  <div class="characteristic-card__title">Growth Rate</div>
+                  <div class="characteristic-card__value">{{ product.metafields.custom.growth_rate | metafield_text }}</div>
+                  <div class="characteristic-card__description">{{ section.settings.desc_growth_rate | default: "How fast the plant grows under ideal conditions." }}</div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if product.metafields.custom.hardiness_celsius_ -%}
+            {% assign temp = product.metafields.custom.hardiness_celsius_ | metafield_text | times: 1 %}
+
+            {%- comment -%} Determine temperature zone and icon based on value {%- endcomment -%}
+            {%- if temp <= -5 -%}
+              {% assign temp_zone = 'temp-cold' %}
+              {% assign temp_icon = section.settings.temperature_icon_green %}
+            {%- elsif temp > -5 and temp <= 0 -%}
+              {% assign temp_zone = 'temp-mild' %}
+              {% assign temp_icon = section.settings.temperature_icon_amber %}
+            {%- else -%}
+              {% assign temp_zone = 'temp-hot' %}
+              {% assign temp_icon = section.settings.temperature_icon_red %}
+            {%- endif -%}
+
+            <div class="characteristic-card {{ temp_zone }}">
+              <div class="characteristic-card__inner">
+                <div class="characteristic-card__icon">
+                  {%- if temp_icon != blank -%}
+                    <img src="{{ temp_icon | image_url: width: 200 }}" alt="Temperature" loading="lazy">
+                  {%- else -%}
+                    {% render 'icon-thermometer' %}
+                  {%- endif -%}
+                </div>
+                <div class="characteristic-card__content">
+                  <div class="characteristic-card__title">Minimum Temperature</div>
+                  <div class="characteristic-card__value">{{ temp }}°C</div>
+                  <div class="characteristic-card__description">{{ section.settings.desc_min_temp | default: "The lowest temperature this plant can tolerate without damage." }}</div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if product.metafields.custom.maximum_height_and_spread -%}
+            <div class="characteristic-card">
+              <div class="characteristic-card__inner">
+                <div class="characteristic-card__icon">
+                  {% render 'icon-maximum-size' %}
+                </div>
+                <div class="characteristic-card__content">
+                  <div class="characteristic-card__title">Maximum Height & Spread</div>
+                  <div class="characteristic-card__value">{{ product.metafields.custom.maximum_height_and_spread | metafield_text }}</div>
+                  <div class="characteristic-card__description">{{ section.settings.desc_max_size | default: "The typical maximum dimensions this plant can reach when mature." }}</div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if product.metafields.custom.featured_colour.value -%}
+            <div class="characteristic-card">
+              <div class="characteristic-card__inner">
+                <div class="characteristic-card__icon">
+                  {% render 'swatch-multi', colours: product.metafields.custom.featured_colour, size: 60 %}
+                </div>
+                <div class="characteristic-card__content">
+                  <div class="characteristic-card__title">Featured Colour</div>
+                  <div class="characteristic-card__value">
+                    {{ product.metafields.custom.featured_colour | metafield_text }}
+                  </div>
+                  <div class="characteristic-card__description">{{ section.settings.desc_colour | default: "The predominant colours displayed by this plant." }}</div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if product.metafields.custom.plant_breeders_rights == true -%}
+            <div class="characteristic-card">
+              <div class="characteristic-card__inner">
+                <div class="characteristic-card__icon">
+                  {%- if section.settings.special_status_icon != blank -%}
+                    <img src="{{ section.settings.special_status_icon | image_url: width: 200 }}" alt="Special Status" loading="lazy">
+                  {%- else -%}
+                    {% render 'icon-check-mark' %}
+                  {%- endif -%}
+                </div>
+                <div class="characteristic-card__content">
+                  <div class="characteristic-card__title">Special Status</div>
+                  <div class="characteristic-card__value">
+                    <span class="pbr-badge">PBR Protected</span>
+                  </div>
+                  <div class="characteristic-card__description">{{ section.settings.desc_pbr | default: "This plant variety is protected by Plant Breeders' Rights." }}</div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+
+        </div>
+      {% endif %}
+    </div>
+
+    {%- comment -%} Right Side: Care Instructions {%- endcomment -%}
+    <div class="plant-care-split__care">
+      <h3 class="plant-care-split__heading"
+          style="font-size: {{ section.settings.heading_size }}px; font-weight: {{ section.settings.heading_weight }};">
+        {{ section.settings.care_heading }}
+      </h3>
+      <div class="plant-care-split__care-content">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'text' %}
+              <div class="care-text" {{ block.shopify_attributes }}>
+                {{ block.settings.content }}
+              </div>
+
+            {% when 'care_accordion' %}
+              <details class="care-accordion" {{ block.shopify_attributes }} {% if forloop.first %}open{% endif %}>
+                <summary class="care-accordion__summary">
+                  {{ block.settings.title }}
+                  <span class="care-accordion__icon">+</span>
+                </summary>
+                <div class="care-accordion__content">
+                  {{ block.settings.content }}
+                </div>
+              </details>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  (function() {
+    const accordions = document.querySelectorAll('.plant-care-split--{{ section.id }} .care-accordion');
+
+    accordions.forEach(accordion => {
+      accordion.addEventListener('toggle', function() {
+        if (this.open) {
+          // Close all other accordions in this section
+          accordions.forEach(otherAccordion => {
+            if (otherAccordion !== this && otherAccordion.open) {
+              otherAccordion.open = false;
+            }
+          });
+        }
+      });
+    });
+  })();
+</script>
+
+<style>
+  .plant-care-split--{{ section.id }} .plant-characteristics__grid {
+    grid-template-columns: repeat({{ section.settings.grid_columns_desktop }}, 1fr);
+    gap: {{ section.settings.grid_gap }}px;
+  }
+
+  .plant-care-split--{{ section.id }} .characteristic-card {
+    min-height: {{ section.settings.card_min_height }}px;
+    border-radius: {{ section.settings.card_border_radius }}px;
+    {% if section.settings.card_border_style == 'normal' %}
+      border: {{ section.settings.card_border_width }}px solid {{ section.settings.card_border_color }};
+    {% elsif section.settings.card_border_style == 'none' %}
+      border: none;
+    {% endif %}
+  }
+
+  {% if section.settings.card_border_style != 'colored' %}
+    .plant-care-split--{{ section.id }} .characteristic-card::before {
+      display: none;
+    }
+  {% endif %}
+
+  .plant-care-split--{{ section.id }} .characteristic-card__icon {
+    width: {{ section.settings.icon_size }}px;
+    height: {{ section.settings.icon_size }}px;
+  }
+
+  .plant-care-split--{{ section.id }} .characteristic-card__title {
+    font-size: {{ section.settings.card_title_size }}px;
+    font-weight: {{ section.settings.card_title_weight }};
+  }
+
+  .plant-care-split--{{ section.id }} .characteristic-card__value {
+    font-size: {{ section.settings.card_value_size }}px;
+    font-weight: {{ section.settings.card_value_weight }};
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .plant-care-split--{{ section.id }} .plant-characteristics__grid {
+      grid-template-columns: repeat({{ section.settings.grid_columns_tablet }}, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .plant-care-split--{{ section.id }} .plant-characteristics__grid {
+      grid-template-columns: repeat({{ section.settings.grid_columns_mobile }}, 1fr);
+    }
+  }
+</style>
+
+{% stylesheet %}
+  .plant-care-split {
+    font-family: inherit;
+  }
+
+  /* Main container - 50/50 split */
+  .plant-care-split__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .plant-care-split__heading {
+    color: rgba(var(--color-foreground-rgb), 0.9);
+    margin-bottom: 1.5rem;
+  }
+
+  .plant-care-split__characteristics,
+  .plant-care-split__care {
+    padding: 2rem;
+    background-color: rgba(var(--color-foreground-rgb), 0.02);
+    border-radius: 12px;
+  }
+
+  /* Plant Characteristics Grid - Single column for 50% width */
+  .plant-characteristics__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    overflow: visible;
+  }
+
+  /* Characteristic Cards - Uniform Size */
+  .characteristic-card {
+    position: relative;
+    border-radius: 12px;
+    padding: 1.25rem;
+    background-color: rgba(var(--color-foreground-rgb), 0.03);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    overflow: visible;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  /* Ensure colored border doesn't overflow */
+  .characteristic-card::before {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .characteristic-card__inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .characteristic-card__icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+  }
+
+  .characteristic-card:hover .characteristic-card__icon {
+    transform: scale(1.05);
+  }
+
+  .characteristic-card__icon svg {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  .characteristic-card__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .characteristic-card__content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* SWAPPED: Title now bold, Value now normal */
+  .characteristic-card__title {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(var(--color-foreground-rgb), 0.6);
+    margin-bottom: 0.5rem;
+  }
+
+  .characteristic-card__value {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(var(--color-foreground-rgb), 0.9);
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+
+  .characteristic-card__description {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(var(--color-foreground-rgb), 0.55);
+    text-transform: none;
+    letter-spacing: normal;
+  }
+
+  /* Border styling - controlled by settings */
+  .characteristic-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    background-color: #5c9a3b;
+    border-radius: 4px 0 0 4px;
+    opacity: 0.7;
+  }
+
+  /* Difficulty color variations */
+  .characteristic-card.difficulty-b::before { background-color: #5c9a3b; }
+  .characteristic-card.difficulty-i::before { background-color: #f59e0b; }
+  .characteristic-card.difficulty-a::before { background-color: #ef4444; }
+
+  /* Growth rate color variations */
+  .characteristic-card.growth-slow::before { background-color: #5c9a3b; }
+  .characteristic-card.growth-moderate::before { background-color: #f59e0b; }
+  .characteristic-card.growth-fast::before { background-color: #ef4444; }
+
+  /* Temperature color variations */
+  .characteristic-card.temp-cold::before { background-color: #3b82f6; }
+  .characteristic-card.temp-mild::before { background-color: #f59e0b; }
+  .characteristic-card.temp-hot::before { background-color: #ef4444; }
+
+  .pbr-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(var(--color-foreground-rgb), 0.1);
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  /* Care Content Styling */
+  .plant-care-split__care-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .care-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(var(--color-foreground-rgb), 0.85);
+  }
+
+  /* Accordion/Dropdown Styling */
+  .care-accordion {
+    border: 1px solid rgba(var(--color-foreground-rgb), 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(var(--color-foreground-rgb), 0.02);
+  }
+
+  .care-accordion__summary {
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: rgba(var(--color-foreground-rgb), 0.9);
+    transition: background-color 0.2s ease;
+    user-select: none;
+  }
+
+  .care-accordion__summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .care-accordion__summary:hover {
+    background-color: rgba(var(--color-foreground-rgb), 0.03);
+  }
+
+  .care-accordion__icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 1rem;
+  }
+
+  .care-accordion[open] .care-accordion__icon {
+    transform: rotate(45deg);
+  }
+
+  .care-accordion__content {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(var(--color-foreground-rgb), 0.75);
+  }
+
+  .care-accordion__content p {
+    margin-bottom: 1rem;
+  }
+
+  .care-accordion__content p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Mobile responsiveness */
+  @media screen and (max-width: 767px) {
+    .plant-care-split__container {
+      grid-template-columns: 1fr;
+      gap: 2rem !important;
+    }
+
+    .plant-care-split__characteristics,
+    .plant-care-split__care {
+      padding: 1.5rem;
+    }
+
+    .characteristic-card {
+      padding: 1rem;
+      min-height: 95px;
+      height: 100%;
+    }
+
+    .characteristic-card__icon {
+      width: 50px;
+      height: 50px;
+      margin-right: 0.85rem;
+    }
+
+    .characteristic-card__title {
+      font-size: 0.7rem;
+    }
+
+    .characteristic-card__value {
+      font-size: 1rem;
+    }
+
+    .care-accordion__summary {
+      padding: 1rem 1.25rem;
+      font-size: 0.95rem;
+    }
+
+    .care-accordion__content {
+      padding: 0 1.25rem 1.25rem 1.25rem;
+      font-size: 0.95rem;
+    }
+  }
+
+  /* Tablet responsiveness */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .plant-care-split__container {
+      gap: 2rem !important;
+    }
+
+    .characteristic-card__icon {
+      width: 55px;
+      height: 55px;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Plant Care Split",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Headings"
+    },
+    {
+      "type": "text",
+      "id": "characteristics_heading",
+      "label": "Characteristics Heading",
+      "default": "Plant Characteristics"
+    },
+    {
+      "type": "text",
+      "id": "care_heading",
+      "label": "Care Instructions Heading",
+      "default": "How to Care"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading Font Size",
+      "min": 12,
+      "max": 48,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "heading_weight",
+      "label": "Heading Font Weight",
+      "min": 300,
+      "max": 900,
+      "step": 100,
+      "default": 600
+    },
+    {
+      "type": "header",
+      "content": "Tooltip Descriptions"
+    },
+    {
+      "type": "textarea",
+      "id": "desc_difficulty",
+      "label": "Difficulty Description",
+      "default": "Indicates how easy or challenging this plant is to grow and maintain."
+    },
+    {
+      "type": "textarea",
+      "id": "desc_growth_form",
+      "label": "Growth Form Description",
+      "default": "Describes the natural shape and growth habit of the plant."
+    },
+    {
+      "type": "textarea",
+      "id": "desc_growth_rate",
+      "label": "Growth Rate Description",
+      "default": "How fast the plant grows under ideal conditions."
+    },
+    {
+      "type": "textarea",
+      "id": "desc_min_temp",
+      "label": "Minimum Temperature Description",
+      "default": "The lowest temperature this plant can tolerate without damage."
+    },
+    {
+      "type": "textarea",
+      "id": "desc_max_size",
+      "label": "Maximum Size Description",
+      "default": "The typical maximum dimensions this plant can reach when mature."
+    },
+    {
+      "type": "textarea",
+      "id": "desc_colour",
+      "label": "Featured Colour Description",
+      "default": "The predominant colours displayed by this plant."
+    },
+    {
+      "type": "textarea",
+      "id": "desc_pbr",
+      "label": "PBR Status Description",
+      "default": "This plant variety is protected by Plant Breeders' Rights."
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "container_gap",
+      "label": "Gap Between Columns",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "header",
+      "content": "Card Styling"
+    },
+    {
+      "type": "select",
+      "id": "card_border_style",
+      "label": "Card Border Style",
+      "options": [
+        {
+          "value": "colored",
+          "label": "Colored Left Border"
+        },
+        {
+          "value": "normal",
+          "label": "Normal Border (All Sides)"
+        },
+        {
+          "value": "none",
+          "label": "No Border"
+        }
+      ],
+      "default": "colored"
+    },
+    {
+      "type": "range",
+      "id": "card_border_width",
+      "label": "Border Width (if Normal Border)",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Border Color (if Normal Border)",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "card_min_height",
+      "label": "Card Minimum Height",
+      "min": 80,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 110
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Card Border Radius",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Typography - Card Title"
+    },
+    {
+      "type": "range",
+      "id": "card_title_size",
+      "label": "Title Font Size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "card_title_weight",
+      "label": "Title Font Weight",
+      "min": 300,
+      "max": 900,
+      "step": 100,
+      "default": 700
+    },
+    {
+      "type": "header",
+      "content": "Typography - Card Value"
+    },
+    {
+      "type": "range",
+      "id": "card_value_size",
+      "label": "Value Font Size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "card_value_weight",
+      "label": "Value Font Weight",
+      "min": 300,
+      "max": 900,
+      "step": 100,
+      "default": 400
+    },
+    {
+      "type": "header",
+      "content": "Grid Columns (Characteristics)"
+    },
+    {
+      "type": "select",
+      "id": "grid_columns_desktop",
+      "label": "Columns (Desktop)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 Column"
+        },
+        {
+          "value": "2",
+          "label": "2 Columns"
+        }
+      ],
+      "default": "1",
+      "info": "Number of columns for characteristics grid on desktop"
+    },
+    {
+      "type": "select",
+      "id": "grid_columns_tablet",
+      "label": "Columns (Tablet)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 Column"
+        },
+        {
+          "value": "2",
+          "label": "2 Columns"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "select",
+      "id": "grid_columns_mobile",
+      "label": "Columns (Mobile)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 Column"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Grid Gap",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Icon Settings"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon Size (applies to all icons)",
+      "min": 40,
+      "max": 120,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "image_picker",
+      "id": "temperature_icon_green",
+      "label": "Temperature Icon: Green Zone (\u2264 -5\u00b0C)",
+      "info": "Icon for temperatures -5\u00b0C and below"
+    },
+    {
+      "type": "image_picker",
+      "id": "temperature_icon_amber",
+      "label": "Temperature Icon: Amber Zone (-5\u00b0C to 0\u00b0C)",
+      "info": "Icon for temperatures between -5\u00b0C and 0\u00b0C"
+    },
+    {
+      "type": "image_picker",
+      "id": "temperature_icon_red",
+      "label": "Temperature Icon: Red Zone (> 0\u00b0C)",
+      "info": "Icon for temperatures above 0\u00b0C"
+    },
+    {
+      "type": "image_picker",
+      "id": "special_status_icon",
+      "label": "Special Status Icon (leave empty for default)",
+      "info": "Upload a custom icon or leave empty to use the default check mark icon"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top Padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom Padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Add care instructions here.</p>"
+        }
+      ]
+    },
+    {
+      "type": "care_accordion",
+      "name": "Care FAQ (Accordion)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question/Title",
+          "default": "How often should I water?"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Answer/Content",
+          "default": "<p>Water when soil is completely dry. This is typically every 1-2 weeks.</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_by_default",
+          "label": "Open by Default",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Plant Care Split",
+      "category": "Product",
+      "blocks": [
+        {
+          "type": "care_accordion",
+          "settings": {
+            "title": "How often should I water?",
+            "content": "<p>Water thoroughly, then allow soil to dry completely before watering again.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

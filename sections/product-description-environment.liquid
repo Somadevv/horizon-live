@@ -1,0 +1,512 @@
+{% liquid
+  assign product = closest.product
+  if request.visual_preview_mode and product == blank
+    assign product = collections.all.products.first
+  endif
+%}
+
+<div class="desc-env desc-env--{{ section.id }}"
+     style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="desc-env__container"
+       style="gap: {{ section.settings.container_gap }}px;">
+
+    {%- comment -%} Left Side: Description {%- endcomment -%}
+    <div class="desc-env__description"
+         style="max-width: {{ section.settings.description_max_width }}px;">
+      <div class="desc-env__description-content"
+           style="font-size: {{ section.settings.description_font_size }}px;
+                  font-weight: {{ section.settings.description_font_weight }};
+                  line-height: {{ section.settings.description_line_height }};">
+        {{ section.settings.description }}
+      </div>
+    </div>
+
+    {%- comment -%} Right Side: Ideal Environment {%- endcomment -%}
+    <div class="desc-env__environment">
+      <h3 class="desc-env__heading"
+          style="font-size: {{ section.settings.heading_size }}px; font-weight: {{ section.settings.heading_weight }};">
+        {% if section.settings.show_product_in_heading and product.title != blank %}
+          {{ section.settings.environment_heading }}
+        {% else %}
+          {{ section.settings.environment_heading }}
+        {% endif %}
+      </h3>
+
+      <div class="desc-env__cards">
+        {%- if product.metafields.custom.ideal_location -%}
+          {%- for location in product.metafields.custom.ideal_location.value -%}
+
+            {% comment %}
+              Map long metafield values to short labels and optional icon images
+            {% endcomment %}
+            {% case location %}
+              {% when 'Outdoor full sun' %}
+                {% assign label = 'Full Sun' %}
+                {% assign icon = section.settings.icon_outdoor_full_sun %}
+              {% when 'Outdoor part shade' %}
+                {% assign label = 'Part Shade' %}
+                {% assign icon = section.settings.icon_outdoor_part_shade %}
+              {% when 'Outdoor full shade' %}
+                {% assign label = 'Full Shade' %}
+                {% assign icon = section.settings.icon_outdoor_full_shade %}
+              {% when 'Outdoor sheltered from wind' %}
+                {% assign label = 'Wind Sheltered' %}
+                {% assign icon = section.settings.icon_outdoor_wind_sheltered %}
+              {% when 'Outdoor sheltered from rain' %}
+                {% assign label = 'Rain Sheltered' %}
+                {% assign icon = section.settings.icon_outdoor_rain_sheltered %}
+              {% when 'Indoor unheated, bright and good airflow' %}
+                {% assign label = 'Indoor Bright' %}
+                {% assign icon = section.settings.icon_indoor_bright %}
+              {% when 'Indoor bright windowsill' %}
+                {% assign label = 'Windowsill' %}
+                {% assign icon = section.settings.icon_indoor_windowsill %}
+              {% else %}
+                {% assign label = location %}
+                {% assign icon = blank %}
+            {% endcase %}
+
+            <div class="env-card">
+              {% if icon != blank %}
+                <div class="env-card__icon">
+                  <img src="{{ icon | image_url: width: section.settings.icon_size }}"
+                       alt="{{ label }}"
+                       loading="lazy"
+                       width="{{ section.settings.icon_size }}"
+                       height="{{ section.settings.icon_size }}">
+                </div>
+              {% endif %}
+              <div class="env-card__label">{{ label }}</div>
+            </div>
+
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<style>
+  .desc-env--{{ section.id }} .desc-env__heading {
+    font-size: {{ section.settings.heading_size }}px;
+    font-weight: {{ section.settings.heading_weight }};
+  }
+
+  .desc-env--{{ section.id }} .desc-env__cards {
+    grid-template-columns: repeat({{ section.settings.cards_per_row_desktop }}, 1fr);
+    gap: {{ section.settings.card_gap }}px;
+  }
+
+  .desc-env--{{ section.id }} .env-card__icon {
+    width: {{ section.settings.icon_size }}px;
+    height: {{ section.settings.icon_size }}px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .desc-env--{{ section.id }} .desc-env__cards {
+      grid-template-columns: repeat({{ section.settings.cards_per_row_tablet }}, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .desc-env--{{ section.id }} .desc-env__cards {
+      grid-template-columns: repeat({{ section.settings.cards_per_row_mobile }}, 1fr);
+    }
+
+    .desc-env--{{ section.id }} .env-card__icon {
+      width: {{ section.settings.mobile_icon_size }}px;
+      height: {{ section.settings.mobile_icon_size }}px;
+    }
+
+    .desc-env--{{ section.id }} .desc-env__description-content {
+      font-size: {{ section.settings.mobile_description_font_size }}px !important;
+    }
+  }
+</style>
+
+{% stylesheet %}
+  .desc-env {
+    font-family: inherit;
+  }
+
+  /* Main container - 50/50 split */
+  .desc-env__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+  }
+
+  /* Description Side */
+  .desc-env__description {
+    padding: 2rem;
+    background-color: rgba(var(--color-foreground-rgb), 0.02);
+    border-radius: 12px;
+  }
+
+  .desc-env__description-content {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(var(--color-foreground-rgb), 0.85);
+  }
+
+  .desc-env__description-content p {
+    margin-bottom: 1rem;
+  }
+
+  .desc-env__description-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Environment Side */
+  .desc-env__environment {
+    padding: 2rem;
+    background-color: rgba(var(--color-foreground-rgb), 0.02);
+    border-radius: 12px;
+  }
+
+  .desc-env__heading {
+    color: rgba(var(--color-foreground-rgb), 0.9);
+    margin-bottom: 1.5rem;
+  }
+
+  .desc-env__cards {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  /* Environment Cards */
+  .env-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: rgba(var(--color-foreground-rgb), 0.03);
+    border-radius: 12px;
+  }
+
+  .env-card__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .env-card__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .env-card__label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(var(--color-foreground-rgb), 0.9);
+  }
+
+  /* Mobile responsiveness */
+  @media screen and (max-width: 767px) {
+    .desc-env__container {
+      grid-template-columns: 1fr;
+      gap: 2rem !important;
+    }
+
+    .desc-env__description,
+    .desc-env__environment {
+      padding: 1.5rem;
+    }
+
+    .desc-env__description {
+      max-width: 100% !important;
+    }
+
+    .env-card {
+      padding: 1.25rem 0.75rem;
+    }
+
+    .env-card__label {
+      font-size: 0.875rem;
+    }
+  }
+
+  /* Tablet responsiveness */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .desc-env__container {
+      gap: 2rem !important;
+    }
+
+    .env-card__icon {
+      width: 55px;
+      height: 55px;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Description + Environment",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Description Settings"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Product Description",
+      "default": "<p>Add your product description here.</p>"
+    },
+    {
+      "type": "range",
+      "id": "description_font_size",
+      "label": "Description Font Size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "description_font_weight",
+      "label": "Description Font Weight",
+      "min": 300,
+      "max": 900,
+      "step": 100,
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "description_line_height",
+      "label": "Description Line Height",
+      "min": 1.2,
+      "max": 2.5,
+      "step": 0.1,
+      "default": 1.7
+    },
+    {
+      "type": "range",
+      "id": "description_max_width",
+      "label": "Description Max Width",
+      "info": "Control how wide the description text appears",
+      "min": 400,
+      "max": 1200,
+      "step": 50,
+      "unit": "px",
+      "default": 800
+    },
+    {
+      "type": "header",
+      "content": "Environment Section"
+    },
+    {
+      "type": "text",
+      "id": "environment_heading",
+      "label": "Environment Section Heading",
+      "default": "Ideal Environment"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_in_heading",
+      "label": "Show Product Name in Heading",
+      "info": "If enabled, displays 'Ideal Environment for [Product Name]'",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading Font Size",
+      "min": 12,
+      "max": 48,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "heading_weight",
+      "label": "Heading Font Weight",
+      "min": 300,
+      "max": 900,
+      "step": 100,
+      "default": 600
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "container_gap",
+      "label": "Gap Between Columns",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "header",
+      "content": "Environment Cards Grid"
+    },
+    {
+      "type": "select",
+      "id": "cards_per_row_desktop",
+      "label": "Cards Per Row (Desktop)",
+      "options": [
+        {"value": "1","label": "1 Card"},
+        {"value": "2","label": "2 Cards"},
+        {"value": "3","label": "3 Cards"},
+        {"value": "4","label": "4 Cards"}
+      ],
+      "default": "3"
+    },
+    {
+      "type": "select",
+      "id": "cards_per_row_tablet",
+      "label": "Cards Per Row (Tablet)",
+      "options": [
+        {"value": "1","label": "1 Card"},
+        {"value": "2","label": "2 Cards"},
+        {"value": "3","label": "3 Cards"}
+      ],
+      "default": "2"
+    },
+    {
+      "type": "select",
+      "id": "cards_per_row_mobile",
+      "label": "Cards Per Row (Mobile)",
+      "options": [
+        {"value": "1","label": "1 Card"},
+        {"value": "2","label": "2 Cards"},
+        {"value": "3","label": "3 Cards"}
+      ],
+      "default": "3"
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "label": "Card Gap",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon Size (Desktop)",
+      "min": 40,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Environment Icons"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_outdoor_full_sun",
+      "label": "Icon: Full Sun"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_outdoor_part_shade",
+      "label": "Icon: Part Shade"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_outdoor_full_shade",
+      "label": "Icon: Full Shade"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_outdoor_wind_sheltered",
+      "label": "Icon: Wind Sheltered"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_outdoor_rain_sheltered",
+      "label": "Icon: Rain Sheltered"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_indoor_bright",
+      "label": "Icon: Indoor Bright"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_indoor_windowsill",
+      "label": "Icon: Windowsill"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Settings"
+    },
+    {
+      "type": "range",
+      "id": "mobile_icon_size",
+      "label": "Icon Size (Mobile)",
+      "min": 30,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "mobile_description_font_size",
+      "label": "Description Font Size (Mobile)",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top Padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom Padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Description + Environment",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}
+
