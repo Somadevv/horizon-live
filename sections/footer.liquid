@@ -5,8 +5,10 @@
   {% liquid
     assign total_blocks = section.blocks.size
 
+    # Grid layout calculations
     assign grid_columns = total_blocks | at_most: 4
 
+    # Calculate last row counts using modulo arithmetic
     assign last_row_count = total_blocks | minus: 1 | modulo: 4 | plus: 1
     assign tablet_last_row_count = total_blocks | minus: 1 | modulo: 3 | plus: 1
 
@@ -21,16 +23,17 @@
       assign has_isolated_grid_item_tablet = true
     endif
   %}
+
   <div
     class="
       footer-content
       spacing-style
       {% if has_isolated_grid_item_desktop %}footer-content--isolated-grid-item-desktop{% endif %}
       {% if has_isolated_grid_item_tablet %}footer-content--isolated-grid-item-tablet{% endif %}
-      {% if section.settings.center_mobile %}footer-content--center-mobile{% endif %}
+      {% if section.settings.center_mobile %}footer-center-mobile{% endif %}
     "
     style="
-      {%  render 'spacing-style', settings: section.settings %}
+      {% render 'spacing-style', settings: section.settings %}
       --footer-gap: {{ section.settings.gap }}px;
       --grid-columns: {{ grid_columns }};
       --last-row-count: {{ last_row_count }};
@@ -42,13 +45,15 @@
 </div>
 
 {% stylesheet %}
+  /* Base mobile layout */
   .footer-content {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--footer-gap);
   }
 
-  .footer-content--center-mobile {
+  /* NEW: Center on mobile if enabled */
+  .footer-center-mobile {
     text-align: center;
     justify-items: center;
   }
@@ -130,6 +135,7 @@
       "default": "scheme-1"
     },
 
+    /* ⭐ NEW SETTING – SHOWS IN THE CUSTOMIZER */
     {
       "type": "checkbox",
       "id": "center_mobile",
@@ -208,7 +214,9 @@
         },
         "newsletter-form": {
           "type": "email-signup",
-          "settings": { "width": "fill" }
+          "settings": {
+            "width": "fill"
+          }
         }
       },
       "block_order": ["newsletter-group", "newsletter-form"]
