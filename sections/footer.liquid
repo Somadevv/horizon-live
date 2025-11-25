@@ -1,5 +1,3 @@
-
-
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <div
   class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
@@ -7,15 +5,11 @@
   {% liquid
     assign total_blocks = section.blocks.size
 
-    # Grid layout calculations
     assign grid_columns = total_blocks | at_most: 4
 
-    # Calculate last row counts using modulo arithmetic
-    # last_row_count = (total_blocks - 1) % N + 1
     assign last_row_count = total_blocks | minus: 1 | modulo: 4 | plus: 1
     assign tablet_last_row_count = total_blocks | minus: 1 | modulo: 3 | plus: 1
 
-    # Check if there are orphaned elements (single item in last row)
     assign has_isolated_grid_item_desktop = false
     assign has_isolated_grid_item_tablet = false
 
@@ -33,6 +27,7 @@
       spacing-style
       {% if has_isolated_grid_item_desktop %}footer-content--isolated-grid-item-desktop{% endif %}
       {% if has_isolated_grid_item_tablet %}footer-content--isolated-grid-item-tablet{% endif %}
+      {% if section.settings.center_mobile %}footer-content--center-mobile{% endif %}
     "
     style="
       {%  render 'spacing-style', settings: section.settings %}
@@ -47,11 +42,15 @@
 </div>
 
 {% stylesheet %}
-  /* Mobile: Single column layout (base styles) */
   .footer-content {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--footer-gap);
+  }
+
+  .footer-content--center-mobile {
+    text-align: center;
+    justify-items: center;
   }
 
   @media screen and (min-width: 750px) and (max-width: 989px) {
@@ -69,7 +68,6 @@
       grid-template-columns: repeat(var(--grid-columns), 1fr);
     }
 
-    /* Single item centered */
     .footer-content[style*='--grid-columns: 1'] {
       justify-items: center;
     }
@@ -86,48 +84,20 @@
   "class": "section-wrapper",
   "tag": "footer",
   "blocks": [
-    {
-      "type": "_divider"
-    },
-    {
-      "type": "@app"
-    },
-    {
-      "type": "button"
-    },
-    {
-      "type": "follow-on-shop"
-    },
-    {
-      "type": "group"
-    },
-    {
-      "type": "icon"
-    },
-    {
-      "type": "image"
-    },
-    {
-      "type": "menu"
-    },
-    {
-      "type": "payment-icons"
-    },
-    {
-      "type": "text"
-    },
-    {
-      "type": "logo"
-    },
-    {
-      "type": "jumbo-text"
-    },
-    {
-      "type": "social-links"
-    },
-    {
-      "type": "email-signup"
-    }
+    { "type": "_divider" },
+    { "type": "@app" },
+    { "type": "button" },
+    { "type": "follow-on-shop" },
+    { "type": "group" },
+    { "type": "icon" },
+    { "type": "image" },
+    { "type": "menu" },
+    { "type": "payment-icons" },
+    { "type": "text" },
+    { "type": "logo" },
+    { "type": "jumbo-text" },
+    { "type": "social-links" },
+    { "type": "email-signup" }
   ],
   "enabled_on": {
     "groups": ["footer"]
@@ -138,14 +108,8 @@
       "id": "section_width",
       "label": "t:settings.width",
       "options": [
-        {
-          "value": "page-width",
-          "label": "t:options.page"
-        },
-        {
-          "value": "full-width",
-          "label": "t:options.full"
-        }
+        { "value": "page-width", "label": "t:options.page" },
+        { "value": "full-width", "label": "t:options.full" }
       ],
       "default": "page-width"
     },
@@ -165,6 +129,14 @@
       "label": "t:settings.color_scheme",
       "default": "scheme-1"
     },
+
+    {
+      "type": "checkbox",
+      "id": "center_mobile",
+      "label": "Center footer content on mobile",
+      "default": false
+    },
+
     {
       "type": "header",
       "content": "t:content.padding"
@@ -236,9 +208,7 @@
         },
         "newsletter-form": {
           "type": "email-signup",
-          "settings": {
-            "width": "fill"
-          }
+          "settings": { "width": "fill" }
         }
       },
       "block_order": ["newsletter-group", "newsletter-form"]
