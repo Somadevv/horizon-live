@@ -1,6 +1,6 @@
 
 
-<div class="footer section-background color-{{ section.settings.color_scheme }}"></div>
+<div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <div
   class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
 >
@@ -27,23 +27,24 @@
       assign has_isolated_grid_item_tablet = true
     endif
   %}
- <div
-  class="footer-content spacing-style ..."
-  style="--footer-gap: {{ section.settings.gap }}px; --grid-columns: {{ grid_columns }};"
->
-  {% content_for 'blocks' %}
+  <div
+    class="
+      footer-content
+      spacing-style
+      {% if has_isolated_grid_item_desktop %}footer-content--isolated-grid-item-desktop{% endif %}
+      {% if has_isolated_grid_item_tablet %}footer-content--isolated-grid-item-tablet{% endif %}
+    "
+    style="
+      {%  render 'spacing-style', settings: section.settings %}
+      --footer-gap: {{ section.settings.gap }}px;
+      --grid-columns: {{ grid_columns }};
+      --last-row-count: {{ last_row_count }};
+      --tablet-last-row-count: {{ tablet_last_row_count }};
+    "
+  >
+    {% content_for 'blocks' %}
+  </div>
 </div>
-
-{% if section.settings.mobile_centered_toggle %}
-  <style>
-    @media screen and (max-width: 749px) {
-      .footer-content {
-        justify-items: center;
-        text-align: center;
-      }
-    }
-  </style>
-{% endif %}
 
 {% stylesheet %}
   /* Mobile: Single column layout (base styles) */
@@ -77,8 +78,7 @@
       grid-column: 1 / -1;
     }
   }
-
-  {% endstylesheet %}
+{% endstylesheet %}
 
 {% schema %}
 {
@@ -133,12 +133,6 @@
     "groups": ["footer"]
   },
   "settings": [
-    {
-  "type": "checkbox",
-  "id": "mobile_centered_toggle",
-  "label": "Center all content on mobile",
-  "default": false
-},
     {
       "type": "select",
       "id": "section_width",
