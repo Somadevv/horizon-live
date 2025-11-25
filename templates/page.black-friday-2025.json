@@ -418,8 +418,8 @@
         "description_word_limit": 15,
         "show_cta": true,
         "cta_text": "Shop Now",
-        "color_scheme": "scheme-1",
-        "card_background": "#ffffff",
+        "color_scheme": "scheme-1250fc8b-08e5-4e3f-8b57-d9c0daef6b76",
+        "card_background": "#000000",
         "card_border_color": "#000000",
         "border_width": 1,
         "border_opacity": 15,
@@ -618,7 +618,7 @@
             "case": "none",
             "wrap": "pretty",
             "color": "var(--color-foreground)",
-            "color_scheme": "",
+            "color_scheme": "scheme-1250fc8b-08e5-4e3f-8b57-d9c0daef6b76",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -647,7 +647,7 @@
             "case": "none",
             "wrap": "pretty",
             "color": "var(--color-foreground)",
-            "color_scheme": "",
+            "color_scheme": "scheme-1250fc8b-08e5-4e3f-8b57-d9c0daef6b76",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -704,8 +704,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 36,
+        "padding-block-end": 36
       }
     },
     "1763368380ff65eda3": {
