@@ -1558,10 +1558,39 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "text_6zQqc4": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h3>We also have a physical location!</h3>",
+                "width": "100%",
+                "max_width": "none",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "ai_gen_block_ec12080_zfMNg8": {
               "type": "ai_gen_block_ec12080",
               "settings": {
-                "heading": "We also have a physical location!",
+                "heading": "",
                 "description": "<p>We are open to the public near Penzance! We offer a wide range of succulents and tropical shrubs, often found in the beautiful neighbouring Tremenheere Sculpture gardens.</p>",
                 "show_footer_note": true,
                 "footer_note": "<p><strong>Bank holidays:</strong> We are open on all bank holidays during our main season.<br/><strong>Click & Collect:</strong> Just select 'Store Pick-Up' at checkout.</p>",
@@ -1626,6 +1655,7 @@
             }
           },
           "block_order": [
+            "text_6zQqc4",
             "ai_gen_block_ec12080_zfMNg8",
             "text_UN8bDz",
             "button_3tzGQB"
