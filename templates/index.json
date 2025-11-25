@@ -1103,7 +1103,7 @@
       "custom_css": [
         ".blog-post-details {padding-left: 12px;}",
         ".blog-post-card__content-text {padding-left: 12px; padding-bottom: 16px;}",
-        "div {height: 100%;}"
+        "@media screen and (max-width: 400px) {div {height: 100%;}}"
       ],
       "name": "Full care guides",
       "settings": {
