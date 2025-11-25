@@ -133,6 +133,18 @@
       .menu__item a {
         display: inline-block;
       }
+    {% else %}
+      /* Reset to default alignment if disabled */
+      .menu__details,
+      .menu__item,
+      .menu__heading {
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .menu__item a {
+        display: block;
+      }
     {% endif %}
   }
 
@@ -141,6 +153,7 @@
     display: none;
   }
 {% endstylesheet %}
+
 
 {% schema %}
 {
