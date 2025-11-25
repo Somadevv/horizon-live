@@ -11,7 +11,9 @@ body {
   min-height: 100svh;
   font-variation-settings: 'slnt' 0;
 }
-
+#bundle-smart_bar {
+  display: none;
+}
 :root {
   --hover-lift-amount: 4px;
   --hover-scale-amount: 1.03;
