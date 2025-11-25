@@ -597,6 +597,117 @@
         "padding-block-end": 80
       }
     },
+    "section_7d4m8p": {
+      "type": "section",
+      "blocks": {
+        "text_gwryid": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Our BIGGEST EVER Black Friday Sale!</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "max_width_tablet": "inherit",
+            "max_width_desktop": "inherit",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "color_scheme": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_qGMFcU": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Some of our best ever deals are now up for grabs. You will not want to miss out!</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "max_width_tablet": "inherit",
+            "max_width_desktop": "inherit",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "color_scheme": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_ynYB4i": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop now",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_gwryid",
+        "text_qGMFcU",
+        "button_ynYB4i"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1250fc8b-08e5-4e3f-8b57-d9c0daef6b76",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "1763368380ff65eda3": {
       "type": "_blocks",
       "blocks": {
@@ -1602,6 +1713,7 @@
     "discount_collections_4dTj9e",
     "divider_GPxBjL",
     "split_deal_1",
+    "section_7d4m8p",
     "1763368380ff65eda3",
     "hero_CrYghe",
     "social_proof",
