@@ -720,6 +720,7 @@
         },
         "block_de8f4368221c": {
           "type": "social-links",
+          "disabled": true,
           "settings": {
             "facebook_url": "https://www.facebook.com/shopify",
             "instagram_url": "https://www.instagram.com/shopify/#",
