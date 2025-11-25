@@ -338,7 +338,7 @@
                         "color_scheme": "",
                         "heading_preset": "h5",
                         "link_preset": "paragraph",
-                        "padding-block-start": 0,
+                        "padding-block-start": 25,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0
@@ -404,7 +404,7 @@
                         "color_scheme": "",
                         "heading_preset": "h5",
                         "link_preset": "paragraph",
-                        "padding-block-start": 0,
+                        "padding-block-start": 25,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0
@@ -667,6 +667,7 @@
         "group_tbFfTQ"
       ],
       "custom_css": [
+        ".menu__heading {font-weight: 600;}",
         "@media screen and (max-width: 749px) {.menu__details {text-align: center; } .menu__heading__default {display: block; margin: auto; } .menu__heading {text-align: center; }}"
       ],
       "name": "Footer",
