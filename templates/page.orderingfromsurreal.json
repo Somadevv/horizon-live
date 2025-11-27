@@ -106,7 +106,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>About Us</p>",
+                "text": "<h2>Ordering from Surreal Succulents</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "max_width_tablet": "inherit",
@@ -125,7 +125,36 @@
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 30,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_pwJdKU": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<p>After You Place an Order</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 18,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -134,7 +163,7 @@
             "text_wempPb": {
               "type": "text",
               "settings": {
-                "text": "<p>Surreal Succulents is an award-winning nursery, specializing in rare and unusual succulents. Our passion for unique plants has earned us several prestigious awards, including:</p><ul><li>RHS Plant of the Year 2022 with <a href=\"https://online-store-web.shopifyapps.com/products/x-semponium-destiny\" title=\"xSemponium 'Destiny'\"><em>x Semponium 'Destiny'</em></a></li><li>5x RHS Gold at the Chelsea Flower Show</li><li>RHS Gold at the Malvern Flower Show</li><li>RHS Gold at the Hampton Court Flower Show</li></ul><p>Our vision is to share our extensive collection of succulents, which began in 2000, with plant enthusiasts across the globe. We take pride in offering the rarest and most remarkable varieties of succulents, nurtured by our knowledgeable staff of expert horticulturists.</p><p>Feel free to reach out to us if you have any questions. We hope you enjoy your visit!</p>",
+                "text": "<p>Once your order is confirmed, you'll receive an email with your order details itemized, followed by a <strong>tracking number</strong> when your plants are on the way. Our team carefully selects the <strong>biggest, healthiest succulents</strong> for you—most of which range between 6–10 cm in diameter. To ensure safe delivery, we ship most of them <strong>bare-root</strong>, which allows us to give each plant a thorough health check before packing. Some may come with soil to preserve the plant.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -162,6 +191,7 @@
           },
           "block_order": [
             "text_pPNL3N",
+            "text_pwJdKU",
             "text_wempPb"
           ]
         }
@@ -204,9 +234,9 @@
         "image_a9zbgL": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Tremenheere-Nursery-2019-1.jpg",
+            "image": "shopify://shop_images/IMG_1034.jpg",
             "link": "",
-            "image_ratio": "landscape",
+            "image_ratio": "square",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -266,7 +296,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>You can visit us!</p>",
+                "text": "<h2>Single-use plastic free</h2><p></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "max_width_tablet": "inherit",
@@ -294,7 +324,7 @@
             "text_z3gFVm": {
               "type": "text",
               "settings": {
-                "text": "<p>Our RHS Chelsea Gold Medal winning display is on show for most of the year at our nursery.</p><p>We let our plants mature outdoors all summer in Cornwall, bringing out some of the most vibrant colours you could ever see in the succulent world.</p>",
+                "text": "<p>We ship our succulents with minimal impact to the environment by using the following:</p><ul><li>Paper tape, rather than plastic tape</li><li>Newspaper padding for your succulents</li><li>A fragile stamp, rather than plastic wrap</li></ul>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "max_width_tablet": "inherit",
@@ -359,123 +389,15 @@
         "padding-block-end": 40
       }
     },
-    "section_rQWXby": {
-      "type": "section",
-      "blocks": {
-        "group_pdRGLL": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_VxE39k": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Our beautiful nursery is located in the far west of Cornwall, within the stunning grounds of Tremenheere Sculpture Gardens, near Penzance.<br/>We specialize in a wide variety of plants, including:<br/></p><ul><li>Succulents (from rare and exotic to UK-hardy varieties)</li><li>Palms</li><li>Ferns</li><li>Grasses</li><li>Other rare and exotic plants from all corners of the world</li></ul><p>When you visit, you’ll be welcomed into our Curious Cabin, which is topped with a bespoke succulent green roof. Inside, you’ll find a carefully curated selection of gifts, including:<br/></p><ul><li>Succulent terrariums</li><li>Air plants</li><li>Handmade porcelain pots by local artisans</li><li>Greeting cards</li></ul><p>And more, all beautifully displayed on our handcrafted shelves.</p>",
-                "width": "fit-content",
-                "max_width": "none",
-                "max_width_tablet": "inherit",
-                "max_width_desktop": "inherit",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "color_scheme": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_VxE39k"
-          ]
-        }
-      },
-      "block_order": [
-        "group_pdRGLL"
-      ],
-      "name": "Text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
-    },
     "section_PtVV6W": {
       "type": "section",
       "blocks": {
         "image_xNLK3a": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Tremenheere-Nursery-2019-6.jpg",
+            "image": "shopify://shop_images/IMG_1060.jpg",
             "link": "",
-            "image_ratio": "landscape",
+            "image_ratio": "square",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -535,7 +457,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>Bigger and Better!</p>",
+                "text": "<h2>Shipped bare-root</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "max_width_tablet": "inherit",
@@ -563,7 +485,7 @@
             "text_itdY7h": {
               "type": "text",
               "settings": {
-                "text": "<p>We sell larger plants at our nursery than you can find on this website. Here, you can see a variety of large Agave and Aloe on our shelves for sale.</p>",
+                "text": "<p>We ship our succulents with bare-roots. We have found out that this is the best way to trasport these lovely plants as soil can cause a great mess in the box.</p><p>As they have water stores in their leaves, they can survive for many weeks without the need of soil.</p><p>Some plants may be shipped with soil to preserve them.</p><p><a href=\"https://surrealsucculents.co.uk/products/echeveria-zestar\">Echeveria 'Zestar'</a></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "max_width_tablet": "inherit",
@@ -598,6 +520,167 @@
       "block_order": [
         "image_xNLK3a",
         "group_HmtUUe"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_9igFDr": {
+      "type": "section",
+      "blocks": {
+        "image_JQTTxY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1058_7f6506bd-af63-4ba5-90b5-7ef9c4ab5b0d.jpg",
+            "link": "",
+            "image_ratio": "square",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 24,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_KdQbTV": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_YKk7ri": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Carefully nested</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_qwhUJt": {
+              "type": "text",
+              "settings": {
+                "text": "<p>We prepare a newspaper page in the box into a nest formation, then carefully place your bare-rooted, individually-labelled and wrapped succulents into this nest. We then place another newspaper page on top to secure them in place.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_YKk7ri",
+            "text_qwhUJt"
+          ]
+        }
+      },
+      "block_order": [
+        "image_JQTTxY",
+        "group_KdQbTV"
       ],
       "name": "t:names.image_with_text",
       "settings": {
@@ -674,13 +757,13 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>Things to Do During Your Visit</p>",
+                "text": "<h3>Care note included</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "max_width_tablet": "inherit",
                 "max_width_desktop": "inherit",
                 "alignment": "left",
-                "type_preset": "h2",
+                "type_preset": "h3",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -702,7 +785,7 @@
             "text_cgX9VG": {
               "type": "text",
               "settings": {
-                "text": "<p>In addition to browsing our extensive plant collection, you can explore the magnificent Tremenheere Sculpture Garden. This 22-acre garden is filled with stunning sculptures and cascading architectural plants, set against the breathtaking backdrop of Mounts Bay and St. Michael's Mount.</p><p>You can also:</p><ul><li>Enjoy delicious food at the on-site restaurant</li><li>Browse the art gallery and artisan shop</li><li>Get your \"succulent fix\" at our nursery</li></ul>",
+                "text": "<p>A care note is included with your order. This short guide will aid you for the first few weeks to get your plant rooted and established, healthily and happily.</p><h3>After Your Succulents Arrive</h3><p>Once your new plant babies arrive to their new home, we recommend potting them in <strong>9 cm pots</strong> with <a href=\"https://surrealsucculents.co.uk/products/succulent-compost-mix\" target=\"_blank\" title=\"General Succulent Compost Mix\">well-draining soil</a>. Keep them in a shaded spot for <strong>7–10 days</strong> to help them settle in and acclimate to their new environment. After that, they’re ready to thrive wherever you choose to display them!</p><p>Enjoy your succulents! 🌱✨</p><p><a href=\"https://surrealsucculents.co.uk/blogs/plant-care-advice/general-succulent-care-guide\">General Succulent Care Guide</a></p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -765,292 +848,14 @@
         "padding-block-start": 40,
         "padding-block-end": 40
       }
-    },
-    "section_mxDwCY": {
-      "type": "section",
-      "blocks": {
-        "group_qLNGd6": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_Uk3hha": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p>Nursery Opening Times</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "max_width_tablet": "inherit",
-                "max_width_desktop": "inherit",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "color_scheme": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_VNXhPq": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Please note, opening times may vary due to staff availability or unforeseen circumstances. If you're planning a special or long journey, we recommend contacting us in advance to confirm our hours—especially during the winter months.</p><h4>Regular Opening Times:</h4><p>Reviewed 12/11/2025</p><p>Spring-Summer:<br/>10:30 am - 4:30 pm open every day. Also open on bank holidays.</p><p>Spring 2026 opening early March.</p><p>Autumn-Winter:<br/>November: 10:30 am - 4:00 pm Friday - Sunday<br/>December: 11:00 am - 4:00 pm Wednesday - Sunday<br/>Closed January & February.</p><p>We may occasionally close due to unforeseen circumstances or bad weather forecast.</p><p>Please get in touch if you are unsure whether we will be open.</p>",
-                "width": "fit-content",
-                "max_width": "none",
-                "max_width_tablet": "inherit",
-                "max_width_desktop": "inherit",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "color_scheme": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_Uk3hha",
-            "text_VNXhPq"
-          ]
-        }
-      },
-      "block_order": [
-        "group_qLNGd6"
-      ],
-      "name": "Text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
-    },
-    "section_ke4tUT": {
-      "type": "section",
-      "blocks": {
-        "group_VEQkki": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_mkDwWm": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p>Our Address</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "max_width_tablet": "inherit",
-                "max_width_desktop": "inherit",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "color_scheme": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_tekQcP": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Surreal Succulents <br/>Tremenheere Sculpture Gardens<br/>Gulval<br/>Penzance<br/>TR20 8YL</p><p>If you have any questions about our hours or would like to know more about our collection, don’t hesitate to reach out. We look forward to welcoming you!</p>",
-                "width": "fit-content",
-                "max_width": "none",
-                "max_width_tablet": "inherit",
-                "max_width_desktop": "inherit",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "color_scheme": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_mkDwWm",
-            "text_tekQcP"
-          ]
-        }
-      },
-      "block_order": [
-        "group_VEQkki"
-      ],
-      "name": "Text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
     }
   },
   "order": [
     "main",
     "section_LEdQjr",
     "section_iYUFg4",
-    "section_rQWXby",
     "section_PtVV6W",
-    "section_Pj7Xre",
-    "section_mxDwCY",
-    "section_ke4tUT"
+    "section_9igFDr",
+    "section_Pj7Xre"
   ]
 }
