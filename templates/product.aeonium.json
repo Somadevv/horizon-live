@@ -664,7 +664,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>What size is this plant?</p>",
+                        "text": "<p><a href=\"/pages/size-guide\" title=\"Size Guide\">What size is this plant?</a></p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "max_width_tablet": "inherit",
