@@ -3,7 +3,7 @@
   class="no-js{% if request.design_mode %} shopify-design-mode{% endif %}"
   lang="{{ request.locale.iso_code }}"
 >
-    <head>{% render 'spdn' %}
+    <head>
     {%- if settings.favicon != blank -%}
       <link
         rel="icon"
@@ -376,17 +376,6 @@
   }
 }
 </script>
-
-  <script type="importmap">
-  {
-    "imports": {
-      "@theme/critical": "/assets/critical.js",
-      "@theme/component": "/assets/component.js",
-      "@theme/utilities": "/assets/utilities.js"
-    }
-  }
-  </script>
-
 
   </head>
 
