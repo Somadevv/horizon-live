@@ -350,41 +350,41 @@
         "collection_aVeeQb": {
           "type": "collection",
           "settings": {
-            "collection": "aeonium",
+            "collection": "40-off",
             "discount_percentage": 40,
             "custom_badge_color": "",
             "show_product_count": true,
-            "show_description": true
+            "show_description": false
           }
         },
         "collection_yGJK8f": {
           "type": "collection",
           "settings": {
-            "collection": "agave",
+            "collection": "40-off-copy",
             "discount_percentage": 30,
             "custom_badge_color": "",
             "show_product_count": true,
-            "show_description": true
+            "show_description": false
           }
         },
         "collection_waNKVz": {
           "type": "collection",
           "settings": {
-            "collection": "crassula",
+            "collection": "30-off-copy",
             "discount_percentage": 20,
             "custom_badge_color": "",
             "show_product_count": true,
-            "show_description": true
+            "show_description": false
           }
         },
         "collection_aUP4Di": {
           "type": "collection",
           "settings": {
-            "collection": "echeveria",
+            "collection": "20-off-copy",
             "discount_percentage": 10,
             "custom_badge_color": "",
             "show_product_count": true,
-            "show_description": true
+            "show_description": false
           }
         }
       },
@@ -420,7 +420,7 @@
         "cta_text": "Shop Now",
         "color_scheme": "scheme-1",
         "card_background": "#ffffff",
-        "card_border_color": "#000000",
+        "card_border_color": "#dedede",
         "border_width": 1,
         "border_opacity": 15,
         "border_radius": 25,
@@ -547,7 +547,7 @@
               "type": "button",
               "settings": {
                 "label": "Shop Discounted Aeoniums",
-                "link": "shopify://collections/aeonium",
+                "link": "shopify://collections/discounted-aeoniums",
                 "open_in_new_tab": false,
                 "style_class": "button-secondary",
                 "width": "fit-content",
@@ -833,10 +833,10 @@
       },
       "name": "t:names.products_carousel",
       "settings": {
-        "collection": "",
+        "collection": "discounted-succulents",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
-        "max_products": 6,
+        "max_products": 15,
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
