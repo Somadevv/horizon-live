@@ -331,6 +331,21 @@
     "product_list_hfQRGa": {
       "type": "product-list",
       "blocks": {
+        "button_kaK4ij": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop All Discounted Succulents",
+            "link": "shopify://collections/discounted-succulents",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
         "static-header": {
           "type": "_product-list-content",
           "name": "t:names.header",
@@ -479,7 +494,7 @@
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "square",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -547,13 +562,16 @@
           ]
         }
       },
+      "block_order": [
+        "button_kaK4ij"
+      ],
       "name": "t:names.products_carousel",
       "settings": {
         "collection": "discounted-succulents",
-        "layout_type": "carousel",
+        "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 15,
-        "columns": 4,
+        "max_products": 16,
+        "columns": 8,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
