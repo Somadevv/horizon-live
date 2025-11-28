@@ -76,8 +76,8 @@
         "button_RbC8XQ": {
           "type": "button",
           "settings": {
-            "label": "Shop now",
-            "link": "shopify://collections/all-plants",
+            "label": "Black Friday 2025",
+            "link": "shopify://pages/black-friday-2025",
             "open_in_new_tab": false,
             "style_class": "button-secondary",
             "width": "fit-content",
@@ -311,6 +311,10 @@
       "name": "Browse our collection",
       "settings": {
         "collection_list": [
+          "40-off",
+          "30-off",
+          "20-off",
+          "10-off",
           "aeonium",
           "crassula",
           "surreal-hybrids",
@@ -1103,7 +1107,7 @@
       "custom_css": [
         ".blog-post-details {padding-left: 12px;}",
         ".blog-post-card__content-text {padding-left: 12px; padding-bottom: 16px;}",
-        "@media screen and (max-width: 400px) {div {height: 100%;}}"
+        "@media screen and (max-width: 400px) {div {height: 100%; }}"
       ],
       "name": "Full care guides",
       "settings": {
