@@ -156,11 +156,16 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "vitals_reviews_stars_ejtHmN": {
+                  "type": "shopify://apps/vitals/blocks/reviews-stars/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+                  "settings": {}
                 }
               },
               "block_order": [
                 "text_xrnftG",
-                "price_tVjtKg"
+                "price_tVjtKg",
+                "vitals_reviews_stars_ejtHmN"
               ]
             },
             "divider_VJhene": {
