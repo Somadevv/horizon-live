@@ -1458,7 +1458,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h3><em>x Semponium 'Diamond'</em></h3>",
+                    "text": "<h3><em>x Semponium<br/>'Diamond'</em></h3>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "max_width_tablet": "inherit",
@@ -1603,7 +1603,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h3><em>x Semponium 'Mrs Frosty'</em></h3>",
+                    "text": "<h3><em>x Semponium<br/>'Mrs Frosty'</em></h3>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "max_width_tablet": "inherit",
