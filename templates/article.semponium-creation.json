@@ -15,7 +15,7 @@
         "text_Vtc8kX": {
           "type": "text",
           "settings": {
-            "text": "<h1>All-Round Aeonium Care Guide</h1>",
+            "text": "<h1>Succulent Hybridising and The Origin of x Semponiums</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "max_width_tablet": "inherit",
@@ -43,7 +43,7 @@
         "text_KQGTfX": {
           "type": "text",
           "settings": {
-            "text": "<p>The best general tips for growing quality Aeoniums.</p>",
+            "text": "<p>How and why Surreal Succulents bred <em>x Semponiums</em> </p>",
             "width": "fit-content",
             "max_width": "narrow",
             "max_width_tablet": "inherit",
@@ -93,7 +93,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/aeonium-deep-purple-group-3.jpg",
+        "image_1": "shopify://shop_images/semponium-destiny-specimin.jpg",
         "media_type_2": "image",
         "hide_second_media_mobile": false,
         "link": "",
@@ -107,7 +107,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
-        "section_height": "medium",
+        "section_height": "large",
         "section_height_custom": 50,
         "color_scheme": "scheme-5",
         "toggle_overlay": true,
@@ -165,7 +165,7 @@
             "text_TkNtMY": {
               "type": "text",
               "settings": {
-                "text": "<p>There are approximately 35 species of Aeonium, all belonging to the Crassulaceae family. While most Aeonium species are native to the Canary Islands, they are also found in Madeira, Morocco, the Cape Verde Islands, and the East Coast of Africa.</p>",
+                "text": "<p>Since founding Surreal Succulents, Daniel Michael has created some beautiful <em>Aeonium</em> hybrids which are enjoyed globally, such as <a href=\"/products/aeonium-phoenix-flame\" title=\"Aeonium 'Phoenix Flame'\"><em>Aeonium 'Phoenix Flame'</em></a><em>, </em><a href=\"/products/aeonium-emerald-flame\" title=\"Aeonium 'Emerald Flame'\"><em>Aeonium 'Emerald Flame'</em></a><em>, </em><a href=\"/products/aeonium-blood\" title=\"Aeonium 'Blood'\"><em>Aeonium 'Blood'</em></a><em>, </em><a href=\"/products/aeonium-cornish-rose\" title=\"Aeonium 'Cornish Rose'\"><em>Aeonium 'Cornish Rose</em></a><em>'</em> and <a href=\"/products/aeonium-pomegranate\" title=\"Aeonium 'Pomegranate'\"><em>Aeonium 'Pomegranate'</em></a>.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -234,7 +234,7 @@
         "image_zRB3De": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Aeonium-Pomegranate.jpg",
+            "image": "shopify://shop_images/xSemponium-Vortex.jpg",
             "link": "",
             "image_ratio": "landscape",
             "width": "fill",
@@ -295,7 +295,7 @@
             "text_jAqjRL": {
               "type": "text",
               "settings": {
-                "text": "<p>These succulents are well-adapted to extremely dry and arid environments, storing water in their leaves and stems to survive. Aeoniums come in a variety of shapes and sizes, from the ornamental <a href=\"/products/aeonium-medusa\" title=\"Aeonium 'Medusa'\">Aeonium ‘Medusa’</a>, to the large Aeonium ‘Pomegranate’ (shown), and the smaller <a href=\"https://srealsucculents.myshopify.com/product/aeonium-aizoon\">Aeonium aizoon</a>.</p>",
+                "text": "<p>Already with many years of experience hybridising, Daniel had often talked to RHS botanists about the theoretical chances of crossing other members of the <em>Crassulaceae</em> family. </p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -324,8 +324,8 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
-                "label": "Aeonium 'Pomegranate'",
-                "link": "shopify://products/aeonium-pomegranate",
+                "label": "x Semponium 'Vortex'",
+                "link": "shopify://products/x-semponium-vortex",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -371,8 +371,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 20,
+        "padding-block-end": 20
       }
     },
     "section_ppWayN": {
@@ -420,7 +420,7 @@
             "text_LhWdxW": {
               "type": "text",
               "settings": {
-                "text": "<p>Aeoniums are surprisingly easy to grow and require minimal care and maintenance. For best results, use a free-draining soil mix and keep your plants frost-free during the winter. If planted in the garden or potted outside, protect them with <a href=\"/products/horticultural-fleece\" title=\"Horticultural Fleece\">horticultural fleece </a>to shield them from frost and hail.</p>",
+                "text": "<p>While some of these such as <em>'Pheonix Flame'</em> are tested frost survivors, generally <em>Aeoniums</em> are tender plants which need protection over winter in the UK. So, we started looking into how we could create plants with the beautiful architectural structure of <em>Aeoniums</em> with some of the hardiness of other succulent species, such as <em>Sempervivums</em>.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -483,13 +483,78 @@
         "padding-block-end": 40
       }
     },
+    "section_4bMLb4": {
+      "type": "section",
+      "blocks": {
+        "text_3d8WQF": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>What are <em>x Semponiums</em>?</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "max_width_tablet": "inherit",
+            "max_width_desktop": "inherit",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "color_scheme": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_3d8WQF"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "section_pYMhwt": {
       "type": "section",
       "blocks": {
         "image_T6LDa7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Aeonium-tabuliforme.png",
+            "image": "shopify://shop_images/semponium-diamond-specimen.jpg",
             "link": "",
             "image_ratio": "landscape",
             "width": "fill",
@@ -550,7 +615,7 @@
             "text_CXFLKA": {
               "type": "text",
               "settings": {
-                "text": "<p>Most Aeoniums love full sun or part shade, the darker leaf varieties in particular love full sun, some other varieties of Aeonium such as the variegated forms and the Aeonium tabuliforme, prefer part-shade or morning sunshine. </p>",
+                "text": "<p><em>x Semponium</em> is an inter-generic hybrid consisting of <em>Sempervivum</em> and <em>Aeonium</em>. This was possible as they are genetically similar with both being members of the <em>Crassulaceae</em> family. </p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -579,8 +644,8 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
-                "label": "Aeonium tabuliforme",
-                "link": "shopify://products/aeonium-tabuliforme",
+                "label": "x Semponium 'Diamond'",
+                "link": "shopify://products/x-semponium-diamond",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -672,39 +737,10 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_rwnQyU": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p>Seasonal growth</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "max_width_tablet": "inherit",
-                "max_width_desktop": "inherit",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "color_scheme": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "text_YWFjQ9": {
               "type": "text",
               "settings": {
-                "text": "<p>Aeoniums can grow all year round if the conditions suit them, but their main growing season is in the spring and autumn.</p>",
+                "text": "<p><em>Sempervivums</em> are generally small, compact plants which are extremely hardy and can withstand freezing temperatures as low as -20°c.</p><p><em>Aeoniums</em> tend to be much larger and mostly frost tender, with only a few species and hybrids being able to take frosty conditions.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -731,7 +767,6 @@
             }
           },
           "block_order": [
-            "text_rwnQyU",
             "text_YWFjQ9"
           ]
         }
@@ -764,34 +799,1265 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 20,
+        "padding-block-end": 20
       }
     },
-    "section_Y7C3mc": {
+    "section_brYQzm": {
       "type": "section",
       "blocks": {
-        "image_PPmm98": {
-          "type": "image",
+        "group_HbE4fj": {
+          "type": "group",
+          "name": "t:names.group",
           "settings": {
-            "image": "shopify://shop_images/Dormant-Aeoniums-Photoroom.jpg",
-            "link": "",
-            "image_ratio": "landscape",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 24,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_PkfLkF": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h3><em>Sempervivum<br/>'Green Ice'</em></h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "image_xXettN": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/green-ice-mother.jpg",
+                "link": "",
+                "image_ratio": "landscape",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 24,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_PkfLkF",
+            "image_xXettN"
+          ]
+        },
+        "group_A4TAF7": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 12,
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_h6nhhM": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h3>X</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_h6nhhM"
+          ]
+        },
+        "group_ChwTKz": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_KXAVXK": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h3><em>Aeonium<br/>'Ice Warrior'</em></h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "image_mTtpJB": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/IMG_3097.png",
+                "link": "",
+                "image_ratio": "landscape",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 24,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_KXAVXK",
+            "image_mTtpJB"
+          ]
+        }
+      },
+      "block_order": [
+        "group_HbE4fj",
+        "group_A4TAF7",
+        "group_ChwTKz"
+      ],
+      "name": "Text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_FPHcbK": {
+      "type": "section",
+      "blocks": {
+        "text_h8Yn3V": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>=</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "max_width_tablet": "inherit",
+            "max_width_desktop": "inherit",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "color_scheme": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_h8Yn3V"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 10
+      }
+    },
+    "section_tb4WnV": {
+      "type": "section",
+      "blocks": {
+        "group_bAFwwV": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_Wj6NwK": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 20,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_CqKFUa": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h3><em>x Semponium<br/>'Sienna'</em></h3>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "max_width_tablet": "inherit",
+                    "max_width_desktop": "inherit",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "color_scheme": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "image_xtwnw4": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/Semponium_Sienna.jpg",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 24,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_CqKFUa",
+                "image_xtwnw4"
+              ]
+            },
+            "group_W4CcYF": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 20,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_M7PR83": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h3><em>x Semponium<br/>'Destiny'</em></h3>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "max_width_tablet": "inherit",
+                    "max_width_desktop": "inherit",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "color_scheme": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "image_EbcKRE": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/semponium-destiny-specimin.jpg",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 24,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_M7PR83",
+                "image_EbcKRE"
+              ]
+            },
+            "group_EUyEcM": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 20,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_7xtPi7": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h3><em>x Semponium 'Diamond'</em></h3>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "max_width_tablet": "inherit",
+                    "max_width_desktop": "inherit",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "color_scheme": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "image_JAY8tR": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/semponium-diamond-specimen.jpg",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 24,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_7xtPi7",
+                "image_JAY8tR"
+              ]
+            }
+          },
+          "block_order": [
+            "group_Wj6NwK",
+            "group_W4CcYF",
+            "group_EUyEcM"
+          ]
+        },
+        "group_Nf4iYi": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_pRip9P": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 20,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_EhPTC8": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h3><em>x Semponium 'Mrs Frosty'</em></h3>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "max_width_tablet": "inherit",
+                    "max_width_desktop": "inherit",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "color_scheme": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "image_XrDBDz": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/semponium-mrs-frosty-specimin.jpg",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 24,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_EhPTC8",
+                "image_XrDBDz"
+              ]
+            },
+            "group_7kzabm": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 20,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_RKRCXi": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h3><em>x Semponium<br/>'Halo'</em></h3>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "max_width_tablet": "inherit",
+                    "max_width_desktop": "inherit",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "color_scheme": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "image_PYb8iX": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/semponium-halo-specimin.jpg",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 24,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_RKRCXi",
+                "image_PYb8iX"
+              ]
+            },
+            "group_dqcX8E": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 20,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_ePhYKm": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h3><em>x Semponium<br/>'Vortex'</em></h3>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "max_width_tablet": "inherit",
+                    "max_width_desktop": "inherit",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "color_scheme": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "image_zBKqEB": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/semponium-vortex-specimin_bc3d6d34-d991-41fb-8297-cc7d5e49cc82.jpg",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 14,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_ePhYKm",
+                "image_zBKqEB"
+              ]
+            }
+          },
+          "block_order": [
+            "group_pRip9P",
+            "group_7kzabm",
+            "group_dqcX8E"
+          ]
+        }
+      },
+      "block_order": [
+        "group_bAFwwV",
+        "group_Nf4iYi"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_xHVKCG": {
+      "type": "section",
+      "blocks": {
+        "text_jRF3az": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>How was this possible?</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "max_width_tablet": "inherit",
+            "max_width_desktop": "inherit",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "color_scheme": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_jRF3az"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 30,
+        "padding-block-end": 0
+      }
+    },
+    "section_Y7C3mc": {
+      "type": "section",
+      "blocks": {
+        "group_Qe6dgG": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_z6bkqE": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h3><em>Sempervivum 'Green Ice'</em> flower</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "image_nDirrA": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/IMG_3094.png",
+                "link": "",
+                "image_ratio": "square",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 24,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_z6bkqE",
+            "image_nDirrA"
+          ]
         },
         "group_qFwU7U": {
           "type": "group",
@@ -804,7 +2070,7 @@
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
-            "width": "custom",
+            "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
@@ -835,7 +2101,7 @@
             "text_xePcP7": {
               "type": "text",
               "settings": {
-                "text": "<p>During the longer, hotter summer days, Aeoniums may enter a dormant phase. They prefer to grow during the cooler months before and after summer. Signs of dormancy include darkening colours at the centre of the rosette heads or the rosettes closing up like a rosebud.</p><p>While dormant, Aeoniums don’t need feeding or watering, as overwatering can lead to stem or root rot. Simply wait until the heads open up again before resuming regular care.</p>",
+                "text": "<p>Two plants were used to create these amazing inter-generic hybrids, and that might sound simple at first. However, their flowering seasons couldn’t be more different. <em>Aeoniums</em> bloom in early spring, while <em>Sempervivums</em> flower in mid-summer. They almost never flower simultaneously. Bringing these two worlds together takes careful timing, expert knowledge, and a little bit of horticultural magic.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -864,18 +2130,116 @@
           "block_order": [
             "text_xePcP7"
           ]
+        },
+        "group_ebYQUe": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_kzTjdG": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h3><em>Aeonium 'Ice Warrior'</em> flower</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "image_c3mpBX": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/IMG_3098.png",
+                "link": "",
+                "image_ratio": "square",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 24,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_kzTjdG",
+            "image_c3mpBX"
+          ]
         }
       },
       "block_order": [
-        "image_PPmm98",
-        "group_qFwU7U"
+        "group_Qe6dgG",
+        "group_qFwU7U",
+        "group_ebYQUe"
       ],
       "name": "t:names.image_with_text",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
+        "vertical_alignment": "flex-end",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
@@ -944,7 +2308,7 @@
             "text_7wmFmj": {
               "type": "text",
               "settings": {
-                "text": "<p>To extend the growing season, you can move Aeoniums to a cooler, less sunny area or a shady spot to reduce dormancy.</p><p>In winter, Aeoniums can still grow but at a slower rate. The ideal nighttime temperatures for Aeoniums are between 12-16°C, with daytime temperatures ranging from 18-22°C.</p>",
+                "text": "<p>At the nursery, we had a late flowering <a href=\"/products/aeonium-ice-warrior\" title=\"Aeonium 'Ice Warrior'\"><em>Aeonium</em> ‘Ice Warrior’</a> which was moved to a cool, shaded spot to slow down the flowering process in an attempt to preserve the plant for a once in a generational cross. <a href=\"/products/sempervivum-green-ice\" title=\"Sempervivum 'Green Ice'\"><em>Sempervivum</em> ‘Green Ice’</a> was chosen being a strong <em>Sempervivum</em> cultivar. </p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -1010,28 +2374,6 @@
     "section_pxm4mi": {
       "type": "section",
       "blocks": {
-        "image_czCJAG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/yellow-aeonium-flower.jpg",
-            "link": "",
-            "image_ratio": "landscape",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 24,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "group_xy6ymr": {
           "type": "group",
           "settings": {
@@ -1075,7 +2417,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>Flowering</p>",
+                "text": "<p>The breeding process</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "max_width_tablet": "inherit",
@@ -1094,7 +2436,7 @@
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 30,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -1103,7 +2445,7 @@
             "text_Bzngyt": {
               "type": "text",
               "settings": {
-                "text": "<p>In addition to their impressive structure and presence, many Aeonium varieties produce stunning flowering displays. They form large, conical-shaped flower heads covered in hundreds of daisy-like flowers, each filled with sweet nectar that attracts bees and insects. Flowering usually occurs early in the growing season and can last for several months.</p><p>This is the flower of an Aeonium 'Schwarzkopf'.</p>",
+                "text": "<p>In our breeding, we have found that using hybrid mothers, rather than two specie mothers, gives you a larger genetic pool with many more possible exciting outcomes. </p><p>Think of it like a family tree, these hybrid seedlings would have four or more differing original specie parents, rather than just two.</p><p>Breeding two hybrids increased the seedling genetic DNA and random trait potential, maximising our chances of the <em>x Semponium</em> to show up.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -1136,7 +2478,6 @@
         }
       },
       "block_order": [
-        "image_czCJAG",
         "group_xy6ymr"
       ],
       "name": "t:names.image_with_text",
@@ -1150,7 +2491,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 32,
         "section_width": "page-width",
-        "section_height": "small",
+        "section_height": "",
         "section_height_custom": 50,
         "color_scheme": "",
         "background_media": "none",
@@ -1164,34 +2505,109 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 20,
+        "padding-block-end": 0
       }
     },
     "section_BjKcgw": {
       "type": "section",
       "blocks": {
-        "image_yfCGbC": {
-          "type": "image",
+        "group_FCJETB": {
+          "type": "group",
+          "name": "t:names.group",
           "settings": {
-            "image": "shopify://shop_images/aeoniums-repotting-4_1.jpg",
-            "link": "",
-            "image_ratio": "landscape",
-            "width": "fill",
-            "custom_width": 100,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 30,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 24,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "text_w7YMVy": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Ripe <em>Sempervivum 'Green Ice'</em> Seeds fertilised with <em>Aeonium 'Ice Warrior'</em> pollen</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "image_i6pGeA": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/IMG_3092.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fit-content",
+                "custom_width": 22,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 24,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_w7YMVy",
+            "image_i6pGeA"
+          ]
         },
         "group_BK9edA": {
           "type": "group",
@@ -1232,39 +2648,10 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_qENKwc": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p>Soil mix</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "max_width_tablet": "inherit",
-                "max_width_desktop": "inherit",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "color_scheme": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "text_afUgCx": {
               "type": "text",
               "settings": {
-                "text": "<p>A simple compost mix for Aeoniums consists of 60% multi-purpose compost and 40% grit or perlite. This blend provides excellent drainage and allows air to circulate through the root system, promoting robust and healthy growth.</p>",
+                "text": "<p>The cross was by no means easy to pull off. The chosen plants had to be carefully contained to stop any cross contamination from other pollinators. We used methods like covering the flowers with fleece bags, cutting all other Aeonium and Sempervivum flowers and moving them into quarantine to minimise any contamination risk.</p><p>With the goal being hardiness, it was decided that the seed bearing plant would be the <em>Sempervivum</em>. The theory was that this would maximise the hardiness that the <em>Sempervivum</em> could offer and that we could clearly identify that a hybrid seed was achieved.</p><p>The <em>Aeonium</em> <em>‘Ice Warrior’</em> had an abundance of good, strong, healthy pollen. This plant has an extremely long flowering period, sometimes up to ten weeks.</p><p><em>Sempervivum</em> <em>‘Green Ice’</em> produces a short flower spike with up to twenty flowers, only lasting for three to four weeks. </p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -1288,32 +2675,15 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_f6Urhz": {
-              "type": "button",
-              "name": "t:names.button",
-              "settings": {
-                "label": "Compost",
-                "link": "shopify://products/succulent-compost-mix",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_qENKwc",
-            "text_afUgCx",
-            "button_f6Urhz"
+            "text_afUgCx"
           ]
         }
       },
       "block_order": [
-        "image_yfCGbC",
+        "group_FCJETB",
         "group_BK9edA"
       ],
       "name": "t:names.image_with_text",
@@ -1345,30 +2715,170 @@
         "padding-block-end": 40
       }
     },
-    "section_RxfYiU": {
+    "section_tTXtA4": {
       "type": "section",
       "blocks": {
-        "image_diWjkk": {
-          "type": "image",
+        "text_BfQEgR": {
+          "type": "text",
+          "name": "t:names.text",
           "settings": {
-            "image": "shopify://shop_images/20230731_100049_173ff5a4-58d5-4b47-9002-da3d5cfb7927.jpg",
-            "link": "",
-            "image_ratio": "landscape",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 24,
+            "text": "",
+            "width": "100%",
+            "max_width": "none",
+            "max_width_tablet": "inherit",
+            "max_width_desktop": "inherit",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "color_scheme": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_BfQEgR"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_RxfYiU": {
+      "type": "section",
+      "blocks": {
+        "group_4YYkpW": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 30,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_tRG8dV": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>5 day old x Semponiums</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "image_d9BdAT": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/IMG_3093.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fit-content",
+                "custom_width": 22,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 24,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_tRG8dV",
+            "image_d9BdAT"
+          ]
         },
         "group_YNyfk7": {
           "type": "group",
@@ -1409,39 +2919,10 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_ktPgHa": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p><strong>Watering Aeoniums</strong></p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "max_width_tablet": "inherit",
-                "max_width_desktop": "inherit",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "color_scheme": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "text_jK8gCf": {
               "type": "text",
               "settings": {
-                "text": "<p>For watering Aeoniums, the general rule is to thoroughly drench the soil and then let it dry out completely between waterings. If Aeoniums are grown outside in large pots or in the garden during summer, it's best to rely on natural rainfall. For plants grown undercover, watering in the early morning is recommended for the best results.</p>",
+                "text": "<p>In the summer, Daniel took fresh pollen from the <em>Aeonium</em> <em>‘Ice Warrior’</em>  and carefully transferred it to the newly flowering <em>Sempervivum</em> ‘<em>Green Ice</em>’ using a soft paint brush and tweezers.</p><p>He then left the flower to ripen in a dry sunny spot for eight weeks. After this period, he then collected the flower heads and left them to dry out completely in a brown paper bag in a cool, dry place for a further two weeks.</p><p>After the two weeks, we removed the fine dust like seed from the chaff of the flower, then carefully packaged into a cellophane envelope and clearly labelled it, which was then stored in the fridge for two more weeks until sowing. </p><p>The seed was then good to go.</p><p>Come late Autumn, a total fourteen weeks later, Daniel took the fine seed and evenly distributed it over the surface of a tray of sterilized seed compost. He then covered the seed with fine sand and carefully soaked the seed tray in a bath of sterilized water. A thin piece of glass was placed over the top of the seed tray, trapping in the humidity to aid germination. The tray was placed in a bright spot and left. We now patiently wait.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -1465,32 +2946,15 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_K3aYtx": {
-              "type": "button",
-              "name": "t:names.button",
-              "settings": {
-                "label": "Aeonium 'Blood'",
-                "link": "shopify://products/aeonium-blood",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_ktPgHa",
-            "text_jK8gCf",
-            "button_K3aYtx"
+            "text_jK8gCf"
           ]
         }
       },
       "block_order": [
-        "image_diWjkk",
+        "group_4YYkpW",
         "group_YNyfk7"
       ],
       "name": "t:names.image_with_text",
@@ -1564,39 +3028,10 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_kGi9K7": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p><strong>Growing the perfect Aeonium</strong></p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "max_width_tablet": "inherit",
-                "max_width_desktop": "inherit",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "color_scheme": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "text_cjcXRt": {
               "type": "text",
               "settings": {
-                "text": "<p>To grow a large Aeonium, establishing a substantial root system is crucial. As Aeoniums mature, their stems can become elongated. When re-potting or planting, bury the majority of the exposed stem deeper into the soil to encourage additional root growth and support impressive development. This also helps anchor the plant, especially since many Aeoniums can become top-heavy and benefit from extra roots to withstand strong winds.</p><p>To promote root growth, ensure the plant is slightly hungry, encouraging it to search for nutrients. When planting Aeoniums, use a fresh soil mix that contains enough nutrients for one growing season. This will help the plant establish a strong root system. After the first year, begin feeding with a standard all-purpose fertilizer or slow-release option. Water in a balanced soluble feed every two months to support optimal growth.</p>",
+                "text": "<p>Daniel eagerly checked the seed weekly, hoping to see signs of germination.</p><p>By week three we could see signs that the seed had germinated, but there wasn't enough evidence at this point to know if the cross had been successful, more time and patience was needed.</p><p>A further two to three months later, to our excitement, we saw growing variation in the seedlings, some red, some tall and <em>Aeonium</em>-like, and at this point, we knew we had done it; we were witnessing the birth of the world’s first official <em>x Semponiums</em>. </p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -1623,7 +3058,6 @@
             }
           },
           "block_order": [
-            "text_kGi9K7",
             "text_cjcXRt"
           ]
         }
@@ -1656,35 +3090,13 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 20,
+        "padding-block-end": 20
       }
     },
     "section_zDfHVm": {
       "type": "section",
       "blocks": {
-        "image_R7RYKW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/aeonium-repotting-1.jpg",
-            "link": "",
-            "image_ratio": "landscape",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 24,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "group_rkrJFf": {
           "type": "group",
           "settings": {
@@ -1727,7 +3139,7 @@
             "text_jMPU7W": {
               "type": "text",
               "settings": {
-                "text": "<p>For pot-grown Aeoniums, repot annually. When repotting, clean off as much of the old soil as possible and use a fresh soil mix. This technique helps maintain healthy plants, especially for show specimens.</p>",
+                "text": "<p>Once the seedlings where at a suitable size, we potted every single one on, giving each one star treatment. This was important as we didn’t want to miss any potential prospects.</p><p>Over the course of the growing season, we could select potential forms of interest and colour to grow on; this was an incredibly difficult task as we had so many different amazing looking variations.</p><p>We ended up choosing six varieties. These all had unique distinctions whether it was form, colour or vigour; each one looked completely different to the next. </p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -1759,7 +3171,6 @@
         }
       },
       "block_order": [
-        "image_R7RYKW",
         "group_rkrJFf"
       ],
       "name": "t:names.image_with_text",
@@ -1771,9 +3182,9 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
+        "gap": 0,
         "section_width": "page-width",
-        "section_height": "small",
+        "section_height": "",
         "section_height_custom": 50,
         "color_scheme": "",
         "background_media": "none",
@@ -1787,13 +3198,36 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 20,
+        "padding-block-end": 20
       }
     },
     "section_emUrq8": {
       "type": "section",
       "blocks": {
+        "image_r9a3Hr": {
+          "type": "image",
+          "name": "t:names.image",
+          "settings": {
+            "image": "shopify://shop_images/Semponium_Sienna_Header-square.jpg",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 24,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "group_8Fy4AW": {
           "type": "group",
           "settings": {
@@ -1837,13 +3271,13 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p><strong>Pests and Diseases</strong></p>",
+                "text": "<h3>Growing <em>x Semponiums</em></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "max_width_tablet": "inherit",
                 "max_width_desktop": "inherit",
                 "alignment": "left",
-                "type_preset": "h3",
+                "type_preset": "h2",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -1865,7 +3299,7 @@
             "text_JaFDfB": {
               "type": "text",
               "settings": {
-                "text": "<p>Taking good care of your succulents is crucial, and a quick visual inspection each week helps you monitor for any pests or diseases. Aeoniums can be affected by various pests, including mealybugs, aphids, vine weevils, caterpillars, slugs, and snails.</p><p>To address these issues, different treatments can be used. Vine weevils, for example, can be managed with nematodes. For snails, caterpillars, and mealybugs, manual removal is effective, and mealybugs can also be treated with a 70% isopropanol solution. Regular inspections and prompt action can help keep your Aeoniums healthy and pest-free.</p>",
+                "text": "<p>The speed of growth of the <em>x Semponiums</em> is fantastic. They grow incredibly quickly and with strong hybrid vigour. The leaves look fresh and clean all year round. They also seem to have a shorter dormancy stage than their <em>Aeonium</em> parents.</p><p>Hardiness was the key trait that we wanted to bring up in these new hybrids. We wanted a garden-proof <em>Aeonium</em>-like plant suitable for all regions in the UK. Unfortunately, the hardiness trait of the <em>Sempervivum</em> mother did not transfer to the <em>x Semponiums</em>, rendering them to the same tenderness as <em>Aeonium 'Ice Warrior', </em>which is know to only just survive -4°c. This was extremely disappointing to discover as this would have been one of the greatest hybridising achievements in history.</p><p>Daniel, and the rest of the Surreal Succulents team, is still attempting to breed hardiness into <em>Aeonium</em>, one hybrid at a time. Our goal is to curate a selection of plants that are winter hardy for everyone to enjoy without the worry of losing them.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -1898,7 +3332,367 @@
         }
       },
       "block_order": [
+        "image_r9a3Hr",
         "group_8Fy4AW"
+      ],
+      "name": "Text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_K3WYbq": {
+      "type": "section",
+      "blocks": {
+        "image_mgKrzL": {
+          "type": "image",
+          "name": "t:names.image",
+          "settings": {
+            "image": "shopify://shop_images/IMG-20220524-WA00023.jpg",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 24,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_VTN8eq": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_aLCP7a": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h3>RHS awards</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_dRNhaE": {
+              "type": "text",
+              "settings": {
+                "text": "<p>The <em>x Semponiums</em> had received great interest from the community and we decided to show them for the first time at the RHS Chelsea Flower Show 2020. Unfortunately, this show was cancelled because of the pandemic. So, we decided to keep them from public eye until the show returned in September of 2021. </p><p><em>x Semponium 'Sienna'</em> was featured in our Gold Medal winning 2021 show garden. We had entered<em>‘Sienna’</em> into the 'Plant of the Year' competition. The plant was awarded third place in the RHS Chelsea Flower Show Plant of the Year for 2021.</p><p>The following Chelsea Flower Show in 2022, x Semponiums 'Diamond' and 'Destiny' were revealed to the public. We had also entered these two hybrids into the Plant of the Year competition, and to our surprise, 'Destiny' had won 1st place!</p><p>We could not believe it! It was truly a Surreal experience.</p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_aLCP7a",
+            "text_dRNhaE"
+          ]
+        }
+      },
+      "block_order": [
+        "image_mgKrzL",
+        "group_VTN8eq"
+      ],
+      "name": "Text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_EGFYjj": {
+      "type": "section",
+      "blocks": {
+        "text_xXqEqR": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>The future for <em>x Semponiums</em></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "max_width_tablet": "inherit",
+            "max_width_desktop": "inherit",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "color_scheme": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_xXqEqR"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_ENbHzt": {
+      "type": "section",
+      "blocks": {
+        "image_QNahxX": {
+          "type": "image",
+          "name": "t:names.image",
+          "settings": {
+            "image": "shopify://shop_images/99C5638C-CE9F-4C16-A135-9F7B19A80F83_c1f09f89-579e-4081-ba91-244545704ba5.jpg",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 24,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_xNzt4G": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_k8Cjez": {
+              "type": "text",
+              "settings": {
+                "text": "<p>We are always trying new and exciting hybrids for x Semponiums, now we know how it is done.</p><p>The next release to our x Semponium range was <a href=\"/products/x-semponium-darwin\" title=\"x Semponium 'Darwin'\">x Semponium 'Darwin'</a>, officially released in April of 2025. This plant is a completely different cross to the original 6 plants, as those were Sempervivum 'Green Ice' x Aeonium 'Ice Warrior'. 'Darwin' is a cross of <a href=\"/products/sempervivum-pink-puff\" title=\"Sempervivum 'Pink Puff'\">Sempervivum 'Pink Puff'</a> x <a href=\"/products/aeonium-nobile\" title=\"Aeonium nobile\">Aeonium nobile</a>.</p><p>'Darwin' is a distinctly unique addition to our range, with its deep red colouration and huge chunky leaves, showing a combination of the two mother plants.</p><p>Unlike the first x Semponium series, this seed batch was less successful, as 'Darwin' was the only unique seedling. The other seedlings had no resemblance the the Aeonium mother plant.</p><p>We are looking forward to creating new x Semponiums in the future, and we press on with our mission of breeding extreme hardiness into the Aeonium gene pool.</p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_k8Cjez"
+          ]
+        }
+      },
+      "block_order": [
+        "image_QNahxX",
+        "group_xNzt4G"
       ],
       "name": "Text",
       "settings": {
@@ -1975,7 +3769,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p><strong>Thank you for reading!</strong></p>",
+                "text": "<p>Thank you for reading!</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "max_width_tablet": "inherit",
@@ -2158,16 +3952,25 @@
     "section_cH3TAN",
     "section_qJE3RG",
     "section_ppWayN",
+    "section_4bMLb4",
     "section_pYMhwt",
     "section_tabQrN",
+    "section_brYQzm",
+    "section_FPHcbK",
+    "section_tb4WnV",
+    "section_xHVKCG",
     "section_Y7C3mc",
     "section_CeQpiA",
     "section_pxm4mi",
     "section_BjKcgw",
+    "section_tTXtA4",
     "section_RxfYiU",
     "section_ycNzf6",
     "section_zDfHVm",
     "section_emUrq8",
+    "section_K3WYbq",
+    "section_EGFYjj",
+    "section_ENbHzt",
     "section_Vri4g4",
     "main"
   ]
