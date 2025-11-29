@@ -3,7 +3,8 @@
   class="no-js{% if request.design_mode %} shopify-design-mode{% endif %}"
   lang="{{ request.locale.iso_code }}"
 >
-    <head>{% render 'spdn' %}
+    <head>
+    {%- render 'scripts' -%}
     {%- if settings.favicon != blank -%}
       <link
         rel="icon"
@@ -26,7 +27,6 @@
     {%- render 'meta-tags' -%}
     {%- render 'stylesheets' -%}
     {%- render 'fonts' -%}
-    {%- render 'scripts' -%}
     {%- render 'theme-styles-variables' -%}
     {%- render 'color-schemes' -%}
 
@@ -411,5 +411,5 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
-  {% render 'spdn4' %}</body>
+  </body>
 </html>
