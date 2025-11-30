@@ -229,7 +229,7 @@
 
 {% if template == 'product' %}
   <script type="module">
-    import { RecentlyViewed } from '@theme/recently-viewed-products';
+    import { RecentlyViewed } from '{{ 'recently-viewed-products.js' | asset_url }}';
     RecentlyViewed.addProduct('{{ product.id }}');
   </script>
 {% endif %}

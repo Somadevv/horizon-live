@@ -634,7 +634,7 @@
 
 {% unless request.design_mode %}
   <script type="module">
-    import { hydrate } from '@theme/section-hydration';
+    import { hydrate } from '{{ 'section-hydration.js' | asset_url }}';
     const url = new URL(window.location.href);
     url.searchParams.delete('page');
     hydrate('{{ section.id }}', url);
