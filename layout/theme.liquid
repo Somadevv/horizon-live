@@ -3,7 +3,7 @@
   class="no-js{% if request.design_mode %} shopify-design-mode{% endif %}"
   lang="{{ request.locale.iso_code }}"
 >
-    <head>{% render 'spdn' %}
+    <head>
     {%- render 'scripts' -%}
     {%- if settings.favicon != blank -%}
       <link
@@ -411,5 +411,5 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
-  {% render 'spdn4' %}</body>
+  </body>
 </html>
