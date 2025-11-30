@@ -7,6 +7,8 @@
   type="module"
 ></script>
 
+{% comment %}Only show if there's a collection description{% endcomment %}
+{% if collection.description != blank or collection.metafields.custom.collection_short_description.value != blank %}
 <dialog-component
   class="popup-link"
   {{ block.shopify_attributes }}
@@ -45,6 +47,7 @@
     </button>
   </dialog>
 </dialog-component>
+{% endif %}
 
 {% stylesheet %}
   .popup-link__button svg {
