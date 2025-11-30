@@ -232,13 +232,6 @@
               "type": "shopify://apps/love-loyalty-program/blocks/product/8e46a2a8-82de-4569-80eb-5c6a231931d5",
               "settings": {}
             },
-            "kite_discount_free_gift_app_block_consolidated_progress_bar_Ecx4LW": {
-              "type": "shopify://apps/kite-discount-free-gift/blocks/app-block-consolidatedProgressBar/2c7302c4-455d-4078-a829-48563ba26089",
-              "settings": {
-                "blockId": "block-id",
-                "sideCartEnabled": false
-              }
-            },
             "group_3cBQjQ": {
               "type": "group",
               "name": "t:names.group",
@@ -551,7 +544,6 @@
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
             "love_loyalty_program_product_RENKKp",
-            "kite_discount_free_gift_app_block_consolidated_progress_bar_Ecx4LW",
             "group_3cBQjQ"
           ]
         }
