@@ -43,7 +43,7 @@
         "text_KQGTfX": {
           "type": "text",
           "settings": {
-            "text": "<p>Our local Christmas market</p>",
+            "text": "<p>November 21st - December 24th</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "max_width_tablet": "inherit",
@@ -93,7 +93,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/aeonium-deep-purple-group-3.jpg",
+        "image_1": "shopify://shop_images/IMG_3208.jpg",
         "media_type_2": "image",
         "hide_second_media_mobile": false,
         "link": "",
@@ -165,7 +165,7 @@
             "text_TkNtMY": {
               "type": "text",
               "settings": {
-                "text": "<p>We are spending our Christmas in the city of Truro.</p>",
+                "text": "<p>We are spending our Christmas in the city of Truro in our home county of Cornwall. </p><p>The winter is usually a quiet period for us nursery workers, so the Christmas market is always a good time for us, keeping us busy during .</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
