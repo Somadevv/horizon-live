@@ -3,7 +3,32 @@
   class="no-js{% if request.design_mode %} shopify-design-mode{% endif %}"
   lang="{{ request.locale.iso_code }}"
 >
-    <head>{% render 'spdn' %}
+    <head>
+    <script>
+      // Block broken CWV Booster scripts that cause appendChild errors
+      if (!window.__scriptBlockerInstalled) {
+        window.__scriptBlockerInstalled = true;
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach(({addedNodes}) => {
+            addedNodes.forEach(node => {
+              if (node.nodeType === 1 && node.tagName === 'SCRIPT') {
+                // Block scripts containing broken optimization code
+                if (node.textContent && (
+                  node.textContent.includes('spdni') ||
+                  node.textContent.includes('cwvbooster') ||
+                  node.textContent.includes('kirklandapps')
+                )) {
+                  node.type = 'text/blocked';
+                  console.log('[Script Blocker] Prevented broken optimization script from executing');
+                }
+              }
+            });
+          });
+        });
+        observer.observe(document.documentElement, {childList: true, subtree: true});
+      }
+    </script>
+    {% render 'spdn' %}
     {%- render 'import-map-shim' -%}
     {%- render 'scripts' -%}
     {%- if settings.favicon != blank -%}
