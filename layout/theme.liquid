@@ -5,21 +5,46 @@
 >
     <head>
     <script>
-      // Block broken CWV Booster scripts that cause appendChild errors
+      // Block broken CWV Booster scripts - must run before spdn loads
       if (!window.__scriptBlockerInstalled) {
         window.__scriptBlockerInstalled = true;
+
+        // Block Web Workers that fetch broken optimization code
+        const OriginalWorker = window.Worker;
+        window.Worker = function(scriptURL, options) {
+          // Block workers trying to fetch cwvbooster code
+          if (scriptURL && (
+            scriptURL.includes('spdnworker') ||
+            scriptURL.includes('cwvbooster') ||
+            scriptURL.includes('kirklandapps')
+          )) {
+            console.log('[Script Blocker] Blocked Web Worker trying to fetch broken optimization code');
+            // Return a fake worker that does nothing
+            return {
+              postMessage: function() {},
+              terminate: function() {},
+              addEventListener: function() {},
+              removeEventListener: function() {},
+              onmessage: null,
+              onerror: null
+            };
+          }
+          return new OriginalWorker(scriptURL, options);
+        };
+
+        // Also block scripts with MutationObserver as backup
         const observer = new MutationObserver((mutations) => {
           mutations.forEach(({addedNodes}) => {
             addedNodes.forEach(node => {
               if (node.nodeType === 1 && node.tagName === 'SCRIPT') {
-                // Block scripts containing broken optimization code
-                if (node.textContent && (
-                  node.textContent.includes('spdni') ||
-                  node.textContent.includes('cwvbooster') ||
-                  node.textContent.includes('kirklandapps')
-                )) {
+                const content = node.textContent || node.innerText || '';
+                // Block scripts that try to create spdnworker or fetch cwvbooster
+                if (content.includes('spdnworker') ||
+                    content.includes('spdni') ||
+                    content.includes('cwvbooster') ||
+                    content.includes('kirklandapps')) {
                   node.type = 'text/blocked';
-                  console.log('[Script Blocker] Prevented broken optimization script from executing');
+                  console.log('[Script Blocker] Blocked inline script with broken optimization code');
                 }
               }
             });
@@ -28,6 +53,7 @@
         observer.observe(document.documentElement, {childList: true, subtree: true});
       }
     </script>
+    {% comment %}Spdn will load but worker will be blocked{% endcomment %}
     {% render 'spdn' %}
     {%- render 'import-map-shim' -%}
     {%- render 'scripts' -%}
