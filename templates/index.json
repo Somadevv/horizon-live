@@ -76,8 +76,8 @@
         "button_RbC8XQ": {
           "type": "button",
           "settings": {
-            "label": "Black Friday 2025",
-            "link": "shopify://pages/black-friday-2025",
+            "label": "Shop Now",
+            "link": "shopify://collections/all-plants",
             "open_in_new_tab": false,
             "style_class": "button-secondary",
             "width": "fit-content",
@@ -311,10 +311,6 @@
       "name": "Browse our collection",
       "settings": {
         "collection_list": [
-          "40-off",
-          "30-off",
-          "20-off",
-          "10-off",
           "aeonium",
           "crassula",
           "surreal-hybrids",
