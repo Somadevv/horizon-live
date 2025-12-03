@@ -14,6 +14,20 @@
     "header_announcements_kMQEU6": {
       "type": "header-announcements",
       "blocks": {
+        "announcement_XqMYar": {
+          "type": "_announcement",
+          "name": "t:names.announcement",
+          "settings": {
+            "text": "<strong>Christmas delivery option now available! Select 'Santa Shipping' at Checkout.</strong>",
+            "link": "",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
+        },
         "announcement_3KQmYC": {
           "type": "_announcement",
           "settings": {
@@ -99,6 +113,7 @@
         }
       },
       "block_order": [
+        "announcement_XqMYar",
         "announcement_3KQmYC",
         "announcement_KCUYTR",
         "announcement_ngwdUK",
