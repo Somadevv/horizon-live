@@ -232,13 +232,6 @@
               "type": "shopify://apps/love-loyalty-program/blocks/product/8e46a2a8-82de-4569-80eb-5c6a231931d5",
               "settings": {}
             },
-            "kite_discount_free_gift_app_block_consolidated_progress_bar_8JhFYc": {
-              "type": "shopify://apps/kite-discount-free-gift/blocks/app-block-consolidatedProgressBar/2c7302c4-455d-4078-a829-48563ba26089",
-              "settings": {
-                "blockId": "block-id",
-                "sideCartEnabled": false
-              }
-            },
             "group_EKJ3MC": {
               "type": "group",
               "name": "t:names.group",
@@ -791,7 +784,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p><strong>Most of our plants are shipped bare-root. Please note that the plant you receive may not be an exact likeness of the images shown.</strong></p>",
+                        "text": "<p>Most of our plants are shipped bare-root. Please note that the plant you receive may not be an exact likeness of the images shown.</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "max_width_tablet": "inherit",
@@ -834,7 +827,6 @@
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
             "love_loyalty_program_product_Dk9Xfc",
-            "kite_discount_free_gift_app_block_consolidated_progress_bar_8JhFYc",
             "group_EKJ3MC"
           ]
         }
