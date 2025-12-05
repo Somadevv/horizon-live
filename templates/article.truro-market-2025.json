@@ -42,6 +42,7 @@
         },
         "text_KQGTfX": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>November 21st - December 24th</p>",
             "width": "fit-content",
@@ -165,7 +166,7 @@
             "text_TkNtMY": {
               "type": "text",
               "settings": {
-                "text": "<p>We are spending our Christmas in the city of Truro in our home county of Cornwall. </p><p>The winter is usually a quiet period for us nursery workers, so the Christmas market is always a good time for us, keeping us busy during .</p>",
+                "text": "<p>We are spending our Christmas in the city of Truro in our home county of Cornwall. This brings us to create the most gorgeous succulent gift items for everyone to enjoy!</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -228,13 +229,13 @@
         "padding-block-end": 40
       }
     },
-    "section_qJE3RG": {
+    "section_JTzdDe": {
       "type": "section",
       "blocks": {
-        "image_zRB3De": {
+        "image_geMFki": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Aeonium-Pomegranate.jpg",
+            "image": "shopify://shop_images/IMG_3195.jpg",
             "link": "",
             "image_ratio": "landscape",
             "width": "fill",
@@ -253,6 +254,115 @@
           },
           "blocks": {}
         },
+        "group_LjTB9A": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_tFLLfK": {
+              "type": "text",
+              "settings": {
+                "text": "<p>These succulents are well-adapted to extremely dry and arid environments, storing water in their leaves and stems to survive. </p><p>This drought tolerance makes them ideal for a terrarium setting because they will only need watering occasionally.</p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_tFLLfK"
+          ]
+        }
+      },
+      "block_order": [
+        "image_geMFki",
+        "group_LjTB9A"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_qJE3RG": {
+      "type": "section",
+      "blocks": {
         "group_a834iV": {
           "type": "group",
           "settings": {
@@ -295,7 +405,7 @@
             "text_jAqjRL": {
               "type": "text",
               "settings": {
-                "text": "<p>These succulents are well-adapted to extremely dry and arid environments, storing water in their leaves and stems to survive. Aeoniums come in a variety of shapes and sizes, from the ornamental <a href=\"/products/aeonium-medusa\" title=\"Aeonium 'Medusa'\">Aeonium ‘Medusa’</a>, to the large Aeonium ‘Pomegranate’ (shown), and the smaller <a href=\"https://srealsucculents.myshopify.com/product/aeonium-aizoon\">Aeonium aizoon</a>.</p>",
+                "text": "<p>We only use the brightest and best succulents for these terrariums, a mix of tall Crassula, shorter Echeveria and some trailing Curio.</p><p>To add to that, they are planted in sand. This sand has almost no nutrients for the plants, this limits their growth and keeping them small and full of colour.</p><p>It looks great, like a mini desert aquarium.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -319,32 +429,38 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_TFzCzT": {
-              "type": "button",
-              "name": "t:names.button",
-              "settings": {
-                "label": "Aeonium 'Pomegranate'",
-                "link": "shopify://products/aeonium-pomegranate",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_jAqjRL",
-            "button_TFzCzT"
+            "text_jAqjRL"
           ]
+        },
+        "image_zRB3De": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_3204.jpg",
+            "link": "",
+            "image_ratio": "landscape",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 24,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "image_zRB3De",
-        "group_a834iV"
+        "group_a834iV",
+        "image_zRB3De"
       ],
       "name": "t:names.image_with_text",
       "settings": {
@@ -417,12 +533,13 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_LhWdxW": {
+            "text_PGLTEL": {
               "type": "text",
+              "name": "t:names.heading",
               "settings": {
-                "text": "<p>Aeoniums are surprisingly easy to grow and require minimal care and maintenance. For best results, use a free-draining soil mix and keep your plants frost-free during the winter. If planted in the garden or potted outside, protect them with <a href=\"/products/horticultural-fleece\" title=\"Horticultural Fleece\">horticultural fleece </a>to shield them from frost and hail.</p>",
+                "text": "<h2>Make your own Terrarium</h2>",
                 "width": "fit-content",
-                "max_width": "none",
+                "max_width": "normal",
                 "max_width_tablet": "inherit",
                 "max_width_desktop": "inherit",
                 "alignment": "left",
@@ -447,7 +564,7 @@
             }
           },
           "block_order": [
-            "text_LhWdxW"
+            "text_PGLTEL"
           ]
         }
       },
@@ -479,8 +596,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "section_pYMhwt": {
@@ -489,7 +606,7 @@
         "image_T6LDa7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Aeonium-tabuliforme.png",
+            "image": "shopify://shop_images/IMG_3198.jpg",
             "link": "",
             "image_ratio": "landscape",
             "width": "fill",
@@ -550,7 +667,7 @@
             "text_CXFLKA": {
               "type": "text",
               "settings": {
-                "text": "<p>Most Aeoniums love full sun or part shade, the darker leaf varieties in particular love full sun, some other varieties of Aeonium such as the variegated forms and the Aeonium tabuliforme, prefer part-shade or morning sunshine. </p>",
+                "text": "<p>We have set up a craft station so you can make your own succulent terrarium. We will guide you on how to plant it, including the amount of sand needed, what plants and colours work well with each other, and where to plant each one. We will also give you aftercare instructions so you can keep it looking stunning.</p><p>It is a very enjoyable and pleasant experience.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -574,32 +691,256 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_CAzmqh": {
-              "type": "button",
-              "name": "t:names.button",
-              "settings": {
-                "label": "Aeonium tabuliforme",
-                "link": "shopify://products/aeonium-tabuliforme",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_CXFLKA",
-            "button_CAzmqh"
+            "text_CXFLKA"
           ]
         }
       },
       "block_order": [
         "image_T6LDa7",
         "group_rfcdBj"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_UYd3c6": {
+      "type": "section",
+      "blocks": {
+        "group_FMJxMq": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_PFdktJ": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>How to care for your terrarium</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_PFdktJ"
+          ]
+        }
+      },
+      "block_order": [
+        "group_FMJxMq"
+      ],
+      "name": "Text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_cDGEUM": {
+      "type": "section",
+      "blocks": {
+        "image_EapUhP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_3205.jpg",
+            "link": "",
+            "image_ratio": "landscape",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 24,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_C9tAta": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_KEJa7i": {
+              "type": "text",
+              "settings": {
+                "text": "<p>To keep your terrarium looking the best it can, you will want to keep it in a cool (between 10-15°c), bright environment.</p><p>Ideally, on a south facing windowsil, away form central heating.</p><p>The combination of bright light and cool temperatures keeps them compact and colourful. </p><p>If the light levels are too low, the plants will lose their bright colours and begin to reach for the light by growing pale and tall.</p><p>Warm temperatures will speed up this unhealthy growth process, so keeping them in a bright, cool spot is a good way of prolonging their beauty.</p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_KEJa7i"
+          ]
+        }
+      },
+      "block_order": [
+        "image_EapUhP",
+        "group_C9tAta"
       ],
       "name": "t:names.image_with_text",
       "settings": {
@@ -2156,9 +2497,12 @@
   "order": [
     "hero_A4Hh7H",
     "section_cH3TAN",
+    "section_JTzdDe",
     "section_qJE3RG",
     "section_ppWayN",
     "section_pYMhwt",
+    "section_UYd3c6",
+    "section_cDGEUM",
     "section_tabQrN",
     "section_Y7C3mc",
     "section_CeQpiA",
