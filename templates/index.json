@@ -1562,7 +1562,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3>We also have a physical location!</h3>",
+                "text": "<h3>Come and visit us!</h3>",
                 "width": "100%",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
