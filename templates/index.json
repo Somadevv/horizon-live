@@ -77,7 +77,7 @@
           "type": "button",
           "settings": {
             "label": "Shop Now",
-            "link": "https://surrealsucculents.co.uk/collections/all-plants?filter.v.availability=1&sort_by=title-ascending&sort_by=title-ascending",
+            "link": "https://surrealsucculents.co.uk/collections/all-plants?filter.v.availability=1&sort_by=best-selling",
             "open_in_new_tab": false,
             "style_class": "button-secondary",
             "width": "fit-content",
