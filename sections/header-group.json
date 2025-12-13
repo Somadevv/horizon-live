@@ -18,7 +18,7 @@
           "type": "_announcement",
           "name": "t:names.announcement",
           "settings": {
-            "text": "<strong>Christmas delivery option now available! Select 'Santa Shipping' at Checkout.</strong>",
+            "text": "<strong>Order NOW for pre-Christmas Delivery!</strong>",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
