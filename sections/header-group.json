@@ -28,6 +28,20 @@
           },
           "blocks": {}
         },
+        "announcement_qFfcC4": {
+          "type": "_announcement",
+          "name": "t:names.announcement",
+          "settings": {
+            "text": "<strong>Plants will keep fresh in the box until Christmas if you order between 15th-19th</strong>",
+            "link": "",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
+        },
         "announcement_3KQmYC": {
           "type": "_announcement",
           "settings": {
@@ -114,6 +128,7 @@
       },
       "block_order": [
         "announcement_XqMYar",
+        "announcement_qFfcC4",
         "announcement_3KQmYC",
         "announcement_KCUYTR",
         "announcement_ngwdUK",
