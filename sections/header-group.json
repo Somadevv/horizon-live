@@ -18,7 +18,7 @@
           "type": "_announcement",
           "name": "t:names.announcement",
           "settings": {
-            "text": "<strong>Order NOW for pre-Christmas Delivery!</strong>",
+            "text": "<strong>Order before Friday 19th 2pm for pre-Christmas Delivery!</strong>",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
