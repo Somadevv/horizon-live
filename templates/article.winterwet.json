@@ -69,11 +69,14 @@
           "blocks": {}
         }
       },
-      "block_order": ["text_title", "text_subtitle"],
+      "block_order": [
+        "text_title",
+        "text_subtitle"
+      ],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/winter-succulents-frost.jpg",
+        "image_1": "shopify://shop_images/FullSizeRender_a2f4a59d-e8f9-4b0c-80a8-e44e730a5bea.heic",
         "media_type_2": "image",
         "hide_second_media_mobile": false,
         "link": "",
@@ -171,10 +174,14 @@
               "blocks": {}
             }
           },
-          "block_order": ["text_intro"]
+          "block_order": [
+            "text_intro"
+          ]
         }
       },
-      "block_order": ["group_intro"],
+      "block_order": [
+        "group_intro"
+      ],
       "name": "Introduction",
       "settings": {
         "content_direction": "row",
@@ -304,10 +311,15 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_villain", "text_villain"]
+          "block_order": [
+            "heading_villain",
+            "text_villain"
+          ]
         }
       },
-      "block_order": ["group_villain"],
+      "block_order": [
+        "group_villain"
+      ],
       "name": "The Real Villain",
       "settings": {
         "content_direction": "row",
@@ -437,10 +449,15 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_what_happens", "text_what_happens"]
+          "block_order": [
+            "heading_what_happens",
+            "text_what_happens"
+          ]
         }
       },
-      "block_order": ["group_what_happens"],
+      "block_order": [
+        "group_what_happens"
+      ],
       "name": "What Happens",
       "settings": {
         "content_direction": "row",
@@ -542,10 +559,14 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_how_to"]
+          "block_order": [
+            "heading_how_to"
+          ]
         }
       },
-      "block_order": ["group_how_to"],
+      "block_order": [
+        "group_how_to"
+      ],
       "name": "How To Keep Happy",
       "settings": {
         "content_direction": "row",
@@ -675,10 +696,15 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_tip1", "text_tip1"]
+          "block_order": [
+            "heading_tip1",
+            "text_tip1"
+          ]
         }
       },
-      "block_order": ["group_tip1"],
+      "block_order": [
+        "group_tip1"
+      ],
       "name": "Tip 1 - Indoors",
       "settings": {
         "content_direction": "row",
@@ -808,10 +834,15 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_tip2", "text_tip2"]
+          "block_order": [
+            "heading_tip2",
+            "text_tip2"
+          ]
         }
       },
-      "block_order": ["group_tip2"],
+      "block_order": [
+        "group_tip2"
+      ],
       "name": "Tip 2 - Watering",
       "settings": {
         "content_direction": "row",
@@ -941,10 +972,15 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_tip3", "text_tip3"]
+          "block_order": [
+            "heading_tip3",
+            "text_tip3"
+          ]
         }
       },
-      "block_order": ["group_tip3"],
+      "block_order": [
+        "group_tip3"
+      ],
       "name": "Tip 3 - Compost",
       "settings": {
         "content_direction": "row",
@@ -1074,10 +1110,15 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_tip4", "text_tip4"]
+          "block_order": [
+            "heading_tip4",
+            "text_tip4"
+          ]
         }
       },
-      "block_order": ["group_tip4"],
+      "block_order": [
+        "group_tip4"
+      ],
       "name": "Tip 4 - Drainage",
       "settings": {
         "content_direction": "row",
@@ -1263,10 +1304,17 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_tip5", "text_tip5_intro", "text_how_to_use", "text_fleece_benefits"]
+          "block_order": [
+            "heading_tip5",
+            "text_tip5_intro",
+            "text_how_to_use",
+            "text_fleece_benefits"
+          ]
         }
       },
-      "block_order": ["group_tip5"],
+      "block_order": [
+        "group_tip5"
+      ],
       "name": "Tip 5 - Fleece Protection",
       "settings": {
         "content_direction": "row",
@@ -1305,6 +1353,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/Fleece-Protection-2.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -1360,7 +1409,7 @@
               "name": "t:names.image",
               "static": true,
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "square",
                 "constrain_to_viewport": "contain"
               },
               "blocks": {}
@@ -1386,7 +1435,7 @@
       },
       "name": "t:names.featured_product",
       "settings": {
-        "product": "high-quality-horticultural-fleece-60g-sm",
+        "product": "horticultural-fleece",
         "layout": "media-left",
         "color_scheme": "scheme-3",
         "padding-block-start": 40,
@@ -1493,10 +1542,15 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_tip6", "text_tip6"]
+          "block_order": [
+            "heading_tip6",
+            "text_tip6"
+          ]
         }
       },
-      "block_order": ["group_tip6"],
+      "block_order": [
+        "group_tip6"
+      ],
       "name": "Tip 6 - Warning Signs",
       "settings": {
         "content_direction": "row",
@@ -1600,7 +1654,7 @@
             "text_bottom_line": {
               "type": "text",
               "settings": {
-                "text": "<p>Winter <em>isn't</em> your succulent's enemy. Wet compost is. Get your watering right, use proper gritty compost, ensure excellent drainage, and protect tender varieties with quality fleece—your succulents will sail through the UK winter looking gorgeous.</p><p>In fact, many succulents actually <em>need</em> a cool, dry winter rest to thrive and flower come spring. So embrace the season, adjust your care routine, and watch your collection flourish.</p><p><em>Stay gritty,</em><br/><strong>The Surreal Succulents Team</strong></p>",
+                "text": "<p>Winter <em>isn't</em> your succulent's enemy. Wet compost is. Get your watering right, use proper gritty compost, ensure excellent drainage, and protect tender varieties with quality fleece—your succulents will sail through the UK winter looking gorgeous.</p><p>In fact, many succulents actually <em>need</em> a cool, dry winter rest to thrive and flower come spring. So embrace the season, adjust your care routine, and watch your collection flourish.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -1626,10 +1680,15 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_bottom_line", "text_bottom_line"]
+          "block_order": [
+            "heading_bottom_line",
+            "text_bottom_line"
+          ]
         }
       },
-      "block_order": ["group_bottom_line"],
+      "block_order": [
+        "group_bottom_line"
+      ],
       "name": "Bottom Line",
       "settings": {
         "content_direction": "row",
@@ -1759,10 +1818,15 @@
               "blocks": {}
             }
           },
-          "block_order": ["text_thank_heading", "text_thank_body"]
+          "block_order": [
+            "text_thank_heading",
+            "text_thank_body"
+          ]
         }
       },
-      "block_order": ["group_thank_you"],
+      "block_order": [
+        "group_thank_you"
+      ],
       "name": "Thank you for reading",
       "settings": {
         "content_direction": "row",
