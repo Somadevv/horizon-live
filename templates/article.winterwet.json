@@ -76,7 +76,6 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/FullSizeRender_a2f4a59d-e8f9-4b0c-80a8-e44e730a5bea.heic",
         "media_type_2": "image",
         "hide_second_media_mobile": false,
         "link": "",
