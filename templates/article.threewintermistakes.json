@@ -9,92 +9,29 @@
  */
 {
   "sections": {
-    "section": {
-      "type": "main-blog-post",
+    "hero_winter_mistakes": {
+      "type": "hero",
       "blocks": {
-        "blog-post-title": {
+        "text_title": {
           "type": "text",
-          "name": "Title",
-          "static": true,
           "settings": {
-            "text": "<h1>{{ article.title }}</h1>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "text": "<h1>The 3 Winter Mistakes That Kill Succulents</h1>"
+          }
         },
-        "blog-post-details": {
-          "type": "_blog-post-info-text",
-          "name": "Blog post details",
-          "static": true,
+        "text_subtitle": {
+          "type": "text",
           "settings": {
-            "show_date": true,
-            "show_author": false,
-            "type_preset": "",
-            "alignment": "center",
-            "show_alignment": true,
-            "padding-block-start": 24,
-            "padding-block-end": 0
-          },
-          "blocks": {}
-        },
-        "blog-post-image": {
-          "type": "image",
-          "name": "Featured image",
-          "disabled": true,
-          "static": true,
-          "settings": {
-            "link": "",
-            "image_ratio": "adapt",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "blog-post-content": {
-          "type": "_blog-post-content",
-          "static": true,
-          "settings": {},
-          "blocks": {}
+            "text": "<p>Avoid these common care mistakes and keep your collection thriving all season long.</p>"
+          }
         }
       },
+      "block_order": ["text_title", "text_subtitle"],
       "settings": {
-        "content_direction": "column",
-        "gap": 32,
-        "color_scheme": "",
-        "padding-block-start": 40,
-        "padding-block-end": 80
+        "media_type_1": "image"
       }
     }
   },
   "order": [
-    "section"
+    "hero_winter_mistakes"
   ]
 }
