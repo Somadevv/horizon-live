@@ -43,7 +43,7 @@
         "text_subtitle": {
           "type": "text",
           "settings": {
-            "text": "<p>Get your free 1 litre soil sample and learn what makes the ideal compost mix for thriving succulents</p>",
+            "text": "<p>Learn what makes the ideal compost mix for thriving succulents</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "max_width_tablet": "inherit",
@@ -76,7 +76,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/aeoniums-repotting-4.jpg",
+        "image_1": "shopify://shop_images/8CB207FA-8945-4FFC-88DF-148896D045E5.jpg",
         "media_type_2": "image",
         "hide_second_media_mobile": false,
         "link": "",
@@ -1014,7 +1014,7 @@
             "text_sample_content": {
               "type": "text",
               "settings": {
-                "text": "<p>Want to try our perfect soil mix before buying in bulk? We're offering a free 1 litre sample so you can test it with your own succulents.</p><p><strong>Use code: SOILSAMPLE</strong></p><p>Simply add the 1 litre succulent compost mix to your basket and use this code at checkout. Offer limited to one per customer.</p>",
+                "text": "<p>Want to try our perfect soil mix before buying in bulk? We're offering a free 1 litre sample so you can test it with your own succulents.</p><p><strong>Use code: SOILSAMPLE</strong></p><p>Simply add the 1 litre succulent compost mix to your basket and use this code at checkout. Offer limited to one per customer. Must add at least one other item to unlock sample. Subscribers only.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
