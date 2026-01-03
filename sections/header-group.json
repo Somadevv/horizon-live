@@ -59,7 +59,7 @@
           "type": "_announcement",
           "name": "t:names.announcement",
           "settings": {
-            "text": "<strong>100s of 5 star reviews!</strong>",
+            "text": "<strong>Highly Rated - 100s of 5 star reviews!</strong>",
             "link": "https://surrealsucculents.co.uk/a/page/top-reviews",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -73,7 +73,7 @@
           "type": "_announcement",
           "name": "t:names.announcement",
           "settings": {
-            "text": "<strong>5 consecutive RHS Chelsea Gold Winners!</strong>",
+            "text": "<strong>Prestigious - 5 consecutive RHS Chelsea Gold Winners!</strong>",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -87,7 +87,7 @@
           "type": "_announcement",
           "name": "t:names.announcement",
           "settings": {
-            "text": "<strong>A total of 10+ RHS Gold Medals!</strong>",
+            "text": "<strong>Award Winning - A total of 10+ RHS Gold Medals!</strong>",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
