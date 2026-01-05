@@ -764,8 +764,8 @@
           "type": "_cart-products",
           "static": true,
           "settings": {
-            "gap": 24,
-            "image_ratio": "square",
+            "gap": 36,
+            "image_ratio": "portrait",
             "dividers": true,
             "vendor": false,
             "padding-block-start": 0,
