@@ -16,10 +16,10 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<h1>{{ closest.page.title }}</h1>",
+            "text": "<h1>The Surreal Top Tips Guidebook</h1>",
             "width": "100%",
             "max_width": "normal",
-            "alignment": "left",
+            "alignment": "center",
             "type_preset": "h1",
             "font": "var(--font-primary--family)",
             "font_size": "",
@@ -37,19 +37,1136 @@
           },
           "blocks": {}
         },
-        "page-content": {
-          "type": "page-content",
-          "settings": {},
+        "intro_text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Surreal Top Tips is an addition to our email newsletter; to provide a helpful resource for anyone who wants to learn a bit more about caring for their succulents. They are mostly snippets of info from our larger care guides. We've picked out some parts that we think would be most useful for succulent growers. Use this page as a resource to easily access our advice.</p><p>If you would like to receive Surreal Top Tips emails, subscribe/ resubscribe to our newsletter at the bottom of the page.</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "padding-block-start": 0,
+            "padding-block-end": 20,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
           "blocks": {}
         }
       },
       "block_order": [
         "heading",
-        "page-content"
+        "intro_text"
       ],
+      "disabled": true,
       "settings": {
         "content_direction": "column",
         "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_beginner_advice": {
+      "type": "section",
+      "blocks": {
+        "beginner_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Beginner Advice</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "beginner_accordion": {
+          "type": "accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "best_beginner_succulents": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What are the best beginner succulents?"
+              },
+              "blocks": {
+                "text_beginner_plants": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We recommend starting with hardy varieties that are forgiving and easy to care for.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_beginner_plants"]
+            },
+            "which_pot": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Which pot should I use for my succulent?"
+              },
+              "blocks": {
+                "text_pot": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>A pot that has a drainage hole and is just big enough to fit the plant is often best for succulents.</p><p>Choose a pot with a drainage hole if you can't limit the watering (outdoors). A pot with no drainage hole can be used as long as you water moderately. A pot with a hole tends to be more forgiving.</p><p>Also, as it is slightly breathable, a terracotta pot is usually preferred over a plastic pot, but the succulents dont seem to mind too much.</p><p>Our plants typically like to be potted in 7cm pots once you receive them.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_pot"]
+            },
+            "which_soil": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Which soil should I use for my succulents?"
+              },
+              "blocks": {
+                "text_soil": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>1/3 succulent or cactus soil, 1/3 coconut coir and 1/3 perlite is a good standard to stick with for most succulents.</p><p>We recommend using a standard general multipurpose compost mix or John Innes no2 (sandy soil mix) and adding 1/3 by volume of drainage media in the form of sand, grit or our personal favourite, perlite. This will give you a free-draining soil mix which is very important for the health of your succulents. Our General Succulent Compost Mix is perfectly designed for succulents.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_soil"]
+            },
+            "how_often_water": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How often should I water my succulents?"
+              },
+              "blocks": {
+                "text_watering": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Usually once to twice a week in the growing season. Follow the 3 D's:</p><ul><li><strong>Drench.</strong> Completely drench the soil (for fully rooted plants only).</li><li><strong>Drain.</strong> Make sure the soil is free-draining.</li><li><strong>Dry.</strong> Leave the soil to dry out between waterings.</li></ul><p>Over-watering is one of the most common cause of succulent problems. The amount of water they require is largely dependent on the location you wish to keep them, so also think about this when watering them.</p><p>The best way to tell if your plant is dry is to pick up the pot and try to get a feel by the weight of the pot to figure out if it needs water.</p><p>Without proper drainage, your succulents may suffer from root rot, especially in the winter months. Always make sure your drainage holes don't become blocked.</p><p>Having proper drainage gives you the desert-like conditions that succulents need to thrive.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_watering"]
+            },
+            "how_much_light": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How much light do my succulents need?"
+              },
+              "blocks": {
+                "text_light": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Some succulents vastly differ in light requirements. Part shade in the growing season (March - September) and full sun during winter is usually best for most of them.</p><p>Selecting a plant for the right conditions you have at home is crucial. You might find that you get odd growing formations know as reaching, or to correctly name, etiolated. This can simply be because you're not providing enough natural light for the plant you have chosen. Haworthias are great indoor plants suited to lower light conditions but at the same time can tolerate high light conditions.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_light"]
+            },
+            "change_soil": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Should I change my plants soil?"
+              },
+              "blocks": {
+                "text_change_soil": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We normally recommend that you refresh your soil every year.</p><p>If planted in pots this can be easily achieved. If outside permanently planted in the ground, we recommend feeding with a general all-purpose plant food. If you want to slow growth rates down, then simply leave your soil to run out of nutrients. This will stop your plants growing as fast, it can be several months before the plant will run out of nutrients and become detrimental to it's health. It will happily survive, as these plants originate from low nutrient deserts like conditions with little rainfall, so they are well adapted to be without.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_change_soil"]
+            },
+            "feed_succulent": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Should I feed my succulent?"
+              },
+              "blocks": {
+                "text_feeding": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes! Feed your plants in the growing season once every two weeks with a liquid seaweed feed.</p><p>Feeding can get your plant out of a growth slump into a growth spurt. We recommend our Cornish friends at LittleGreenSeaweed.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_feeding"]
+            }
+          },
+          "block_order": [
+            "best_beginner_succulents",
+            "which_pot",
+            "which_soil",
+            "how_often_water",
+            "how_much_light",
+            "change_soil",
+            "feed_succulent"
+          ]
+        }
+      },
+      "block_order": [
+        "beginner_heading",
+        "beginner_accordion"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_winter_care": {
+      "type": "section",
+      "blocks": {
+        "winter_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Winter Care Advice</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "winter_accordion": {
+          "type": "accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "winter_prepare": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "When should I start to prepare for winter?"
+              },
+              "blocks": {
+                "text_winter_prep": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>You should start preparing for winter as early as September.</p><p>This means to finish off any repotting and propagation tasks you had planned, slow down your watering and feeding regime and to have an idea of where your succulents will be located for the next several months. You may need to set up a cold frame for them.</p><p><strong>Winter warning signs:</strong></p><ul><li>Temperatures below 10°C</li><li>Strong wind</li><li>Heavy rain</li><li>Weaker sunlight and shorter days</li></ul>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_winter_prep"]
+            },
+            "winter_location": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Where should I put my plants outside in winter?"
+              },
+              "blocks": {
+                "text_winter_location": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Elevate your succulents by placing them on benches, tables, or shelves to avoid direct contact with cold or frozen ground.</p><p>The soil in the ground remains colder than the surrounding air, so elevating them will reduce the chances of your plants from freezing.</p><p>Place your succulents near house walls, fences, or under shelter to shield them from direct rain or snow. A south-facing wall is ideal, as it receives more sun and retains warmth. These sheltered spots help prevent cold, damp conditions that can harm the plants.</p><p>For areas with high winter rainfall, use a cover with a slight tilt, allowing water to run off instead of pooling around the plants.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_winter_location"]
+            },
+            "winter_fleece": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "When should I use fleece for my plants?"
+              },
+              "blocks": {
+                "text_winter_fleece": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>If temperatures are forecast below 5°C, put fleece on your plants.</p><p>Horticultural fleece is a versatile, breathable fabric designed to protect plants from frost, wind, pests, and harsh weather.</p><p><strong>When to Use:</strong> Apply fleece when temperatures are 5°C and below, and during harsh weather such as hail.</p><p><strong>How to Apply:</strong></p><ul><li><strong>Drape Loosely:</strong> Cut fleece to size and loosely drape it over plants, allowing some airflow.</li><li><strong>Secure Edges:</strong> Use pegs, rocks, or weights to hold the fleece down and prevent it from blowing away.</li><li><strong>Avoid Compression:</strong> Ensure the fleece isn't tightly pressed against plants to prevent breakage and allow air.</li></ul><p><strong>Using a Frame:</strong> For added protection, use hoops or stakes to create a frame under the fleece, creating a mini greenhouse effect around the plants.</p><p><strong>Remove During Daytime Warmth:</strong> Take off the fleece on warmer days to prevent trapped moisture, then reapply in the evening for frost protection.</p><p><strong>Storage:</strong> At the end of winter, wash, dry, and store the fleece in a cool, dry place for future use.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_winter_fleece"]
+            },
+            "winter_watering": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How often should I water in winter?"
+              },
+              "blocks": {
+                "text_winter_watering": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Generally, only water when the soil is completely dry, about once every 4-6 weeks, depending on local conditions. It may be best to leave the plant dry for the entirety of winter, depending on conditions and the variety of plant.</p><p>Winter means reduced sunlight and colder temperatures, which slow down the succulents' growth. Reduce watering frequency to avoid waterlogged soil.</p><p>Be cautious with water accumulation, as too much water can freeze around the roots and lead to rot. We often tell growers to follow the 3 D's to keep their succulents alive and happy. However, winter is a little different:</p><p>Keep your plants as dry as possible. If they are showing signs of drought, you can give them a little watering. Some plants grow over the winter months if the right conditions are met, such as Aeonium and Haworthia. Water these a little if the lower leaves look a little shrivelled.</p><p>If your soil becomes waterlogged, we suggest taking 70% of the soil off and leaving the plant to dry in a cool, bright area in an empty pot. Once dry, repot into dry compost.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_winter_watering"]
+            },
+            "winter_airflow": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How much air flow do my plants need in winter?"
+              },
+              "blocks": {
+                "text_winter_airflow": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>A bit of fresh air flow for your succulents will go a long way in winter. Even a fan will help your plants significantly.</p><p>This is key for keeping your succulents happy and fungus free. A simple fan will help more than you think, and if the temperatures allow, open a window or vent to allow some fresh air to breeze over your plants. Just remember to close them if it gets cold. The air flow will also help them dry out, lowering chances of rot.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_winter_airflow"]
+            },
+            "winter_temperature": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What is the best temperature range for succulents in winter?"
+              },
+              "blocks": {
+                "text_winter_temp": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Between 7-13°C is best for most succulents.</p><p>This range will limit unnatural growth, whilst keeping the plant frost free. The lower the temperature, the better your plants will hold their health over winter.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_winter_temp"]
+            }
+          },
+          "block_order": [
+            "winter_prepare",
+            "winter_location",
+            "winter_fleece",
+            "winter_watering",
+            "winter_airflow",
+            "winter_temperature"
+          ]
+        }
+      },
+      "block_order": [
+        "winter_heading",
+        "winter_accordion"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_pest_control": {
+      "type": "section",
+      "blocks": {
+        "pest_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Pest Control Advice</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "pest_accordion": {
+          "type": "accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "pest_prevention": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I generally prevent pests?"
+              },
+              "blocks": {
+                "text_pest_prevention": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Keeping your plants generally healthy by following our advice will keep most pests away.</p><p>Keeping pests away from succulents begins with careful inspection of new plants. Before adding any new succulents to your collection, thoroughly check them for signs of pests. It's also a good idea to quarantine new plants for a couple of weeks to ensure they are pest-free. Regular monitoring of your succulents is essential; inspect them frequently for any unusual signs such as discolouration, webbing, or stunted growth.</p><p>Proper watering practices play a crucial role in pest prevention. Overwatering can lead to soggy soil, which attracts pests. Always allow the soil to dry out completely between waterings. Ensuring good air circulation around your succulents also helps to keep pests at bay by preventing moisture buildup on leaves and stems.</p><p>Maintaining cleanliness is another preventive measure. Use clean tools when handling your plants to avoid transferring pests. Additionally, keeping the area around your succulents clean and free of debris can prevent pests from finding a comfortable habitat. For added protection, neem oil can be applied periodically as a natural deterrent against many common pests.</p><p>Using biological controls, such as introducing natural predators like ladybugs, can help keep pest populations in check. Moreover, it's important to prune any dead or diseased parts of the plant promptly, as they can attract pests. Ensuring that your succulents have adequate space to grow will also reduce the likelihood of pests spreading rapidly between plants.</p><p>By following these preventive measures, you can significantly reduce the chances of pests invading your succulent collection. Consistent care and vigilance are key to maintaining a healthy, pest-free environment for your plants.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_pest_prevention"]
+            },
+            "mealy_bugs": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I treat mealy bugs?"
+              },
+              "blocks": {
+                "text_mealy": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>You can dab the affected areas with cotton swabs dipped in 70% rubbing alcohol, 30% water and a dash of dish soap. This helps dissolve the protective coating of the bugs.</p><p>Mealy bugs are small insects that appear as white, cotton-like masses on the leaves, stems, and roots of succulents. Another effective method is spraying the plant with a diluted solution of neem oil or insecticidal soap. Treatments should be repeated weekly until the infestation is eradicated.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_mealy"]
+            },
+            "caterpillars": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I treat caterpillars?"
+              },
+              "blocks": {
+                "text_caterpillars": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>They can be hand-picked off the plants, especially at night when they are more active. You may find them hiding in silk nests.</p><p>Caterpillars chew leaves, leaving visible damage and holes. Bacillus thuringiensis (Bt), a natural bacterial pesticide, is effective in targeting caterpillars without harming beneficial insects, providing an environmentally friendly solution.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_caterpillars"]
+            },
+            "aphids": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I treat aphids?"
+              },
+              "blocks": {
+                "text_aphids": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>You can treat aphids by spraying the plant with a mixture of water and a few drops of mild dish soap, which helps remove and kill the pests. After treating, we advise to brush any aphids off with a fine paint brush.</p><p>Aphids are tiny, pear-shaped insects that often cluster on new growth, causing leaves to curl or yellow. Introducing natural predators like ladybugs can also help control aphid populations. For severe infestations, neem oil or insecticidal soap can be applied.</p><p>We advise to check for aphids every two weeks as they can return often, especially in peak ant activity periods such as peak summer.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_aphids"]
+            },
+            "vine_weevil": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I treat vine weevil?"
+              },
+              "blocks": {
+                "text_weevil": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Adults can be removed by hand at night, while their larvae in the soil can be controlled with nematodes like Steinernema kraussei.</p><p>Adult vine weevils bugs are nocturnal pests that create notched leaf edges. The larvae cause wilting and plant collapse due to root/ stem damage. For severe infestations, insecticides specifically labeled for vine weevil control should be used as a last resort.</p><p>We advise to regularly change your soil and to clean your pots when doing so to get rid of any potential grubs and eggs. This is best to do at the end of summer, before peak larvae activity.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_weevil"]
+            },
+            "powdery_mildew": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I treat powdery mildew?"
+              },
+              "blocks": {
+                "text_mildew": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>To treat powdery mildew, improve air circulation around the plant and spray with a solution of 1 part milk to 9 parts water or a fungicide labeled for mildew.</p><p>Powdery mildew appears as a white, powdery substance on leaves and stems. It's important to avoid overhead watering to reduce moisture on the leaves, which can exacerbate the problem.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_mildew"]
+            },
+            "botrytis": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I treat botrytis/ grey mould?"
+              },
+              "blocks": {
+                "text_botrytis": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Treatment involves removing the affected parts of the plant and disposing of them away from healthy plants to prevent spread.</p><p>Botrytis, or grey mould, is identified by a grey, fuzzy mould on leaves, stems, and flowers. Increasing air circulation and reducing humidity around the plants can help prevent further outbreaks. Fungicides designed for botrytis control can be applied if necessary.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_botrytis"]
+            }
+          },
+          "block_order": [
+            "pest_prevention",
+            "mealy_bugs",
+            "caterpillars",
+            "aphids",
+            "vine_weevil",
+            "powdery_mildew",
+            "botrytis"
+          ]
+        }
+      },
+      "block_order": [
+        "pest_heading",
+        "pest_accordion"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_propagation": {
+      "type": "section",
+      "blocks": {
+        "prop_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Propagation Advice</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "prop_accordion": {
+          "type": "accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "prop_timing": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "When is the best time of year to propagate my plants?"
+              },
+              "blocks": {
+                "text_prop_timing": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>The best time to propagate succulents is during their active growing season, which typically falls in the spring and early summer.</p><p>During this period, succulents are naturally inclined to grow and establish new roots, making propagation more successful. Avoid propagating during the colder months, as the plants enter a dormant phase and may struggle to develop properly.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_prop_timing"]
+            },
+            "prop_method": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Which is the best method to use?"
+              },
+              "blocks": {
+                "text_prop_method": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>The best method for propagating succulents depends on the plant type, but generally, leaf and stem cuttings are the most effective.</p><p>For rosette-forming succulents like Echeveria, leaf cuttings work well, while for branching types like Crassula and Aeonium, stem cuttings are ideal. Both methods involve cutting a healthy part of the plant, allowing it to callous over for a few days, and then placing it on well-draining soil to encourage root growth.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_prop_method"]
+            },
+            "prop_seeds": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I grow succulents from seeds?"
+              },
+              "blocks": {
+                "text_prop_seeds": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Growing succulents from seeds requires patience, as it can be a slow process. Start by filling a shallow tray with a well-draining succulent or cactus mix. Lightly sprinkle the seeds on the surface and mist them with water to ensure they are moist but not waterlogged. Cover the tray with a clear lid or plastic wrap to create a humid environment. Place it in a warm, bright area but out of direct sunlight, preferably in a controlled environment between 18-22°C. Germination can take several weeks to months, so consistent care and monitoring are key.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_prop_seeds"]
+            },
+            "prop_leaf_cuttings": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Do leaf cuttings actually work?"
+              },
+              "blocks": {
+                "text_prop_leaf": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes, leaf cuttings are a reliable method for propagating many succulents.</p><p>To propagate using leaf cuttings, gently twist a healthy leaf off the stem, ensuring that the entire leaf comes off cleanly. Allow the leaf to dry for a few days until the cut end callouses. Place the leaf on top of the soil, and it will begin to sprout roots and eventually a new plantlet at the base. Be patient, as this process can take several weeks - months.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_prop_leaf"]
+            },
+            "prop_soil": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What is the best soil for new cuttings?"
+              },
+              "blocks": {
+                "text_prop_soil": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>The best soil for new succulent cuttings is a well-draining mix designed for cacti and succulents.</p><p>We would recommend upping the compost to drainage mix to 50/50 so it is extremely free draining. This type of soil prevents water retention, reducing the risk of rot, which is crucial for new cuttings that are prone to overwatering and rot. You can also create your own mix by combining regular potting soil with coarse sand or perlite to enhance drainage. The well-draining soil ensures the cuttings establish roots without sitting in overly moist conditions.</p><p>Once the plants are established, you can consider repotting into a more fertile soil to speed up growing rates.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  }
+                }
+              },
+              "block_order": ["text_prop_soil"]
+            }
+          },
+          "block_order": [
+            "prop_timing",
+            "prop_method",
+            "prop_seeds",
+            "prop_leaf_cuttings",
+            "prop_soil"
+          ]
+        }
+      },
+      "block_order": [
+        "prop_heading",
+        "prop_accordion"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_newsletter": {
+      "type": "section",
+      "blocks": {
+        "newsletter_group": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "gap": 20,
+            "width": "fill",
+            "height": "fit",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "all",
+            "border_width": 1,
+            "border_opacity": 20,
+            "border_radius": 8,
+            "padding-block-start": 32,
+            "padding-block-end": 32,
+            "padding-inline-start": 32,
+            "padding-inline-end": 32
+          },
+          "blocks": {
+            "newsletter_heading": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Unsubscribe from Surreal Top Tips</h3>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "newsletter_text": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Complete the form to stop receiving Surreal Top Tips emails.</p><p>You will still receive marketing and stock emails. You can unsubscribe from our complete newsletter in the footer of any email. View our privacy policy and terms of service for more info.</p><p>You can resubscribe to Surreal Top Tips at anytime by resubscribing to our regular newsletter.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "newsletter_heading",
+            "newsletter_text"
+          ]
+        }
+      },
+      "block_order": [
+        "newsletter_group"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "gap": 32,
+        "section_width": "page-width",
         "color_scheme": "",
         "padding-block-start": 40,
         "padding-block-end": 80
@@ -57,6 +1174,11 @@
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_beginner_advice",
+    "section_winter_care",
+    "section_pest_control",
+    "section_propagation",
+    "section_newsletter"
   ]
 }
