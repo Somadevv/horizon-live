@@ -1742,6 +1742,76 @@
         "padding-block-end": 40
       }
     },
+    "quiz_Bfm66U": {
+      "type": "quiz",
+      "blocks": {
+        "question_TiAyaB": {
+          "type": "question",
+          "settings": {
+            "question_text": "What's the main threat to succulents in UK winter?",
+            "option_a": "❄️ Cold temperatures",
+            "option_b": "💧 Wet compost combined with cold",
+            "option_c": "🌙 Lack of sunlight",
+            "correct_answer": "b"
+          }
+        },
+        "question_AtrXQz": {
+          "type": "question",
+          "settings": {
+            "question_text": "Most hardy succulents can survive down to:",
+            "option_a": "🌡️ 0°C (freezing)",
+            "option_b": "🌡️ -5°C to -10°C",
+            "option_c": "🌡️ -15°C (extreme cold)",
+            "correct_answer": "b"
+          }
+        },
+        "question_QxnX3n": {
+          "type": "question",
+          "settings": {
+            "question_text": "How should you water succulents in winter?",
+            "option_a": "💦 Same as summer",
+            "option_b": "🚫 Stop watering completely",
+            "option_c": "💧 Sparingly, only when soil is dry",
+            "correct_answer": "c"
+          }
+        },
+        "question_EWbbKR": {
+          "type": "question",
+          "settings": {
+            "question_text": "What makes compost 'winter-ready'?",
+            "option_a": "🌱 High nutrient content",
+            "option_b": "💨 Excellent drainage with grit/perlite",
+            "option_c": "🌿 Lots of organic matter",
+            "correct_answer": "b"
+          }
+        },
+        "question_mXV4YK": {
+          "type": "question",
+          "settings": {
+            "question_text": "Horticultural fleece protects succulents by:",
+            "option_a": "🌡️ Raising temperature by 10-15°C",
+            "option_b": "☔ Only keeping rain off",
+            "option_c": "🛡️ Creating a warm micro climate + rain protection",
+            "correct_answer": "c"
+          }
+        }
+      },
+      "block_order": [
+        "question_TiAyaB",
+        "question_AtrXQz",
+        "question_QxnX3n",
+        "question_EWbbKR",
+        "question_mXV4YK"
+      ],
+      "name": "Winter Quiz",
+      "settings": {
+        "quiz_title": "Test Your Winter Succulent Knowledge",
+        "quiz_subtitle": "Answer 5 questions. Get 3+ correct to unlock a 5% discount code!",
+        "background_color": "#f9fafb",
+        "passing_score": 3,
+        "discount_code": "WINTER5"
+      }
+    },
     "section_thank_you": {
       "type": "section",
       "blocks": {
@@ -1980,6 +2050,7 @@
     "featured_product_fleece",
     "section_tip6_warning",
     "section_bottom_line",
+    "quiz_Bfm66U",
     "section_thank_you",
     "main"
   ]
