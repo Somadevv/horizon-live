@@ -881,7 +881,7 @@
           "settings": {
             "image": "shopify://shop_images/8CB207FA-8945-4FFC-88DF-148896D045E5.jpg",
             "link": "",
-            "image_ratio": "adapt",
+            "image_ratio": "landscape",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
