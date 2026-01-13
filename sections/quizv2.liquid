@@ -93,50 +93,6 @@
             color: white;
             border-color: #374151;
           }
-          .feedback-message {
-            margin-top: 16px;
-            padding: 16px;
-            border-radius: 8px;
-            display: none;
-            font-weight: 500;
-          }
-          .feedback-message.show {
-            display: block;
-            animation: fadeIn 0.3s;
-          }
-          @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-          }
-          .feedback-message.correct {
-            background: #d1fae5;
-            color: #065f46;
-            border: 2px solid #22c55e;
-          }
-          .feedback-message.incorrect {
-            background: #fee2e2;
-            color: #991b1b;
-            border: 2px solid #ef4444;
-          }
-          .quiz-nav-btn {
-            background: #374151;
-            color: white;
-            padding: 14px 32px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 24px;
-            transition: background 0.2s;
-          }
-          .quiz-nav-btn:hover:not(:disabled) {
-            background: #1f2937;
-          }
-          .quiz-nav-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-          }
           .quiz-summary {
             display: none;
             padding: 32px;
@@ -248,10 +204,6 @@
                   <input type="radio" name="q{{ forloop.index }}" value="c">
                   <span>{{ block.settings.option_c }}</span>
                 </label>
-
-                <div class="feedback-message" id="feedback-{{ forloop.index }}"></div>
-                
-                <button class="quiz-nav-btn" id="next-btn-{{ forloop.index }}" disabled>Next Question</button>
               </div>
             {% endif %}
           {% endfor %}
@@ -322,8 +274,6 @@
               const input = this.querySelector('input');
               const selectedValue = input.value;
               const correctAnswer = questionDiv.dataset.correct;
-              const nextBtn = document.getElementById(`next-btn-${questionNum}`);
-              const feedback = document.getElementById(`feedback-${questionNum}`);
               
               // Remove selected from siblings
               questionDiv.querySelectorAll('.quiz-option').forEach(opt => {
@@ -344,35 +294,18 @@
                 correctText: questionData[questionNum - 1].options[correctAnswer]
               };
 
-              // Show feedback
-              feedback.classList.add('show');
-              if (selectedValue === correctAnswer) {
-                feedback.className = 'feedback-message show correct';
-                feedback.innerHTML = '✅ Correct! Great job!';
-              } else {
-                feedback.className = 'feedback-message show incorrect';
-                feedback.innerHTML = `❌ Not quite. The correct answer is: ${questionData[questionNum - 1].options[correctAnswer]}`;
-              }
-
-              // Enable next button
-              nextBtn.disabled = false;
-
               // Update progress dot
               document.getElementById(`dot-${questionNum}`).classList.add('completed');
-            });
-          });
 
-          // Handle next button clicks
-          document.querySelectorAll('[id^="next-btn-"]').forEach((btn, index) => {
-            btn.addEventListener('click', function() {
-              const questionNum = index + 1;
-              
-              if (questionNum < totalQuestions) {
-                currentQuestion = questionNum + 1;
-                showQuestion(currentQuestion);
-              } else {
-                showSummary();
-              }
+              // Auto-advance after brief delay
+              setTimeout(() => {
+                if (parseInt(questionNum) < totalQuestions) {
+                  currentQuestion = parseInt(questionNum) + 1;
+                  showQuestion(currentQuestion);
+                } else {
+                  showSummary();
+                }
+              }, 300);
             });
           });
 
