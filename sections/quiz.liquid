@@ -1,0 +1,381 @@
+{% comment %}
+  Winter Succulent Quiz Section
+  Add this as a custom section in your theme
+{% endcomment %}
+
+<div class="winter-quiz-section" style="padding: 60px 0;">
+  <div class="page-width">
+    <div class="quiz-container" style="max-width: 700px; margin: 0 auto; padding: 40px; background: {{ section.settings.background_color }}; border-radius: 16px; border: 2px solid rgba(0,0,0,0.1);">
+      
+      <h2 style="text-align: center; margin-bottom: 12px; font-size: 1.8rem;">🧠 {{ section.settings.quiz_title }}</h2>
+      <p style="text-align: center; margin-bottom: 32px; font-size: 1rem;">{{ section.settings.quiz_subtitle }}</p>
+
+      <div id="winter-quiz">
+        <style>
+          .quiz-question {
+            background: #f9fafb;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #e5e7eb;
+          }
+          .quiz-question h3 {
+            margin: 0 0 16px 0;
+            font-size: 1.1rem;
+          }
+          .quiz-option {
+            display: block;
+            padding: 14px 18px;
+            margin: 10px 0;
+            background: white;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1rem;
+          }
+          .quiz-option:hover {
+            border-color: #374151;
+            transform: translateX(4px);
+          }
+          .quiz-option input {
+            margin-right: 12px;
+            cursor: pointer;
+          }
+          .quiz-option.selected {
+            background: #374151;
+            color: white;
+            border-color: #374151;
+          }
+          .quiz-option.correct {
+            background: #22c55e;
+            color: white;
+            border-color: #22c55e;
+          }
+          .quiz-option.incorrect {
+            background: #ef4444;
+            color: white;
+            border-color: #ef4444;
+          }
+          .quiz-submit-btn {
+            background: #374151;
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 24px;
+            transition: background 0.2s;
+          }
+          .quiz-submit-btn:hover:not(:disabled) {
+            background: #1f2937;
+          }
+          .quiz-submit-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+          }
+          .quiz-result {
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            margin-top: 32px;
+            border: 3px solid;
+            display: none;
+          }
+          .quiz-result.show {
+            display: block;
+          }
+          .quiz-result.pass {
+            border-color: #22c55e;
+            background: #f0fdf4;
+          }
+          .quiz-result.fail {
+            border-color: #f59e0b;
+            background: #fffbeb;
+          }
+          .discount-code {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #22c55e;
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            letter-spacing: 4px;
+            border: 2px dashed #22c55e;
+          }
+        </style>
+
+        <div id="quiz-questions">
+          {% for block in section.blocks %}
+            {% if block.type == 'question' %}
+              <div class="quiz-question" data-question="{{ forloop.index }}">
+                <h3>{{ forloop.index }}. {{ block.settings.question_text }}</h3>
+                
+                <label class="quiz-option">
+                  <input type="radio" name="q{{ forloop.index }}" value="a">
+                  <span>{{ block.settings.option_a }}</span>
+                </label>
+                
+                <label class="quiz-option">
+                  <input type="radio" name="q{{ forloop.index }}" value="b">
+                  <span>{{ block.settings.option_b }}</span>
+                </label>
+                
+                <label class="quiz-option">
+                  <input type="radio" name="q{{ forloop.index }}" value="c">
+                  <span>{{ block.settings.option_c }}</span>
+                </label>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <button class="quiz-submit-btn" id="submit-quiz">Submit Quiz</button>
+        
+        <div id="quiz-result" class="quiz-result"></div>
+      </div>
+
+      <script>
+        (function() {
+          // Correct answers from section settings
+          const answers = {
+            {% for block in section.blocks %}
+              {% if block.type == 'question' %}
+                q{{ forloop.index }}: '{{ block.settings.correct_answer }}',
+              {% endif %}
+            {% endfor %}
+          };
+
+          const passingScore = {{ section.settings.passing_score }};
+          const discountCode = '{{ section.settings.discount_code }}';
+
+          // Handle option selection
+          document.querySelectorAll('.quiz-option').forEach(option => {
+            option.addEventListener('click', function() {
+              const input = this.querySelector('input');
+              const questionDiv = this.closest('.quiz-question');
+              
+              // Remove selected from siblings
+              questionDiv.querySelectorAll('.quiz-option').forEach(opt => {
+                opt.classList.remove('selected');
+              });
+              
+              // Add selected to clicked
+              this.classList.add('selected');
+              input.checked = true;
+            });
+          });
+
+          // Handle submission
+          document.getElementById('submit-quiz').addEventListener('click', function() {
+            let score = 0;
+            let answered = 0;
+            const totalQuestions = Object.keys(answers).length;
+
+            // Check answers
+            for (let q in answers) {
+              const selected = document.querySelector(`input[name="${q}"]:checked`);
+              if (selected) {
+                answered++;
+                const optionLabel = selected.closest('.quiz-option');
+                
+                if (selected.value === answers[q]) {
+                  score++;
+                  optionLabel.classList.add('correct');
+                } else {
+                  optionLabel.classList.add('incorrect');
+                  // Show correct answer
+                  const correctOption = document.querySelector(`input[name="${q}"][value="${answers[q]}"]`).closest('.quiz-option');
+                  correctOption.classList.add('correct');
+                }
+              }
+            }
+
+            if (answered < totalQuestions) {
+              alert('Please answer all questions before submitting!');
+              return;
+            }
+
+            this.disabled = true;
+
+            // Show results
+            const resultDiv = document.getElementById('quiz-result');
+            resultDiv.classList.add('show');
+
+            if (score >= passingScore) {
+              resultDiv.classList.add('pass');
+              resultDiv.innerHTML = `
+                <h3 style="color: #22c55e; margin: 0 0 16px 0; font-size: 1.8rem;">🎉 Congratulations!</h3>
+                <p style="font-size: 1.2rem; margin-bottom: 20px;">You scored ${score}/${totalQuestions}! You're a winter succulent expert!</p>
+                <p style="margin-bottom: 12px; font-size: 1.1rem;">Here's your ${score >= passingScore ? '5%' : ''} discount code:</p>
+                <div class="discount-code">${discountCode}</div>
+                <p style="font-size: 1rem; color: #666; margin-top: 16px;">Use this code at checkout to save on your order!</p>
+              `;
+            } else {
+              resultDiv.classList.add('fail');
+              resultDiv.innerHTML = `
+                <h3 style="color: #f59e0b; margin: 0 0 16px 0; font-size: 1.8rem;">📚 Keep Learning!</h3>
+                <p style="font-size: 1.2rem; margin-bottom: 20px;">You scored ${score}/${totalQuestions}.</p>
+                <p style="font-size: 1rem; color: #666;">Review the article above to learn more about winter succulent care, then try again!</p>
+              `;
+            }
+
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          });
+        })();
+      </script>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Winter Quiz",
+  "settings": [
+    {
+      "type": "text",
+      "id": "quiz_title",
+      "label": "Quiz Title",
+      "default": "Test Your Winter Succulent Knowledge"
+    },
+    {
+      "type": "text",
+      "id": "quiz_subtitle",
+      "label": "Quiz Subtitle",
+      "default": "Answer 5 questions. Get 3+ correct to unlock a 5% discount code!"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#f9fafb"
+    },
+    {
+      "type": "number",
+      "id": "passing_score",
+      "label": "Passing Score (out of 5)",
+      "default": 3
+    },
+    {
+      "type": "text",
+      "id": "discount_code",
+      "label": "Discount Code",
+      "default": "WINTER5"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Quiz Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question_text",
+          "label": "Question",
+          "default": "Question text here"
+        },
+        {
+          "type": "text",
+          "id": "option_a",
+          "label": "Option A",
+          "default": "First answer"
+        },
+        {
+          "type": "text",
+          "id": "option_b",
+          "label": "Option B",
+          "default": "Second answer"
+        },
+        {
+          "type": "text",
+          "id": "option_c",
+          "label": "Option C",
+          "default": "Third answer"
+        },
+        {
+          "type": "select",
+          "id": "correct_answer",
+          "label": "Correct Answer",
+          "options": [
+            {
+              "value": "a",
+              "label": "Option A"
+            },
+            {
+              "value": "b",
+              "label": "Option B"
+            },
+            {
+              "value": "c",
+              "label": "Option C"
+            }
+          ],
+          "default": "a"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Winter Quiz",
+      "blocks": [
+        {
+          "type": "question",
+          "settings": {
+            "question_text": "What's the main threat to succulents in UK winter?",
+            "option_a": "❄️ Cold temperatures",
+            "option_b": "💧 Wet compost combined with cold",
+            "option_c": "🌙 Lack of sunlight",
+            "correct_answer": "b"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question_text": "Most hardy succulents can survive down to:",
+            "option_a": "🌡️ 0°C (freezing)",
+            "option_b": "🌡️ -5°C to -10°C",
+            "option_c": "🌡️ -15°C (extreme cold)",
+            "correct_answer": "b"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question_text": "How should you water succulents in winter?",
+            "option_a": "💦 Same as summer",
+            "option_b": "🚫 Stop watering completely",
+            "option_c": "💧 Sparingly, only when soil is dry",
+            "correct_answer": "c"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question_text": "What makes compost 'winter-ready'?",
+            "option_a": "🌱 High nutrient content",
+            "option_b": "💨 Excellent drainage with grit/perlite",
+            "option_c": "🌿 Lots of organic matter",
+            "correct_answer": "b"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question_text": "Horticultural fleece protects succulents by:",
+            "option_a": "🌡️ Raising temperature by 10-15°C",
+            "option_b": "☔ Only keeping rain off",
+            "option_c": "🛡️ Adding 4-6°C warmth + rain protection",
+            "correct_answer": "c"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
