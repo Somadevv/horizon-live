@@ -165,7 +165,7 @@
             "text_TkNtMY": {
               "type": "text",
               "settings": {
-                "text": "<p>The <a href=\"https://surrealsucculents.co.uk/products/aeonium-tabuliforme/\" title=\"Aeonium tabuliforme\">Aeonium tabuliforme</a> is one of the moststunning species of Aeonium, often stealing the show with its beautiful fibonacci spiral and compact, nearly flat form. While this succulent thrives outdoors, it is sensitive to cold and needs protection from frost and temperatures below 4°C.</p>",
+                "text": "<p>The <a href=\"https://surrealsucculents.co.uk/products/aeonium-tabuliforme/\" title=\"Aeonium tabuliforme\">Aeonium tabuliforme</a>\u00a0is one of the moststunning\u00a0species of Aeonium, often stealing the show with its beautiful fibonacci spiral\u00a0and compact, nearly flat form. While this succulent thrives outdoors, it is sensitive\u00a0to cold and needs protection\u00a0from frost and temperatures below 4\u00b0C.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -245,7 +245,7 @@
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0,
+            "border_radius": 24,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -253,7 +253,7 @@
           },
           "blocks": {}
         },
-        "group_hWWwzi": {
+        "group_a834iV": {
           "type": "group",
           "settings": {
             "content_direction": "column",
@@ -264,7 +264,7 @@
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
-            "width": "fill",
+            "width": "custom",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
@@ -292,16 +292,17 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_jxrYVn": {
+            "text_HVAyzk": {
               "type": "text",
+              "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Light Requirements</h2>",
+                "text": "<h2>Planting</h2>",
                 "width": "fit-content",
-                "max_width": "none",
+                "max_width": "normal",
                 "max_width_tablet": "inherit",
                 "max_width_desktop": "inherit",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -320,10 +321,10 @@
               },
               "blocks": {}
             },
-            "text_n4qEkE": {
+            "text_jAqjRL": {
               "type": "text",
               "settings": {
-                "text": "<p>This plant thrives in bright, indirect light outdoors. While it can tolerate some direct morning sun, prolonged exposure to harsh afternoon sun can scorch its delicate leaves. During the growing season (spring and autumn), provide plenty of light to maintain its compact shape. In hot climates, a little dappled shade during peak summer heat is ideal.</p>",
+                "text": "<p>For best results, plant it at a slight angle\u00a0to allow water to drain off\u00a0from the crown (centre). It can even be planted vertically\u00a0in walls or rockeries, mimicking its natural habitat\u00a0where it grows on cliff faces. This makes it ideal\u00a0for vertical gardens.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -350,16 +351,16 @@
             }
           },
           "block_order": [
-            "text_jxrYVn",
-            "text_n4qEkE"
+            "text_HVAyzk",
+            "text_jAqjRL"
           ]
         }
       },
       "block_order": [
         "image_zRB3De",
-        "group_hWWwzi"
+        "group_a834iV"
       ],
-      "name": "Light Requirements",
+      "name": "t:names.image_with_text",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
@@ -391,7 +392,7 @@
     "section_ppWayN": {
       "type": "section",
       "blocks": {
-        "group_FJmRGW": {
+        "group_EHGDgi": {
           "type": "group",
           "settings": {
             "content_direction": "column",
@@ -402,7 +403,7 @@
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
-            "width": "fill",
+            "width": "custom",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
@@ -430,16 +431,17 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_qRgcaw": {
+            "text_pTRUhV": {
               "type": "text",
+              "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Watering Guidelines</h2>",
+                "text": "<h2>Soil mix and Watering</h2>",
                 "width": "fit-content",
-                "max_width": "none",
+                "max_width": "normal",
                 "max_width_tablet": "inherit",
                 "max_width_desktop": "inherit",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -458,10 +460,10 @@
               },
               "blocks": {}
             },
-            "text_x7gFQY": {
+            "text_LhWdxW": {
               "type": "text",
               "settings": {
-                "text": "<p>Like most Aeoniums, the tabuliforme is winter-growing and semi-dormant in summer. Water moderately during the cooler months, allowing the soil to dry out between waterings. In summer, reduce watering significantly to mimic its natural dormancy. Overwatering, especially during dormancy, can lead to root rot. Always ensure your pot has excellent drainage.</p>",
+                "text": "<p>The Aeonium tabuliforme\u00a0is an excellent feature plant. It tolerates some shade but can also thrive\u00a0in full sun if planted at an angle. It\u2019s equally suited to being an indoor houseplant. Use a well-draining\u00a0soil mix, and feed it during spring to support growth\u00a0before it slows down in winter. Reducing\u00a0feeding in the lead-up to winter will help create a tougher\u00a0plant, better equipped to handle cold spells.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -488,38 +490,15 @@
             }
           },
           "block_order": [
-            "text_qRgcaw",
-            "text_x7gFQY"
+            "text_pTRUhV",
+            "text_LhWdxW"
           ]
-        },
-        "image_KTRJzU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/F44E54ED-6DF7-4EE1-AD3A-CCA4ADFB7A1D.jpg",
-            "link": "",
-            "image_ratio": "landscape",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "group_FJmRGW",
-        "image_KTRJzU"
+        "group_EHGDgi"
       ],
-      "name": "Watering Guidelines",
+      "name": "Text",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
@@ -551,10 +530,10 @@
     "section_pYMhwt": {
       "type": "section",
       "blocks": {
-        "image_FFhUNz": {
+        "image_T6LDa7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/6FD1B14A-1B49-46AC-8831-8C70BA856C50.jpg",
+            "image": "shopify://shop_images/Aeonium-Tabuliforme-Straight.jpg",
             "link": "",
             "image_ratio": "landscape",
             "width": "fill",
@@ -565,7 +544,7 @@
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0,
+            "border_radius": 24,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -573,7 +552,7 @@
           },
           "blocks": {}
         },
-        "group_qXc6hX": {
+        "group_rfcdBj": {
           "type": "group",
           "settings": {
             "content_direction": "column",
@@ -584,7 +563,7 @@
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
-            "width": "fill",
+            "width": "custom",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
@@ -612,16 +591,17 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_cYrq7j": {
+            "text_pQxrTi": {
               "type": "text",
+              "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Soil and Potting</h2>",
+                "text": "<h2>Quick Care Tips</h2>",
                 "width": "fit-content",
-                "max_width": "none",
+                "max_width": "normal",
                 "max_width_tablet": "inherit",
                 "max_width_desktop": "inherit",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -640,10 +620,10 @@
               },
               "blocks": {}
             },
-            "text_bPhPWp": {
+            "text_CXFLKA": {
               "type": "text",
               "settings": {
-                "text": "<p>A <a href=\"https://srealsucculents.myshopify.com/product/succulent-and-cacti-compost/\" title=\"Succulent and Cacti Compost - 5L\">well-draining soil mix</a> is crucial. Use a blend designed for succulents and cacti, or create your own with peat-free compost, perlite, and grit. Choose a pot with drainage holes to prevent waterlogging. Shallow pots work well, as Aeonium tabuliforme has a relatively shallow root system.</p>",
+                "text": "<ul><li>Use a\u00a0free-draining\u00a0soil mix.</li><li>Feed\u00a0only in spring.</li><li>Plant at an\u00a0angle\u00a0for better water drainage.</li><li>Suitable as a houseplant, tolerating\u00a0shade.</li><li>Protect\u00a0from frost and freezing temperatures.</li><li>Does well in pots and can tolerate being\u00a0pot-bound.</li></ul>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -670,16 +650,16 @@
             }
           },
           "block_order": [
-            "text_cYrq7j",
-            "text_bPhPWp"
+            "text_pQxrTi",
+            "text_CXFLKA"
           ]
         }
       },
       "block_order": [
-        "image_FFhUNz",
-        "group_qXc6hX"
+        "image_T6LDa7",
+        "group_rfcdBj"
       ],
-      "name": "Soil and Potting",
+      "name": "t:names.image_with_text",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
@@ -690,7 +670,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 32,
         "section_width": "page-width",
-        "section_height": "",
+        "section_height": "small",
         "section_height_custom": 50,
         "color_scheme": "",
         "background_media": "none",
@@ -752,14 +732,15 @@
           "blocks": {
             "text_jYq4Wg": {
               "type": "text",
+              "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Thank you for reading</h2>",
+                "text": "<p>Thank you for reading!</p>",
                 "width": "fit-content",
-                "max_width": "none",
+                "max_width": "normal",
                 "max_width_tablet": "inherit",
                 "max_width_desktop": "inherit",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "h2",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -781,7 +762,7 @@
             "text_k9dPNg": {
               "type": "text",
               "settings": {
-                "text": "<p>We hope this helped you keep your Aeonium tabuliforme healthy and thriving! If you're looking to add this unique succulent to your collection, we have <a href=\"https://srealsucculents.myshopify.com/product/aeonium-tabuliforme/\" title=\"Aeonium tabuliforme\">Aeonium tabuliforme</a> in stock at Surreal Succulents.</p>",
+                "text": "<p>If you have any other questions on care advice, please drop us an email <a href=\"mailto:info@surrealsucculents.co.uk\" title=\"mailto:info@surrealsucculents.co.uk\">(info@surrealsucculents.co.uk)</a> and we will be happy to answer this for you.</p><p>For alternate care advice, please find our other care guides in the <a href=\"https://surrealsucculents.co.uk/blogs/care-guides/\" target=\"_blank\" title=\"https://surrealsucculents.co.uk/blogs/care-guides/\">Plant Care & Advice</a> section.</p><p>We are adding new advice all of the time, so consider subscribing to our mailing list to make sure you do not miss out on any crucial information on how to care for your succulents. This can be done at the bottom of the page.</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
