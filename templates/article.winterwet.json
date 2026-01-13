@@ -76,7 +76,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/20220524_193130551_iOS.heic",
+        "image_1": "shopify://shop_images/20250801_095123185_iOS.heic",
         "media_type_2": "image",
         "hide_second_media_mobile": false,
         "link": "",
@@ -881,7 +881,7 @@
           "settings": {
             "image": "shopify://shop_images/8CB207FA-8945-4FFC-88DF-148896D045E5.jpg",
             "link": "",
-            "image_ratio": "adapt",
+            "image_ratio": "landscape",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
