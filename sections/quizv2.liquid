@@ -3,9 +3,9 @@
   Add this as a custom section in your theme
 {% endcomment %}
 
-<div class="winter-quiz-section" style="padding: 60px 0;">
-  <div class="page-width">
-    <div class="quiz-container" style="max-width: 700px; margin: 0 auto; padding: 40px; background: {{ section.settings.background_color }}; border-radius: 16px; border: 2px solid rgba(0,0,0,0.1);">
+<div class="winter-quiz-section" style="padding: 60px 20px;">
+  <div style="max-width: 1400px; margin: 0 auto; width: 100%;">
+    <div class="quiz-container" style="max-width: 100%; margin: 0 auto; padding: 40px; background: {{ section.settings.background_color }}; border-radius: 16px; border: 2px solid rgba(0,0,0,0.1);">
       
       <h2 style="text-align: center; margin-bottom: 12px; font-size: 1.8rem;">🧠 {{ section.settings.quiz_title }}</h2>
       <p style="text-align: center; margin-bottom: 32px; font-size: 1rem;">{{ section.settings.quiz_subtitle }}</p>
@@ -39,6 +39,8 @@
             border: 1px solid #e5e7eb;
             min-height: 300px;
             display: none;
+            max-width: 800px;
+            margin: 0 auto;
           }
           .quiz-question.active {
             display: block;
@@ -99,6 +101,8 @@
             background: white;
             border-radius: 12px;
             border: 2px solid #e5e7eb;
+            max-width: 1200px;
+            margin: 0 auto;
           }
           .quiz-summary.show {
             display: block;
@@ -176,6 +180,24 @@
           .result-banner h3 {
             margin: 0 0 8px 0;
             font-size: 1.8rem;
+          }
+          #recommended-products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+          }
+          @media (max-width: 768px) {
+            #recommended-products {
+              grid-template-columns: 1fr;
+              gap: 16px;
+            }
+          }
+          @media (min-width: 769px) and (max-width: 1024px) {
+            #recommended-products {
+              grid-template-columns: repeat(2, 1fr);
+            }
           }
         </style>
 
@@ -340,7 +362,7 @@
                 
                 <div style="margin: 40px 0;">
                   <h3 style="text-align: center; margin-bottom: 24px; font-size: 1.5rem;">🌵 Perfect Winter-Hardy Succulents</h3>
-                  <div id="recommended-products" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;"></div>
+                  <div id="recommended-products"></div>
                 </div>
               `;
             }
