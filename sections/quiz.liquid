@@ -167,6 +167,35 @@
             letter-spacing: 4px;
             border: 3px dashed #22c55e;
             text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+            user-select: none;
+          }
+          .discount-code:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+          }
+          .discount-code:active {
+            transform: scale(0.98);
+          }
+          .copy-tooltip {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #242833;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+          }
+          .copy-tooltip.show {
+            opacity: 1;
           }
           .result-banner {
             padding: 24px;
@@ -195,6 +224,10 @@
             }
             .quiz-summary {
               padding: 20px !important;
+            }
+            .discount-code {
+              font-size: 1.8rem;
+              letter-spacing: 2px;
             }
           }
         </style>
@@ -329,6 +362,29 @@
             });
           });
 
+          // Copy to clipboard function
+          function copyToClipboard(text) {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              return navigator.clipboard.writeText(text);
+            } else {
+              // Fallback for older browsers
+              const textArea = document.createElement('textarea');
+              textArea.value = text;
+              textArea.style.position = 'fixed';
+              textArea.style.left = '-999999px';
+              document.body.appendChild(textArea);
+              textArea.select();
+              try {
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                return Promise.resolve();
+              } catch (err) {
+                document.body.removeChild(textArea);
+                return Promise.reject(err);
+              }
+            }
+          }
+
           // Show summary
           function showSummary() {
             document.getElementById('quiz-questions').style.display = 'none';
@@ -354,8 +410,11 @@
               summaryHTML += `
                 <div style="text-align: center; margin-bottom: 32px;">
                   <p style="font-size: 1.1rem; margin-bottom: 12px;">🎁 Here's your reward:</p>
-                  <div class="discount-code">${discountCode}</div>
-                  <p style="color: #666;">Use this code at checkout to save 5% on your order!</p>
+                  <div class="discount-code" id="discount-code" title="Click to copy">
+                    <span class="copy-tooltip" id="copy-tooltip">Copied! ✓</span>
+                    ${discountCode}
+                  </div>
+                  <p style="color: #666;">Click the code to copy • Use at checkout to save 5%</p>
                 </div>
                 
                 <div style="text-align: center; margin: 40px 0;">
@@ -392,6 +451,26 @@
             summaryDiv.innerHTML = summaryHTML;
             summaryDiv.classList.add('show');
             summaryDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // Add click handler to discount code if passed
+            if (passed) {
+              const discountCodeElement = document.getElementById('discount-code');
+              const tooltip = document.getElementById('copy-tooltip');
+              
+              discountCodeElement.addEventListener('click', function() {
+                copyToClipboard(discountCode)
+                  .then(() => {
+                    tooltip.classList.add('show');
+                    setTimeout(() => {
+                      tooltip.classList.remove('show');
+                    }, 2000);
+                  })
+                  .catch(err => {
+                    console.error('Failed to copy:', err);
+                    alert('Code: ' + discountCode);
+                  });
+              });
+            }
           }
 
           // Initialize
