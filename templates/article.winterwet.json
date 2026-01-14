@@ -148,7 +148,7 @@
             "text_intro": {
               "type": "text",
               "settings": {
-                "text": "<p>Let's bust a myth right now: winter doesn't kill succulents. In fact, most of your desert darlings can handle a surprising amount of cold. What they absolutely cannot tolerate? Sitting in soggy, waterlogged compost whilst the temperature drops. That's the kiss of death.</p><p>Here in the UK, our winters aren't usually brutal cold snaps—they're damp, drizzly marathons of grey skies and persistent moisture. And that's precisely what makes winter tricky for succulent care. It's not the chill; it's the <em>wet</em>.</p>",
+                "text": "<p>Let's bust a myth right now: winter doesn't kill succulents. In fact, most of your desert darlings can handle a surprising amount of cold. What they absolutely cannot tolerate? Sitting in soggy, waterlogged compost whilst the temperature drops. That's the kiss of death.</p><p>Here in the UK, our winters aren't usually brutal cold snaps—they're damp, drizzly marathons of grey skies and persistent moisture. And that's precisely what makes winter tricky for succulent care. It's not the chill; it's the <em>wet</em>.</p><p>Read with intent; there is a qui</p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "max_width_tablet": "inherit",
@@ -1805,8 +1805,8 @@
       ],
       "name": "Winter Quiz",
       "settings": {
-        "quiz_title": "Test Your Winter Succulent Knowledge",
-        "quiz_subtitle": "Answer 5 questions. Get 3+ correct to unlock a 5% discount code!",
+        "quiz_title": "Succulent Winter Care Quiz",
+        "quiz_subtitle": "Answer 5 questions. Get 3+ correct to unlock a discount code!",
         "background_color": "#f9fafb",
         "passing_score": 3,
         "discount_code": "WINTER5"

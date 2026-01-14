@@ -356,12 +356,6 @@
                     <span class="answer-label">Your answer:</span>
                     <span style="color: ${answer.isCorrect ? '#22c55e' : '#ef4444'};">${answer.selectedText}</span>
                   </div>
-                  ${!answer.isCorrect ? `
-                    <div class="summary-answer">
-                      <span class="answer-label">Correct answer:</span>
-                      <span style="color: #22c55e;">${answer.correctText}</span>
-                    </div>
-                  ` : ''}
                 </div>
               `;
             }
