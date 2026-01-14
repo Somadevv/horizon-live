@@ -1807,7 +1807,7 @@
       "settings": {
         "quiz_title": "Succulent Winter Care Quiz",
         "quiz_subtitle": "Answer 5 questions. Get 3+ correct to unlock a discount code!",
-        "background_color": "#f9fafb",
+        "background_color": "#eef1ea",
         "passing_score": 3,
         "discount_code": "WINTER5"
       }
