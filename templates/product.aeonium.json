@@ -232,13 +232,6 @@
               "type": "shopify://apps/love-loyalty-program/blocks/product/8e46a2a8-82de-4569-80eb-5c6a231931d5",
               "settings": {}
             },
-            "kite_discount_free_gift_app_block_consolidated_progress_bar_8JhFYc": {
-              "type": "shopify://apps/kite-discount-free-gift/blocks/app-block-consolidatedProgressBar/2c7302c4-455d-4078-a829-48563ba26089",
-              "settings": {
-                "blockId": "block-id",
-                "sideCartEnabled": false
-              }
-            },
             "group_3cBQjQ": {
               "type": "group",
               "name": "t:names.group",
@@ -834,7 +827,6 @@
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
             "love_loyalty_program_product_Dk9Xfc",
-            "kite_discount_free_gift_app_block_consolidated_progress_bar_8JhFYc",
             "group_3cBQjQ"
           ]
         }
@@ -925,7 +917,7 @@
         "desc_difficulty": "Indicates how easy or challenging this plant is to grow and maintain.",
         "desc_growth_form": "Describes the natural shape and growth habit of the plant.",
         "desc_growth_rate": "How fast the plant grows under ideal conditions.",
-        "desc_min_temp": "The lowest temperature this plant can tolerate without damage.",
+        "desc_min_temp": "The lowest temperature this plant can tolerate.",
         "desc_max_size": "The typical maximum dimensions this plant can reach when mature.",
         "desc_colour": "The predominant colours displayed by this plant.",
         "desc_pbr": "This plant variety is protected by Plant Breeders' Rights.",
