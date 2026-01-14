@@ -1,0 +1,598 @@
+{% comment %}
+  Winter Succulent Quiz Section
+  Add this as a custom section in your theme
+{% endcomment %}
+
+<div class="winter-quiz-section" style="padding: 60px 0;">
+  <div class="page-width">
+    <div class="quiz-container" style="max-width: 700px; margin: 0 auto; padding: 40px; background: {{ section.settings.background_color }}; border-radius: 16px; border: 2px solid rgba(0,0,0,0.1);">
+      
+      <h2 style="text-align: center; margin-bottom: 12px; font-size: 1.8rem;">🧠 {{ section.settings.quiz_title }}</h2>
+      <p style="text-align: center; margin-bottom: 32px; font-size: 1rem;">{{ section.settings.quiz_subtitle }}</p>
+
+      <div id="winter-quiz">
+        <style>
+          .quiz-progress {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 24px;
+          }
+          .progress-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #d1d5db;
+            transition: all 0.3s;
+          }
+          .progress-dot.active {
+            background: #374151;
+            transform: scale(1.3);
+          }
+          .progress-dot.completed {
+            background: #22c55e;
+          }
+          .quiz-question {
+            background: #f9fafb;
+            padding: 32px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            min-height: 300px;
+            display: none;
+          }
+          .quiz-question.active {
+            display: block;
+            animation: slideIn 0.3s ease-out;
+          }
+          @keyframes slideIn {
+            from {
+              opacity: 0;
+              transform: translateX(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+          .quiz-question h3 {
+            margin: 0 0 24px 0;
+            font-size: 1.3rem;
+            color: #1f2937;
+          }
+          .question-number {
+            display: inline-block;
+            background: #374151;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+          }
+          .quiz-option {
+            display: block;
+            padding: 16px 20px;
+            margin: 12px 0;
+            background: white;
+            border: 2px solid #d1d5db;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1.05rem;
+          }
+          .quiz-option:hover {
+            border-color: #374151;
+            transform: translateX(6px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          }
+          .quiz-option input {
+            margin-right: 12px;
+            cursor: pointer;
+          }
+          .quiz-option.selected {
+            background: #374151;
+            color: white;
+            border-color: #374151;
+          }
+          .quiz-summary {
+            display: none;
+            padding: 32px;
+            background: white;
+            border-radius: 12px;
+            border: 2px solid #e5e7eb;
+          }
+          .quiz-summary.show {
+            display: block;
+            animation: slideIn 0.3s ease-out;
+          }
+          .summary-header {
+            text-align: center;
+            margin-bottom: 32px;
+          }
+          .summary-score {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #374151;
+            margin: 16px 0;
+          }
+          .summary-question {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 16px;
+            border-left: 4px solid;
+          }
+          .summary-question.correct {
+            border-left-color: #22c55e;
+          }
+          .summary-question.incorrect {
+            border-left-color: #ef4444;
+          }
+          .summary-question h4 {
+            margin: 0 0 12px 0;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
+          .summary-question p {
+            margin: 6px 0;
+            font-size: 0.95rem;
+          }
+          .summary-answer {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+            font-size: 0.9rem;
+          }
+          .answer-label {
+            font-weight: 600;
+          }
+          .discount-code {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #22c55e;
+            margin: 24px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            letter-spacing: 4px;
+            border: 3px dashed #22c55e;
+            text-align: center;
+          }
+          .result-banner {
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 32px;
+            text-align: center;
+          }
+          .result-banner.pass {
+            background: #d1fae5;
+            border: 3px solid #22c55e;
+          }
+          .result-banner.fail {
+            background: #fef3c7;
+            border: 3px solid #f59e0b;
+          }
+          .result-banner h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.8rem;
+          }
+        </style>
+
+        <!-- Progress Dots -->
+        <div class="quiz-progress" id="quiz-progress"></div>
+
+        <!-- Questions Container -->
+        <div id="quiz-questions">
+          {% for block in section.blocks %}
+            {% if block.type == 'question' %}
+              <div class="quiz-question" data-question="{{ forloop.index }}" data-correct="{{ block.settings.correct_answer }}">
+                <div class="question-number">Question {{ forloop.index }} of {{ section.blocks.size }}</div>
+                <h3>{{ block.settings.question_text }}</h3>
+                
+                <label class="quiz-option" data-value="a">
+                  <input type="radio" name="q{{ forloop.index }}" value="a">
+                  <span>{{ block.settings.option_a }}</span>
+                </label>
+                
+                <label class="quiz-option" data-value="b">
+                  <input type="radio" name="q{{ forloop.index }}" value="b">
+                  <span>{{ block.settings.option_b }}</span>
+                </label>
+                
+                <label class="quiz-option" data-value="c">
+                  <input type="radio" name="q{{ forloop.index }}" value="c">
+                  <span>{{ block.settings.option_c }}</span>
+                </label>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <!-- Summary Screen -->
+        <div id="quiz-summary" class="quiz-summary"></div>
+      </div>
+
+      <script>
+        (function() {
+          const totalQuestions = {{ section.blocks.size }};
+          const passingScore = {{ section.settings.passing_score }};
+          const discountCode = '{{ section.settings.discount_code }}';
+          
+          let currentQuestion = 1;
+          let userAnswers = {};
+          let questionData = [];
+
+          // Collect question data
+          document.querySelectorAll('.quiz-question').forEach((q, index) => {
+            questionData.push({
+              number: index + 1,
+              element: q,
+              correctAnswer: q.dataset.correct,
+              questionText: q.querySelector('h3').textContent,
+              options: {
+                a: q.querySelector('[data-value="a"] span').textContent,
+                b: q.querySelector('[data-value="b"] span').textContent,
+                c: q.querySelector('[data-value="c"] span').textContent
+              }
+            });
+          });
+
+          // Initialize progress dots
+          function initProgressDots() {
+            const progressContainer = document.getElementById('quiz-progress');
+            for (let i = 1; i <= totalQuestions; i++) {
+              const dot = document.createElement('div');
+              dot.className = 'progress-dot';
+              dot.id = `dot-${i}`;
+              progressContainer.appendChild(dot);
+            }
+            document.getElementById('dot-1').classList.add('active');
+          }
+
+          // Show specific question
+          function showQuestion(num) {
+            document.querySelectorAll('.quiz-question').forEach(q => {
+              q.classList.remove('active');
+            });
+            document.querySelector(`[data-question="${num}"]`).classList.add('active');
+            
+            // Update progress dots
+            document.querySelectorAll('.progress-dot').forEach((dot, index) => {
+              dot.classList.remove('active');
+              if (index + 1 === num) {
+                dot.classList.add('active');
+              }
+            });
+          }
+
+          // Handle option selection
+          document.querySelectorAll('.quiz-option').forEach(option => {
+            option.addEventListener('click', function() {
+              const questionDiv = this.closest('.quiz-question');
+              const questionNum = questionDiv.dataset.question;
+              const input = this.querySelector('input');
+              const selectedValue = input.value;
+              const correctAnswer = questionDiv.dataset.correct;
+              
+              // Remove selected from siblings
+              questionDiv.querySelectorAll('.quiz-option').forEach(opt => {
+                opt.classList.remove('selected');
+              });
+              
+              // Add selected to clicked
+              this.classList.add('selected');
+              input.checked = true;
+
+              // Store answer
+              userAnswers[questionNum] = {
+                selected: selectedValue,
+                correct: correctAnswer,
+                isCorrect: selectedValue === correctAnswer,
+                questionText: questionData[questionNum - 1].questionText,
+                selectedText: questionData[questionNum - 1].options[selectedValue],
+                correctText: questionData[questionNum - 1].options[correctAnswer]
+              };
+
+              // Update progress dot
+              document.getElementById(`dot-${questionNum}`).classList.add('completed');
+
+              // Auto-advance after brief delay
+              setTimeout(() => {
+                if (parseInt(questionNum) < totalQuestions) {
+                  currentQuestion = parseInt(questionNum) + 1;
+                  showQuestion(currentQuestion);
+                } else {
+                  showSummary();
+                }
+              }, 300);
+            });
+          });
+
+          // Show summary
+          function showSummary() {
+            document.getElementById('quiz-questions').style.display = 'none';
+            document.getElementById('quiz-progress').style.display = 'none';
+            
+            const score = Object.values(userAnswers).filter(a => a.isCorrect).length;
+            const passed = score >= passingScore;
+            const summaryDiv = document.getElementById('quiz-summary');
+
+            let summaryHTML = `
+              <div class="result-banner ${passed ? 'pass' : 'fail'}">
+                <h3>${passed ? '🎉 Congratulations!' : '📚 Keep Learning!'}</h3>
+                <div class="summary-score">${score} / ${totalQuestions}</div>
+                <p style="font-size: 1.1rem; margin: 0;">
+                  ${passed 
+                    ? "You're a winter succulent expert!" 
+                    : "Review the article and try again to unlock your discount!"}
+                </p>
+              </div>
+            `;
+
+            if (passed) {
+              summaryHTML += `
+                <div style="text-align: center; margin-bottom: 32px;">
+                  <p style="font-size: 1.1rem; margin-bottom: 12px;">🎁 Here's your reward:</p>
+                  <div class="discount-code">${discountCode}</div>
+                  <p style="color: #666;">Use this code at checkout to save 5% on your order!</p>
+                </div>
+                
+                <div style="margin: 40px 0;">
+                  <h3 style="text-align: center; margin-bottom: 24px; font-size: 1.5rem;">🌵 Perfect Winter-Hardy Succulents</h3>
+                  <div id="recommended-products" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;"></div>
+                </div>
+              `;
+            }
+
+            summaryHTML += '<h3 style="margin: 32px 0 20px 0; font-size: 1.4rem;">📊 Your Answers:</h3>';
+
+            // Add each question summary
+            for (let i = 1; i <= totalQuestions; i++) {
+              const answer = userAnswers[i];
+              summaryHTML += `
+                <div class="summary-question ${answer.isCorrect ? 'correct' : 'incorrect'}">
+                  <h4>
+                    ${answer.isCorrect ? '✅' : '❌'}
+                    <span>Question ${i}</span>
+                  </h4>
+                  <p style="font-weight: 600; color: #1f2937;">${answer.questionText}</p>
+                  <div class="summary-answer">
+                    <span class="answer-label">Your answer:</span>
+                    <span style="color: ${answer.isCorrect ? '#22c55e' : '#ef4444'};">${answer.selectedText}</span>
+                  </div>
+                </div>
+              `;
+            }
+
+            summaryDiv.innerHTML = summaryHTML;
+            summaryDiv.classList.add('show');
+            summaryDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            // Load recommended products if passed
+            if (passed) {
+              loadRecommendedProducts();
+            }
+          }
+
+          // Load and display recommended products
+          function loadRecommendedProducts() {
+            const productHandles = ['echeveria-elegans', 'aeonium-phoenix-flame', 'sedeveria-letizia'];
+            const productsContainer = document.getElementById('recommended-products');
+            
+            productHandles.forEach(handle => {
+              fetch(`/products/${handle}.js`)
+                .then(response => response.json())
+                .then(product => {
+                  const productCard = createProductCard(product);
+                  productsContainer.innerHTML += productCard;
+                })
+                .catch(err => console.log('Product not found:', handle));
+            });
+          }
+
+          // Create product card HTML
+          function createProductCard(product) {
+            const variant = product.variants[0];
+            const price = (variant.price / 100).toFixed(2);
+            const available = variant.available;
+            
+            return `
+              <div style="background: white; border-radius: 12px; padding: 16px; border: 2px solid #e5e7eb; text-align: center;">
+                <img src="${product.featured_image}" alt="${product.title}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 12px;">
+                <h4 style="margin: 0 0 8px 0; font-size: 1rem; color: #1f2937;">${product.title}</h4>
+                <p style="font-size: 1.2rem; font-weight: bold; color: #374151; margin: 8px 0;">£${price}</p>
+                <button 
+                  onclick="addToCart(${variant.id})" 
+                  style="width: 100%; padding: 12px; background: ${available ? '#374151' : '#9ca3af'}; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: ${available ? 'pointer' : 'not-allowed'}; transition: background 0.2s;"
+                  ${!available ? 'disabled' : ''}
+                  onmouseover="if(this.disabled === false) this.style.background='#1f2937'"
+                  onmouseout="if(this.disabled === false) this.style.background='#374151'"
+                >
+                  ${available ? '🛒 Add to Cart' : 'Out of Stock'}
+                </button>
+              </div>
+            `;
+          }
+
+          // Add to cart function
+          window.addToCart = function(variantId) {
+            fetch('/cart/add.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                id: variantId,
+                quantity: 1
+              })
+            })
+            .then(response => response.json())
+            .then(data => {
+              // Show success feedback
+              alert('✅ Added to cart! Your discount code is ready to use at checkout.');
+              // Optionally update cart count if you have one
+              if (typeof window.updateCartCount === 'function') {
+                window.updateCartCount();
+              }
+            })
+            .catch(err => {
+              alert('Sorry, there was an error adding to cart. Please try again.');
+            });
+          }
+
+          // Initialize
+          initProgressDots();
+          showQuestion(1);
+        })();
+      </script>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Winter Quiz",
+  "settings": [
+    {
+      "type": "text",
+      "id": "quiz_title",
+      "label": "Quiz Title",
+      "default": "Test Your Winter Succulent Knowledge"
+    },
+    {
+      "type": "text",
+      "id": "quiz_subtitle",
+      "label": "Quiz Subtitle",
+      "default": "Answer 5 questions. Get 3+ correct to unlock a 5% discount code!"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#f9fafb"
+    },
+    {
+      "type": "number",
+      "id": "passing_score",
+      "label": "Passing Score (out of 5)",
+      "default": 3
+    },
+    {
+      "type": "text",
+      "id": "discount_code",
+      "label": "Discount Code",
+      "default": "WINTER5"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Quiz Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question_text",
+          "label": "Question",
+          "default": "Question text here"
+        },
+        {
+          "type": "text",
+          "id": "option_a",
+          "label": "Option A",
+          "default": "First answer"
+        },
+        {
+          "type": "text",
+          "id": "option_b",
+          "label": "Option B",
+          "default": "Second answer"
+        },
+        {
+          "type": "text",
+          "id": "option_c",
+          "label": "Option C",
+          "default": "Third answer"
+        },
+        {
+          "type": "select",
+          "id": "correct_answer",
+          "label": "Correct Answer",
+          "options": [
+            {
+              "value": "a",
+              "label": "Option A"
+            },
+            {
+              "value": "b",
+              "label": "Option B"
+            },
+            {
+              "value": "c",
+              "label": "Option C"
+            }
+          ],
+          "default": "a"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Winter Quiz",
+      "blocks": [
+        {
+          "type": "question",
+          "settings": {
+            "question_text": "What's the main threat to succulents in UK winter?",
+            "option_a": "❄️ Cold temperatures",
+            "option_b": "💧 Wet compost combined with cold",
+            "option_c": "🌙 Lack of sunlight",
+            "correct_answer": "b"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question_text": "Most hardy succulents can survive down to:",
+            "option_a": "🌡️ 0°C (freezing)",
+            "option_b": "🌡️ -5°C to -10°C",
+            "option_c": "🌡️ -15°C (extreme cold)",
+            "correct_answer": "b"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question_text": "How should you water succulents in winter?",
+            "option_a": "💦 Same as summer",
+            "option_b": "🚫 Stop watering completely",
+            "option_c": "💧 Sparingly, only when soil is dry",
+            "correct_answer": "c"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question_text": "What makes compost 'winter-ready'?",
+            "option_a": "🌱 High nutrient content",
+            "option_b": "💨 Excellent drainage with grit/perlite",
+            "option_c": "🌿 Lots of organic matter",
+            "correct_answer": "b"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question_text": "Horticultural fleece protects succulents by:",
+            "option_a": "🌡️ Raising temperature by 10-15°C",
+            "option_b": "☔ Only keeping rain off",
+            "option_c": "🛡️ Adding 4-6°C warmth + rain protection",
+            "correct_answer": "c"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
