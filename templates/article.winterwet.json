@@ -1769,8 +1769,8 @@
           "type": "question",
           "settings": {
             "question_text": "How should you water succulents in winter?",
-            "option_a": "💦 Same as summer",
-            "option_b": "🚫 Stop watering completely",
+            "option_a": "💦 Once a day",
+            "option_b": "🚫 Once a week",
             "option_c": "💧 Sparingly, only when soil is dry",
             "correct_answer": "c"
           }
