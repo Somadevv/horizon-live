@@ -12,6 +12,11 @@
 
       <div id="winter-quiz">
         <style>
+          @media (max-width: 768px) {
+            .winter-quiz-section {
+              padding: 40px 12px !important;
+            }
+          }
           .quiz-progress {
             display: flex;
             justify-content: center;
@@ -197,6 +202,17 @@
           @media (min-width: 769px) and (max-width: 1024px) {
             #recommended-products {
               grid-template-columns: repeat(2, 1fr);
+            }
+          }
+          @media (max-width: 768px) {
+            .quiz-container {
+              padding: 24px 16px !important;
+            }
+            .quiz-question {
+              padding: 20px !important;
+            }
+            .quiz-summary {
+              padding: 20px !important;
             }
           }
         </style>
