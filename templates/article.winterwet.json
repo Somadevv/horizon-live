@@ -1803,6 +1803,7 @@
         "question_FMkYmz",
         "question_YDfk6B"
       ],
+      "disabled": true,
       "name": "Winter Quiz",
       "settings": {
         "quiz_title": "QUIZ: Winter Succulent Care",
