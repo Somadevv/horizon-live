@@ -186,24 +186,6 @@
             margin: 0 0 8px 0;
             font-size: 1.8rem;
           }
-          #recommended-products {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            max-width: 900px;
-            margin: 0 auto;
-          }
-          @media (max-width: 768px) {
-            #recommended-products {
-              grid-template-columns: 1fr;
-              gap: 16px;
-            }
-          }
-          @media (min-width: 769px) and (max-width: 1024px) {
-            #recommended-products {
-              grid-template-columns: repeat(2, 1fr);
-            }
-          }
           @media (max-width: 768px) {
             .quiz-container {
               padding: 24px 16px !important;
@@ -358,7 +340,7 @@
 
             let summaryHTML = `
               <div class="result-banner ${passed ? 'pass' : 'fail'}">
-                <h3>${passed ? '🎉 Congratulations!' : '📚 Keep Learning!'}</h4>
+                <h3>${passed ? '🎉 Congratulations!' : '📚 Keep Learning!'}</h3>
                 <div class="summary-score">${score} / ${totalQuestions}</div>
                 <p style="font-size: 1.1rem; margin: 0;">
                   ${passed 
@@ -376,9 +358,13 @@
                   <p style="color: #666;">Use this code at checkout to save 5% on your order!</p>
                 </div>
                 
-                <div style="margin: 40px 0;">
-                  <h3 style="text-align: center; margin-bottom: 24px; font-size: 1.5rem;">🌵 Perfect Winter-Hardy Succulents</h3>
-                  <div id="recommended-products"></div>
+                <div style="text-align: center; margin: 40px 0;">
+                  <a href="https://surrealsucculents.co.uk/collections/all?sort_by=manual&filter.v.availability=1" 
+                     style="display: inline-block; padding: 18px 48px; background: #374151; color: white; text-decoration: none; border-radius: 12px; font-size: 1.2rem; font-weight: 600; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"
+                     onmouseover="this.style.background='#1f2937'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)';"
+                     onmouseout="this.style.background='#374151'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)';">
+                    🛒 Shop Now
+                  </a>
                 </div>
               `;
             }
@@ -406,77 +392,6 @@
             summaryDiv.innerHTML = summaryHTML;
             summaryDiv.classList.add('show');
             summaryDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            
-            // Load recommended products if passed
-            if (passed) {
-              loadRecommendedProducts();
-            }
-          }
-
-          // Load and display recommended products
-          function loadRecommendedProducts() {
-            const productHandles = ['echeveria-elegans', 'aeonium-phoenix-flame', 'sedeveria-letizia'];
-            const productsContainer = document.getElementById('recommended-products');
-            
-            productHandles.forEach(handle => {
-              fetch(`/products/${handle}.js`)
-                .then(response => response.json())
-                .then(product => {
-                  const productCard = createProductCard(product);
-                  productsContainer.innerHTML += productCard;
-                })
-                .catch(err => console.log('Product not found:', handle));
-            });
-          }
-
-          // Create product card HTML
-          function createProductCard(product) {
-            const variant = product.variants[0];
-            const price = (variant.price / 100).toFixed(2);
-            const available = variant.available;
-            
-            return `
-              <div style="background: white; border-radius: 12px; padding: 16px; border: 2px solid #e5e7eb; text-align: center;">
-                <img src="${product.featured_image}" alt="${product.title}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 12px;">
-                <h4 style="margin: 0 0 8px 0; font-size: 1rem; color: #1f2937;">${product.title}</h4>
-                <p style="font-size: 1.2rem; font-weight: bold; color: #374151; margin: 8px 0;">£${price}</p>
-                <button 
-                  onclick="addToCart(${variant.id})" 
-                  style="width: 100%; padding: 12px; background: ${available ? '#374151' : '#9ca3af'}; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: ${available ? 'pointer' : 'not-allowed'}; transition: background 0.2s;"
-                  ${!available ? 'disabled' : ''}
-                  onmouseover="if(this.disabled === false) this.style.background='#1f2937'"
-                  onmouseout="if(this.disabled === false) this.style.background='#374151'"
-                >
-                  ${available ? '🛒 Add to Cart' : 'Out of Stock'}
-                </button>
-              </div>
-            `;
-          }
-
-          // Add to cart function
-          window.addToCart = function(variantId) {
-            fetch('/cart/add.js', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                id: variantId,
-                quantity: 1
-              })
-            })
-            .then(response => response.json())
-            .then(data => {
-              // Show success feedback
-              alert('✅ Added to cart! Your discount code is ready to use at checkout.');
-              // Optionally update cart count if you have one
-              if (typeof window.updateCartCount === 'function') {
-                window.updateCartCount();
-              }
-            })
-            .catch(err => {
-              alert('Sorry, there was an error adding to cart. Please try again.');
-            });
           }
 
           // Initialize
