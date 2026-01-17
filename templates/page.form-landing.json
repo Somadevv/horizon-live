@@ -349,13 +349,22 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "custom_liquid_cjyVTV": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "{% render 'add-to-cart-button', product: card_product %}"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "product_card_gallery_9EXGKE",
             "product_title_rzMKri",
             "price_GjrMC4",
-            "text_GmEbCm"
+            "text_GmEbCm",
+            "custom_liquid_cjyVTV"
           ]
         }
       },
