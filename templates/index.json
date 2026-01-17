@@ -962,7 +962,7 @@
     "hero_wqphbC": {
       "type": "hero",
       "blocks": {
-        "group_8fehHJ": {
+        "group_ypNEEY": {
           "type": "group",
           "name": "t:names.group",
           "settings": {
@@ -980,8 +980,8 @@
             "custom_width_mobile": 100,
             "height": "fit",
             "custom_height": 100,
-            "inherit_color_scheme": false,
-            "color_scheme": "scheme-6",
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-d0d44ea1-7daf-4739-a399-4645d45a9987",
             "background_media": "none",
             "video_position": "cover",
             "background_image_position": "cover",
@@ -989,7 +989,7 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 14,
-            "toggle_overlay": true,
+            "toggle_overlay": false,
             "overlay_color": "#0000003b",
             "overlay_style": "solid",
             "gradient_direction": "to top",
@@ -1002,7 +1002,7 @@
             "padding-inline-end": 12
           },
           "blocks": {
-            "group_TDMECG": {
+            "group_GUxW7w": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -1042,7 +1042,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_Bpfk4J": {
+                "text_fUdycM": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
@@ -1060,7 +1060,7 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
-                    "color_scheme": "scheme-2",
+                    "color_scheme": "scheme-1",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -1071,7 +1071,7 @@
                   },
                   "blocks": {}
                 },
-                "text_hedVTp": {
+                "text_7x3LcK": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
@@ -1089,7 +1089,7 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
-                    "color_scheme": "scheme-2",
+                    "color_scheme": "scheme-1",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -1102,11 +1102,11 @@
                 }
               },
               "block_order": [
-                "text_Bpfk4J",
-                "text_hedVTp"
+                "text_fUdycM",
+                "text_7x3LcK"
               ]
             },
-            "group_Cftwen": {
+            "group_GqMEat": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -1146,11 +1146,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_zbWcjg": {
+                "text_Y3gzxL": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><strong>Take a look at our amazing gift collection, perfect for giving a loved one something special</strong></p>",
+                    "text": "<p>Take a look at our amazing gift collection, perfect for giving a loved one something special</p>",
                     "width": "100%",
                     "max_width": "none",
                     "max_width_tablet": "inherit",
@@ -1164,7 +1164,7 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
-                    "color_scheme": "scheme-2",
+                    "color_scheme": "scheme-1",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -1175,7 +1175,7 @@
                   },
                   "blocks": {}
                 },
-                "button_rTXMan": {
+                "button_kqxBQH": {
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
@@ -1192,26 +1192,26 @@
                 }
               },
               "block_order": [
-                "text_zbWcjg",
-                "button_rTXMan"
+                "text_Y3gzxL",
+                "button_kqxBQH"
               ]
             }
           },
           "block_order": [
-            "group_TDMECG",
-            "group_Cftwen"
+            "group_GUxW7w",
+            "group_GqMEat"
           ]
         }
       },
       "block_order": [
-        "group_8fehHJ"
+        "group_ypNEEY"
       ],
       "name": "Hero: Gifts",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Hex-terrarium-1.jpg",
+        "image_1": "shopify://shop_images/0001-4853119744235447270.png",
         "media_type_2": "image",
-        "image_2": "shopify://shop_images/12cm-terrerium-1.jpg",
+        "image_2": "shopify://shop_images/0001-9081999791966841072.png",
         "hide_second_media_mobile": true,
         "link": "shopify://collections/gifts-terrariums",
         "open_in_new_tab": false,
