@@ -1,0 +1,50 @@
+{% comment %}
+  Renders an add to cart button for product cards
+{% endcomment %}
+
+{%- liquid
+  assign product_form_id = 'product-form-' | append: block.id
+-%}
+
+<product-form class="product-form">
+  {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+    <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}" class="product-variant-id">
+    
+    <div class="product-form__buttons">
+      <button
+        id="{{ product_form_id }}-submit"
+        type="submit"
+        name="add"
+        class="product-form__submit button button--full-width button--primary"
+        {% if card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+      >
+        <span>
+          {%- if card_product.selected_or_first_available_variant.available -%}
+            {{ block.settings.button_label | default: 'Add to Cart' }}
+          {%- else -%}
+            {{ 'products.product.sold_out' | t }}
+          {%- endif -%}
+        </span>
+        <div class="loading__spinner hidden">
+          <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+          </svg>
+        </div>
+      </button>
+    </div>
+  {%- endform -%}
+</product-form>
+
+{% schema %}
+{
+  "name": "Add to Cart Button",
+  "settings": [
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Add to Cart"
+    }
+  ]
+}
+{% endschema %}
