@@ -67,7 +67,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>New arrivals</h2>",
+            "text": "<h2>PICK YOUR FREEBIE</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "max_width_tablet": "inherit",
@@ -96,7 +96,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+            "text": "<p>Welcome to the Surreal Succulents family!<br/>The choice is yours. Add to cart and spend over £20 to activate. Applies automatically.</p>",
             "width": "fit-content",
             "max_width": "normal",
             "max_width_tablet": "inherit",
@@ -133,7 +133,7 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
+        "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 25,
         "section_width": "page-width",
@@ -349,22 +349,13 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "custom_liquid_cjyVTV": {
-              "type": "custom-liquid",
-              "name": "t:names.custom_liquid",
-              "settings": {
-                "custom_liquid": "{% render 'add-to-cart-button', product: card_product %}"
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "product_card_gallery_9EXGKE",
             "product_title_rzMKri",
             "price_GjrMC4",
-            "text_GmEbCm",
-            "custom_liquid_cjyVTV"
+            "text_GmEbCm"
           ]
         }
       },
