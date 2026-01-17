@@ -50,10 +50,10 @@
   {% endif %}
 
   {% if show_compare_price %}
-    <span role="group">
-      <span class="visually-hidden">{{ 'content.price_sale' | t }}&nbsp;</span>
-      <span class="price">{{ price | default: '&nbsp;' }}</span>
-    </span>
+  <span role="group">
+    <span class="visually-hidden">{{ 'content.price_sale' | t }}&nbsp;</span>
+    <span class="price"><s>{{ price | default: '&nbsp;' }}</s></span>
+  </span>
   {% else %}
     <span class="price">{{ price | default: '&nbsp;' }}</span>
   {% endif %}
