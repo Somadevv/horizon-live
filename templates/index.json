@@ -786,7 +786,7 @@
             "product_list_text_qLCTNF": {
               "type": "_product-list-text",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3>Hardy succulents - these will brave the UK winter</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
