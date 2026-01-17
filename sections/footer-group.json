@@ -288,7 +288,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "content_direction": "row",
+                "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "center",
                 "vertical_alignment": "center",
@@ -324,28 +324,45 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_eC4rXd": {
-                  "type": "text",
-                  "name": "Text",
+                "image_wqdpVd": {
+                  "type": "image",
+                  "name": "t:names.image",
                   "settings": {
-                    "text": "<p>A family-run nursery in <strong>Cornwall</strong>, specialising in rare and unusual succulents. With over <strong>10 RHS Gold Medal-winning plants</strong>, we offer expert advice, sustainable practices, and fast, free UK delivery on orders over £40. Explore our collection and discover how to care for your succulents with our detailed guides.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "max_width_tablet": "inherit",
-                    "max_width_desktop": "inherit",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "color_scheme": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
+                    "image": "shopify://shop_images/emailfooter03012026.png",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 14,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "image_dGbNXN": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/Untitled_1500_x_500_px_1_f1e7fd21-2150-4064-87a0-b3f3b43c04b1.png",
+                    "link": "https://account.surrealsucculents.co.uk/profile",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 14,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -355,7 +372,8 @@
                 }
               },
               "block_order": [
-                "text_eC4rXd"
+                "image_wqdpVd",
+                "image_dGbNXN"
               ]
             },
             "group_AVMfnR": {
