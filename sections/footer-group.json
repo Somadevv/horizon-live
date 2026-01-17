@@ -102,6 +102,7 @@
         "text_tk7kBf",
         "email_signup_TbfkbH"
       ],
+      "disabled": true,
       "name": "t:names.email_signup",
       "settings": {
         "content_direction": "column",
