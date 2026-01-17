@@ -18,7 +18,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Free Succulent</h2>",
+            "text": "<h3><strong>Unlock Your Free Plant</strong></h3>",
             "width": "100%",
             "max_width": "normal",
             "max_width_tablet": "inherit",
@@ -102,7 +102,6 @@
         "text_tk7kBf",
         "email_signup_TbfkbH"
       ],
-      "disabled": true,
       "name": "t:names.email_signup",
       "settings": {
         "content_direction": "column",
