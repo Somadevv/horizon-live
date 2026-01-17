@@ -284,15 +284,48 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "text_GmEbCm": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><strong>FREE</strong></p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "max_width_tablet": "inherit",
+                "max_width_desktop": "inherit",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "color_scheme": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "product_card_gallery_9EXGKE",
             "product_title_rzMKri",
-            "price_GjrMC4"
+            "price_GjrMC4",
+            "text_GmEbCm"
           ]
         }
       },
+      "custom_css": [
+        "product-price span.price {text-decoration: line-through !important;}"
+      ],
       "name": "t:names.products_grid",
       "settings": {
         "collection": "surreal-picks",
