@@ -1,27 +1,44 @@
 {%- liquid
-  assign product_form_id = 'product-form-' | append: product.id
+  if card_product
+    assign current_product = card_product
+  elsif product
+    assign current_product = product
+  endif
+  
+  assign product_form_id = 'product-form-' | append: current_product.id | append: '-' | append: section.id
 -%}
 
-<product-form class="product-form">
-  {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" class="product-variant-id">
+<product-form class="product-form" data-product-id="{{ current_product.id }}">
+  {%- form 'product', current_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+    <input 
+      type="hidden" 
+      name="id" 
+      value="{{ current_product.selected_or_first_available_variant.id }}" 
+      class="product-variant-id"
+    >
     
     <div class="product-form__buttons">
       <button
         id="{{ product_form_id }}-submit"
         type="submit"
         name="add"
-        class="product-form__submit button button--full-width button--primary"
-        {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+        class="button button--primary button--full-width"
+        {% if current_product.selected_or_first_available_variant.available == false %}disabled{% endif %}
       >
         <span>
-          {%- if product.selected_or_first_available_variant.available -%}
-            Add to Cart
+          {%- if current_product.selected_or_first_available_variant.available -%}
+            Add to cart
           {%- else -%}
-            Sold Out
+            Sold out
           {%- endif -%}
         </span>
       </button>
     </div>
   {%- endform -%}
 </product-form>
+
+<script>
+  document.querySelector('#{{ product_form_id }}').addEventListener('submit', function(e) {
+    console.log('Form submitted for product:', '{{ current_product.id }}');
+  });
+</script>
